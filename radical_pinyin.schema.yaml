@@ -1,0 +1,81 @@
+# Rime schema settings
+# encoding: utf-8
+
+schema:
+  schema_id: radical_pinyin
+  name: "部件拆字 | 全拼双拼"
+  version: "1.1.0"
+  author: Mirtle
+  description: |
+    用拼音按顺序打出偏旁部件，组合出汉字
+    码表：开放词典 / henrysting / Mirtle
+    注音、校对、方案：Mirtle
+    仓库：https://github.com/mirtlecn/rime_radical_pinyin
+
+engine:
+  processors:
+    - key_binder
+    - speller
+    - selector
+    - navigator
+    - express_editor
+  segmentors:
+    - abc_segmentor
+  translators:
+    - echo_translator
+    - table_translator
+  filters:
+    - uniquifier
+
+key_binder:
+  __include: default:/key_binder?
+
+speller:
+  alphabet: "abcdefghijklmnopqrstuvwxyz;"
+  delimiter: " '"
+  algebra:
+    # 根据当前所用拼音方案选择 __include 的值
+    __include: algebra_double_pinyin  # 自然码双拼
+
+
+translator:
+  dictionary: radical_pinyin
+  enable_user_dict: false
+
+
+algebra_double_pinyin:
+  - derive/^([jqxy])u(?=^|$|')/$1v/
+  - derive/'([jqxy])u(?=^|$|')/'$1v/
+  - derive/^([aoe])([ioun])(?=^|$|')/$1$1$2/
+  - derive/'([aoe])([ioun])(?=^|$|')/'$1$1$2/
+  - xform/^([aoe])(ng)?(?=^|$|')/$1$1$2/
+  - xform/'([aoe])(ng)?(?=^|$|')/'$1$1$2/
+  - xform/iu(?=^|$|')/<q>/
+  - xform/[iu]a(?=^|$|')/<w>/
+  - xform/[uv]an(?=^|$|')/<r>/
+  - xform/[uv]e(?=^|$|')/<t>/
+  - xform/ing(?=^|$|')|uai(?=^|$|')/<y>/
+  - xform/^sh/<u>/
+  - xform/^ch/<i>/
+  - xform/^zh/<v>/
+  - xform/'sh/'<u>/
+  - xform/'ch/'<i>/
+  - xform/'zh/'<v>/
+  - xform/uo(?=^|$|')/<o>/
+  - xform/[uv]n(?=^|$|')/<p>/
+  - xform/([a-z>])i?ong(?=^|$|')/$1<s>/
+  - xform/[iu]ang(?=^|$|')/<d>/
+  - xform/([a-z>])en(?=^|$|')/$1<f>/
+  - xform/([a-z>])eng(?=^|$|')/$1<g>/
+  - xform/([a-z>])ang(?=^|$|')/$1<h>/
+  - xform/ian(?=^|$|')/<m>/
+  - xform/([a-z>])an(?=^|$|')/$1<j>/
+  - xform/iao(?=^|$|')/<c>/
+  - xform/([a-z>])ao(?=^|$|')/$1<k>/
+  - xform/([a-z>])ai(?=^|$|')/$1<l>/
+  - xform/([a-z>])ei(?=^|$|')/$1<z>/
+  - xform/ie(?=^|$|')/<x>/
+  - xform/ui(?=^|$|')/<v>/
+  - xform/([a-z>])ou(?=^|$|')/$1<b>/
+  - xform/in(?=^|$|')/<n>/
+  - xform/'|<|>//

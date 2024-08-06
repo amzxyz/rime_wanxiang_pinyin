@@ -1,0 +1,4 @@
+# Rime default settings
+# encoding: utf-8
+patch:
+  translator/preedit_format: []

@@ -1,0 +1,28 @@
+# Rime dictionary
+# encoding: utf-8
+# 
+# rime配置的部署位置：
+# ~/.local/share/fcitx5/rime 或者 ~/.config/ibus/rime  (Linux)
+# ~/Library/Rime  (Mac OS)
+# %APPDATA%\Rime  (Windows)
+# 
+#
+
+---
+name: wanxiang
+version: "2024.06.26"
+sort: by_weight  #字典初始排序，可選original或by_weight
+use_preset_vocabulary: false
+#此處爲明月拼音擴充詞庫（基本）默認鏈接載入的詞庫，有朙月拼音官方詞庫、明月拼音擴充詞庫（漢語大詞典）、明月拼音擴充詞庫（詩詞）、明月拼音擴充詞庫（含西文的詞彙）。如果不需要加載某个詞庫請將其用「#」註釋掉。
+#雙拼不支持 luna_pinyin.cn_en 詞庫，請用戶手動禁用。
+
+import_tables:
+  - cn_dicts/8105     # 字表
+  - cn_dicts/cell     # 细胞词库
+  - cn_dicts/base     # 基础词库
+  - cn_dicts/ext      # 扩展词库
+  - cn_dicts/others   # 一些杂项 容错音和错字 可以不开
+  - cn_dicts/tencent  # 腾讯词向量（大词库，部署时间较长 选择性开启）
+...
+
+

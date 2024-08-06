@@ -1,0 +1,36 @@
+customization:
+  distribution_code_name: Weasel
+  distribution_version: 0.16.1
+  generator: "Weasel::UIStyleSettings"
+  modified_time: "Mon Jul 29 16:48:22 2024"
+  rime_version: 1.11.2 
+patch:
+  "style/horizontal": true
+  "style/color_scheme": jianchun
+  "style/layout/border_width": 1
+  "style/layout/candidate_spacing": 12  #候选字间距
+  "style/layout/hilite_padding": 5    #填充
+  "style/layout/hilite_spacing": 5   #序号和候选字之间的间隔
+  "style/layout/line_spacing": 5
+  "style/layout/margin_x": 4    #候选字左右边距
+  "style/layout/margin_y": 4      #候选
+  "style/layout/min_width": 0
+  "style/layout/border": 1
+  "style/layout/corner_radius": 0
+
+  preset_color_schemes:
+    jianchun:
+      name: jianchun
+      author: amzxyz
+      back_color: '0xf2f2f2'
+      border_color: '0xf2f2f2'
+      text_color: '0x3c647e'
+      hilited_text_color: '0x3c647e'
+      hilited_back_color: '0x797954'
+      hilited_comment_text_color: '0xffffff'
+      hilited_candidate_text_color: '0xffffff'
+      hilited_candidate_back_color: '0xCE7539'
+      hilited_label_color: '0xdedede'
+      candidate_text_color: '0x000000'
+      comment_text_color: '0x000000'
+      label_color: '0x91897e'

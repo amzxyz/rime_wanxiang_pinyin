@@ -1,0 +1,157 @@
+# Rime schema
+# vim: set sw=2 sts=2 et:
+# encoding: utf-8
+#
+# 复制自 https://github.com/tumuyan/rime-melt，修改了拼写派生
+# 感谢 @[Mirtle](https://github.com/mirtlecn) 贡献的极其好用的拼写派生
+# 全拼和各个双拼有部分拼写规则不通用，需要修改 speller/algebra 下的 __include: algebra_rime_amz 为你所使用的方案
+
+schema:
+  schema_id: melt_eng
+  name: Easy English Nano
+  version: "2023-10-17"
+  author:
+    - Patrick <ipatrickmac@gmail.com>
+    - tumuyan <tumuyan@21cn.com>
+  description: Easy English Nano，只包含少量常用词汇，方便中英文混合输入度方案调用。
+
+switches:
+  - name: ascii_mode
+    reset: 0
+    states: [ASCII-OFF, ASCII-ON]
+
+engine:
+  processors:
+    - ascii_composer
+    - key_binder
+    - speller
+    - recognizer
+    #關閉標點符號轉換（對應symbols.yaml）    - punctuator
+    - selector
+    - navigator
+    - express_editor
+  segmentors:
+    - matcher
+    - ascii_segmentor
+    - abc_segmentor
+    - punct_segmentor
+    - fallback_segmentor
+  translators:
+    - table_translator
+    - punct_translator
+  filters:
+    - uniquifier
+
+speller:
+  alphabet: zyxwvutsrqponmlkjihgfedcbaZYXWVUTSRQPONMLKJIHGFEDCBA
+  delimiter: " '"
+  algebra:
+    # 根据当前所用拼音方案选择 __include 的值
+    # 如果要在补丁中（melt_eng.custom.yaml）修改 algebra 以适配双拼，请参考 [常见问题](https://github.com/iDvel/rime-amz/issues/133)
+     __include: algebra_double_pinyin   # 自然码双拼
+
+
+translator:
+  dictionary: melt_eng
+  spelling_hints: 9
+
+key_binder:
+  import_preset: default
+
+punctuator:
+  import_preset: default
+
+recognizer:
+  import_preset: default
+
+
+# 通用的派生规则
+algebra_common:
+  # 数字派生
+  - derive/1([4-7|9])/$1teen/
+  - derive/11/eleven/
+  - derive/12/twelve/
+  - derive/13/thirteen/
+  - derive/15/fifteen/
+  - derive/18/eighteen/
+  - derive/0/o/ # 如 1000 -> oneOOO
+  - derive/0/O/
+  - derive/0/zero/
+  - derive/1/one/
+  - derive/10/ten/
+  - derive/2/to/
+  - derive/2/two/
+  - derive/3/three/
+  - derive/4/for/
+  - derive/4/four/
+  - derive/5/five/
+  - derive/6/six/
+  - derive/7/seven/
+  - derive/8/eight/
+  - derive/9/nine/
+  # 符号派生
+  - derive/\+/plus/
+  - derive/\./dot/
+  - derive/@/at/
+  - derive/-/hyphen/
+  - derive/#/hash/
+  - derive/#/number/
+  - derive/#/sharp/
+  - derive/♯/sharp/
+  - derive / slash
+  - derive/&/and/
+  - derive/%/percent/
+  # 派生无单个特殊字符的拼写
+  - derive/[.]//
+  - derive/[+]//
+  - derive/[@]//
+  - derive/[-]//
+  - derive/[_]//
+  # 派生无任何非字母数字字符的拼写
+  - derive/[^a-zA-Z0-9]//
+  # 禁用非英文、数字开头的编码
+  - erase/^[^a-zA-Z0-9].+$/
+  # 全小写
+  - derive/^.+$/\L$0/
+  # 全大写
+  - derive/^.+$/\U$0/
+  # 首字母大写
+  - derive/^./\U$0/
+  # 前 2~10 个字母大写
+  - derive/^([a-z]{2})/\U$1/
+  - derive/^([a-z]{3})/\U$1/
+  - derive/^([a-z]{4})/\U$1/
+  - derive/^([a-z]{5})/\U$1/
+  - derive/^([a-z]{6})/\U$1/
+  - derive/^([a-z]{7})/\U$1/
+  - derive/^([a-z]{8})/\U$1/
+  - derive/^([a-z]{9})/\U$1/
+  - derive/^([a-z]{10})/\U$1/
+
+# 自然码双拼
+algebra_double_pinyin:
+  __include: algebra_common
+  __append:
+    - derive/(?<!\d)1([1-9])(?!\d)/ui$1/
+    - derive/([1-9])0000(?!0)/$1wj/
+    - derive/([1-9])000(?!0)/$1qm/
+    - derive/([1-9])00(?!0)/$1bl/
+    - derive/([2-9])0(?!0)/$1ui/
+    - derive/(?<!\d)([2-9])([1-9])(?!\d)/$1ui$2/
+    - derive/\./dm/
+    - derive/10/ui/
+    - derive/0/ly/
+    - derive/1/yi/
+    - derive/2/er/
+    - derive/2/ld/
+    - derive/3/sj/
+    - derive/4/si/
+    - derive/5/wu/
+    - derive/6/lq/
+    - derive/7/qi/
+    - derive/8/ba/
+    - derive/9/jq/
+    - derive/\+/jw/
+    - derive/#/jy/
+
+
