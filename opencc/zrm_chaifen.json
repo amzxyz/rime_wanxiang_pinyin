@@ -1,0 +1,19 @@
+{
+  "name": "zrm_chaifen",
+  "segmentation": {
+    "type": "mmseg",
+    "dict": {
+      "type": "text",
+      "file": "zrm_chaifen.txt"
+    }
+  },
+  "conversion_chain": [{
+    "dict": {
+      "type": "group",
+      "dicts": [{
+        "type": "text",
+        "file": "zrm_chaifen.txt"
+      }]
+    }
+  }]
+}

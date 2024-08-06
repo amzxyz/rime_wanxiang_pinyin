@@ -1,0 +1,18 @@
+{
+  "name": "Simplified Chinese to Martian Language",
+  "segmentation": {
+    "type": "mmseg",
+    "dict": {
+      "type": "text",
+      "file": "martian.txt"
+    }
+  },
+  "conversion_chain": [
+    {
+      "dict": {
+        "type": "text",
+        "file": "martian.txt"
+      }
+    }
+  ]
+}
