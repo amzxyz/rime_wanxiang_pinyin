@@ -143,7 +143,7 @@
     schema_name: 
       name: 万象拼音   #可以改成与你所选方案一致的描述，不改也行
     set_shuru_schema:         #配置此项就是选择什么输入法
-      __include: algebra_zrm  #可选解码规则有   algebra_quanpin, algebra_zrm, algebra_flypy,  algebra_ziguang, algebra_sogou, algebra_mspy, algebra_abc  选择一个填入
+      __include: algebra_zrm  #可选解码规则有   algebra_pinyin, algebra_zrm, algebra_flypy,  algebra_ziguang, algebra_sogou, algebra_mspy, algebra_abc  选择一个填入
     set_algebra_fuzhu:        #配置此项就是选择什么辅助码
       __include: fuzhu_zrm    #可选辅助码有：fuzhu_kong，fuzhu_moqi, fuzhu_zrm, fuzhu_flypy, fuzhu_tiger, fuzhu_cj, fuzhu_wubi, fuzhu_jdh 选择一个填入
     set_comment_format:       #辅助码提示用哪个？初学者开启提示可以辅助快速记忆辅助码。选其一，其余注释掉
