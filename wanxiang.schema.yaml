@@ -5,18 +5,21 @@
 schema_name: 
   name: 万象拼音   #可以改成与你所选方案一致的描述，不改也行
 set_shuru_schema:         #配置此项就是选择什么输入法,同时拆分反查和中英文混输也将匹配该输入方案
-  __include: algebra_pinyin  #可选解码规则有   algebra_pinyin, algebra_zrm, algebra_flypy,  algebra_ziguang, algebra_sogou, algebra_mspy, algebra_abc  选择一个填入
+  __include: algebra_zrm  #可选解码规则有   algebra_pinyin, algebra_zrm, algebra_flypy,  algebra_ziguang, algebra_sogou, algebra_mspy, algebra_abc  选择一个填入
 set_algebra_fuzhu:        #配置此项就是选择什么辅助码
   __include: fuzhu_zrm    #可选辅助码有：fuzhu_kong，fuzhu_moqi, fuzhu_zrm, fuzhu_flypy, fuzhu_tiger, fuzhu_cj, fuzhu_wubi, fuzhu_jdh 选择一个填入
-set_comment_format:       #辅助码提示用哪个？初学者开启提示可以辅助快速记忆辅助码。选其一，其余注释掉
-  __append:   
-#    - xform|^(.+?);(.*?);(.*?);.*$|$2|     #墨奇辅助码提示
-#    - xform|^(.+?);.*?;(.*?);.*$|$2|    #小鹤辅助码提示
-    - xform|^(.+?);.*?;.*?;(.*?);.*$|$2|   #自然码辅助码提示
-#    - xform|^(.+?);.*?;.*?;.*?;(.*?);.*$|$2|    #简单鹤码提示
-#    - xform|^(.+?);.*?;.*?;.*?;.*?;(.*?);.*$|$2|  #仓颉提示
-#    - xform|^(.+?);.*?;.*?;.*?;.*?;.*?;(.*?);.*$|$2|    #虎码提示
-#    - xform|^(.+?);.*?;.*?;.*?;.*?;.*?;.*?;(.*?);.*$|$2|   #五笔提示
+#Lua 配置: 超级注释模块
+pro_comment_format:                   # 超级注释，子项配置 true 开启，false 关闭
+  fuzhu_code: true                    # 启用辅助码提醒，用于辅助输入练习辅助码，成熟后可关闭
+  candidate_length: 1                 # 候选词辅助码提醒的生效长度，0为关闭  但同时清空其它，应当使用上面开关来处理    
+  fuzhu_type: zrm                     # 用于匹配对应的辅助码注释显示，可选显示类型有：moqi, flypy, zrm, jdh, cj, tiger, wubi,选择一个填入，应与上面辅助码类型一致
+
+  jiancode_priority: true             # 简码前置：开启即查询 1-3 简码的词库回显到第一个候选词的注释里，可配合快捷键设置上屏       
+  jiancode_identifier: "{identifier}⚡" #回显样式定义：假设值为 "*{identifier}*", 然后注释会被生成为 "*注释*" 的形式。如果值为 "⚡", 则注释会显示为 "注释⚡"，清空⚡也是默认值
+
+  corrector: true                     # 启用错音错词提醒，例如输入 geiyu 给予 获得 jiyu 提示
+  corrector_type: "{comment}"         # 新增一个显示类型，比如"【{comment}】" 
+
 __include: octagram/enable_for_sentence   #启用语言模型
 #__include: octagram/disable   #禁用语言模型
 ########################以下是方案配置######################################################
@@ -50,7 +53,7 @@ switches:
     states: [ 🈚️, 🈶 ]
     reset: 1
   - name: full_shape
-    states: [ 半角, 全角 ]
+    states: [ 半, 全 ]
   - name: search_single_char  # search.lua 的功能开关，辅码查词时是否单字优先
     abbrev: [词, 单]
     states: [正常, 单字]
@@ -97,7 +100,6 @@ engine:
   filters:
     - lua_filter@*cold_word_drop.filter
     - lua_filter@*long_word_filter                  #长词优先      
-    - lua_filter@*corrector                         # 错音错字提示，关闭同时需要关闭 translator/spelling_hints，否则 comment 里都是拼音
     - reverse_lookup_filter@radical_reverse_lookup  # 部件拆字滤镜
     - lua_filter@*autocap_filter                    # 英文自动大写
     - lua_filter@*pin_cand_filter                   # 置顶候选项（顺序要求：置顶候选项 > Emoji > 简繁切换）
@@ -110,7 +112,7 @@ engine:
     - simplifier@traditionalize                     # 简繁切换
     - simplifier@mars                               #火星文
     - simplifier@chinese_english                    #中英翻译
-    - lua_filter@*stick                             # tab置顶词回显在第一个comment中
+    - lua_filter@*pro_comment_format                #超级注释模块，支持简码前置、错词提示、辅助码显示，支持个性化配置和关闭相应的功能，详情搜索pro_comment_format进行详细配置
     - uniquifier                                    # 去重
 
 
@@ -139,12 +141,6 @@ pin_cand_filter:
 long_word_filter:
   count: 4
   idx: 3
-
-# Lua 配置：为 corrector 格式化 comment，占位符为 {comment}
-# 默认 "{comment}" 输入 hun dun 时会在「馄饨」旁边生成 hún tun 的 comment
-# 例如左右加个括号 "({comment})" 就会变成 (hún tun)
-corrector: "{comment}"
-
 
 # Lua 配置: 降低部分英语单词在候选项的位置。
 # 详细介绍 https://dvel.me/posts/make-rime-en-better/#短单词置顶的问题
@@ -186,8 +182,6 @@ reduce_english_filter:
 translator:
   dictionary: wanxiang          # 挂载词库 wanxiang.dict.yaml
 #  prism: double_pinyin          # 多方案共用一个词库时，为避免冲突，需要用 prism 指定一个名字。
-  ##  默认为不超过 2 个字的候选项显示输入码；将 2 改为 0 可关闭编码提示，
-  ##  改为 1 则是只显示单字的输入码，依此类推。
   contextual_suggestions: true   #上下文建议开启〔需配合 grammar 使用〕
   max_homophones: 4 # 最大同音簇长度〔需配合 grammar 使用〕
   max_homographs: 2 # 最大同形簇长度〔需配合 grammar 使用〕
@@ -200,19 +194,17 @@ translator:
 #  punctuation_model: default  # 设置标点符号模型
 #  single_char_first: true  # 优先显示单个字符
 #  candidate_filter: "^(?!abc).*$"  # 过滤掉包含 "abc" 的候选词
+#  user_dict: zrm.userdb  # 用户词典的文件名称
+#  db_class: tabledb  #开启后就不会产生zrm.userdb这样的文件夹，会直接输出文本zrm.txt同时无法使用同步能力
   enable_user_dict: true # 是否开启自动调频
-  spelling_hints: 1             # corrector.lua ：为了让错音错字提示的 Lua 同时适配全拼双拼，将拼音显示在 comment 中
-  always_show_comments: true    # corrector.lua ：Rime 默认在 preedit 等于 comment 时取消显示 comment，这里强制一直显示，供 corrector.lua 做判断用。
-#  user_dict: wanxiang.userdb  # 用户词典的文件名称
-#  db_class: tabledb  #开启后就不会产生wanxiang.userdb这样的文件夹，会直接输出文本wanxiang.txt同时无法使用同步能力
+  encode_commit_history: true   # 预留历史上屏自动编码成词
   initial_quality: 3       # 初始质量拼音的权重应该比英文大
 #  secondary_quality: 0.8  # 设置次要质量
-  comment_format:
-#    - xform/([^\[]{2})\[[^\]]{2}/$1/       # 编码只获取双拼码部分，用于corrector.lua获取双拼码识别
-#    - xform/^/［/
-#    - xform/$/］/
-    __patch: set_comment_format  ## 编码提示只显示辅助码部分
+  spelling_hints: 10             # 将注释以词典字符串形式完全暴露，通过pro_comment_format.lua完全接管，灵活配置。
+  always_show_comments: true    # Rime 默认在 preedit 等于 comment 时取消显示 comment，这里强制一直显示，供pro_comment_format.lua做判断用。
+  comment_format: {comment}  #将注释以词典字符串形式完全暴露，通过pro_comment_format.lua完全接管，灵活配置。
   preedit_format:               # preedit_format 影响到输入框的显示和“Shift+回车”上屏的字符
+#下面这是自然码用的，非必要大可不必转回去
     - xform/([bpmnljqxy])n/$1in/
     - xform/(\w)g/$1eng/
     - xform/(\w)q/$1iu/
@@ -802,15 +794,3 @@ octagram:
         collocation_penalty: -6
         weak_collocation_penalty: -12
         rear_penalty: -18
-  enable_for_fixed:
-    __patch:
-      grammar:
-        language: zh-hant-t-essay-bgc
-        collocation_max_length: 4
-        collocation_min_length: 2
-      fixed/+:
-        contextual_suggestions: true
-        max_homographs: 7
-      translator/+:
-        contextual_suggestions: true
-        max_homographs: 7
