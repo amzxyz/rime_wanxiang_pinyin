@@ -270,7 +270,7 @@ function C.init(env)
         corrector_type = config:get_string("pro_comment_format/corrector_type") or "{comment}",  -- 提示类型
         fuzhu_code_enabled = config:get_bool("pro_comment_format/fuzhu_code") or false,  -- 辅助码提醒功能
         candidate_length = tonumber(config:get_string("pro_comment_format/candidate_length")) or 1,  -- 候选词长度
-        fuzhu_type = config:get_string("pro_comment_format/fuzhu_code/fuzhu_type") or "zrm"  -- 辅助码类型
+        fuzhu_type = config:get_string("pro_comment_format/fuzhu_type") or ""  -- 辅助码类型
     }
 -- #########################
 -- 一起初始化简码前置
