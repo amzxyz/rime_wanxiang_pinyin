@@ -178,7 +178,7 @@ style:
   candidate_text_size: 21 #候选字号
   ## 编码
   comment_on_top: false #编码提示在上方或右侧
-  comment_height: 15 #编码提示区高度
+  comment_height: 18 #编码提示区高度
   comment_font: comment.ttf #编码提示字型
   comment_text_size: 15 #编码提示字号
 
@@ -3483,7 +3483,7 @@ preset_keys:
   CommitComment: { label: 编码, send: Control+Shift+Return }
   DeleteCandidate: { label: 删词, send: Control+Delete }
   # rime状态
-  Mode_switch: { toggle: ascii_mode, send: Mode_switch, states: [中文, 英文] }
+  Mode_switch: { toggle: ascii_mode, send: Mode_switch, states: [中, 英] }
   Zenkaku_Hankaku:
     { toggle: full_shape, send: Mode_switch, states: [半角, 全角] }
   Henkan: { toggle: simplification, send: Mode_switch, states: [汉字, 汉字] }
