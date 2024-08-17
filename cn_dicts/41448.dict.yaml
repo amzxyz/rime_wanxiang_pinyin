@@ -1,16 +1,13 @@
 # Rime dictionary
 # encoding: utf-8
 #
-#
 # https://github.com/iDvel/rime-ice
 # ------- 大字表 -------
 # （已经不是最初的 41448 个字了，一直没有改名）
-#
 # 数据来源：
 # 字来自 Unihan https://www.unicode.org/Public/ > 16.0.0 > Unihan.zip > Unihan_Readings.txt > kMandarin
 # 音来自汉典 https://github.com/mozillazg/pinyin-data/ > zdic.txt
 # 因为 Unihan 的音存在错误及缺失的情况，汉典存在过多生僻罕见的字，结合了一下。
-#
 # 使用建议： 多个词库文件有重复时，靠前的词库文件中的权重生效。
 #          将 8105  作为第一字表，放到靠前位置；
 #          将 41448 作为第二字表，放到靠后位置。
@@ -142,7 +139,7 @@ sort: by_weight
 𩮖	ai;eb;;iq;;st;pz;de;	0
 𪇈	ai;vn;;na,an;;bf;yx;ep;	0
 𪕭	ai;jr;;uh;;hv;pf;vn;	0
-广	an;di;di;dp;rr;yh;xg;yy;	0
+广	an;di;di,wp;dp;rr;yh;xg;yy;	0
 厂	an;ap;ap;ap;rr;mh;xc;dg;	0
 鮟	an;yn;;ya;;nv;wb;qo;	121
 闇	an;mo;;my;;aa;ax;uu;	86
@@ -2065,7 +2062,7 @@ sort: by_weight
 𩟒	can;uw;;ul,uw;;oe;qh;wy;	0
 𩯞	can;em;;ic;;sd;pp;de;	0
 𪆶	can;dn;;nc,cn;;yf;gx;hq;	0
-臧	cang;vi;wi;gi,ig;rh;il;nq;dn;	0
+臧	cang;vi;wi,ad;gi,ig;rh;il;nq;dn;	0
 倉	cang;rk;;rk;;or;jd;wy;	18
 蒼	cang;ck;;cc;;tr;ld;aw;	13
 玱	cang;wv;wv;wc;at;mu;nz;gw;	0
@@ -2941,7 +2938,7 @@ sort: by_weight
 㐼	cheng;rc;;ru;;ot;jl;wt;	0
 㛵	cheng;nr;;ni;;vb;bg;ve;	0
 㞼	cheng;lu;;ui;;nu;av;bi;	0
-㨃	cheng;fz;fz;fx;ja;qd;uh;ry;	0
+㨃	cheng;fz;fz,f;fx;ja;qd;uh;ry;	0
 㲂	cheng;xu;;uu;;fe;sr;im;	0
 㼩	cheng;iw;;wi;;in;nr;dn;	0
 䀕	cheng;ol;;oy;;bl;qg;hx;	0
@@ -5294,7 +5291,7 @@ sort: by_weight
 𪑩	dian;lg;;hg;;wc;ph;lf;	0
 𪓼	dian;wd;;md,dm;;yu;zd;yl;	0
 𪖚	dian;zv;;bv;;hr;od;th;	0
-鸟	diao;na;wd;na,pa;cc;pm;xn;qy;	0
+鸟	diao;na;wd,pa;na,pa;cc;pm;xn;qy;	0
 調	diao;yk;;yv;;yr;sd;ym;	115
 鳥	diao;nh;;ph;;hf;xn;wv;	88
 弔	diao;gl;;aa,ga,vu;rp;nl,xl;bg;xh;	46
@@ -18261,7 +18258,7 @@ sort: by_weight
 烕	mie;wh;;gh,gm,hg,wh,wm;;if;nc;dg;	9
 眜	mie;ow;;om;;bj;qe;hg;	5
 衊	mie;pd;;xm;;hi;ti;tl;	3
-搣	mie;fh;fh;fh,fm;jh;qf,xf;uc;rd;	2
+搣	mie;fh;fh,fm;fh,fm;jh;qf,xf;uc;rd;	2
 蠛	mie;id;;im;;li;ci;ja;	2
 瀎	mie;dd;;dm;;ei;ki;ia;	2
 鑖	mie;jd;;jm;;ci,xi;zi;qa;	1
@@ -18446,7 +18443,7 @@ sort: by_weight
 𨱯	miu;ex;;ie,ix;;sf;py;dw;	0
 嘿	mo;kh;kh;kh;on;rf;dp;kl;	0
 沒	mo;dy;;du,dy;;ee;kr;iq;	2059
-冒	mo;oo;ko;oo;vs;au;oq;jh;	0
+冒	mo;oo;ko,oo;oo;vs;au;oq;jh;	0
 無	mo;ph;;rh,ph,ha,da,pd,rd;en;of;ec;rl;	819
 麼	mo;gy;;my;;ii;zi;ys;	122
 貉	mo;vk;vk;vg;ur,uo;br;ms;ee;	0
@@ -24758,7 +24755,7 @@ sort: by_weight
 𩠶	shou;nz;;un,nu;;vu;bo;vg;	0
 𩴍	shou;gy;;gs;;he;ar;rq;	0
 𪈀	shou;kn;;ny,kn;;rf;dx;kk;	0
-朱	shu;pw;pw;pw;ee;hd;ta;ri;	0
+朱	shu;pw;pw,nn;pw;ee;hd;ta;ri;	0
 書	shu;yo;;oy,yo;;la;bo;vf;	933
 俞	shu;rd;rd;rd,ry;ei;on;jp;wg;	0
 數	shu;uw;;wl;;lk;kh;kg,lv;	161
