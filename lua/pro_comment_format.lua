@@ -391,11 +391,10 @@ function C.func(input, env)
             local jiancode_priority = env.fixed[preedit_str] or ""
             if jiancode_priority ~= "" then
                 if identifier:find("{identifier}") then
-                    jiancode_identifier = identifier:gsub("{identifier}", jiancode_priority)
-                else
-                    jiancode_identifier = jiancode_priority .. identifier
+                    local comment = identifier:gsub("{identifier}", "")
+                    local candidate_word = jiancode_priority
+                    table.insert(initial_candidates, create_candidate(candidate_word, comment)) --这种情况不显示注释了，简码词已经被设置为候选词因此注释为空，而且没有其它候选词因此任何注释都是多余的
                 end
-                table.insert(initial_candidates, create_candidate(jiancode_identifier, "")) --这种情况不显示注释了，简码词已经被设置为候选词因此注释为空，而且没有其它候选词因此任何注释都是多余的
             end
         end
     -- 输出简码处理后的候选词
