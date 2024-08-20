@@ -14,9 +14,6 @@ pro_comment_format:                   # 超级注释，子项配置 true 开启�
   candidate_length: 1                 # 候选词辅助码提醒的生效长度，0为关闭  但同时清空其它，应当使用上面开关来处理    
   fuzhu_type: zrm                     # 用于匹配对应的辅助码注释显示，可选显示类型有：moqi, flypy, zrm, jdh, cj, tiger, wubi,选择一个填入，应与上面辅助码类型一致
 
-  jiancode_priority: true             # 简码前置：开启即查询 1-3 简码的词库回显到第一个候选词的注释里，可配合快捷键设置上屏       
-  jiancode_identifier: "{identifier}⚡" #回显样式定义：假设值为 "*{identifier}*", 然后注释会被生成为 "*注释*" 的形式。如果值为 "⚡", 则注释会显示为 "注释⚡"，清空⚡也是默认值
-
   corrector: true                     # 启用错音错词提醒，例如输入 geiyu 给予 获得 jiyu 提示
   corrector_type: "{comment}"         # 新增一个显示类型，比如"【{comment}】" 
 
