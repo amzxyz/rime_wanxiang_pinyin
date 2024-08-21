@@ -86,7 +86,7 @@ pure:
 
 
 style:
-  __include: trime:/style
+#  __include: trime:/style
   color_scheme: default #默认配色方案
   keyboard_height: 280 #锁定键盘高度，避免切换时键盘高度变化而造成闪烁
   keyboard_height_land: 200 #锁定横屏下键盘高度，避免切换时键盘高度变化而造成闪烁
@@ -171,7 +171,7 @@ style:
   # 候选区
   ## 候选
   candidate_use_cursor: true #高亮候选项
-  candidate_view_height: 33 #候选区高度
+  candidate_view_height: 30 #候选区高度
   candidate_padding: 5 #候选项内边距
   candidate_spacing: 0.5 #候选间距
   candidate_font: han.ttf #候选字型
@@ -250,7 +250,7 @@ style:
     line_spacing_multiplier: 1.1 #候选词的行间距(倍数)
 
 fallback_colors:
-  __include: trime:/fallback_colors
+#  __include: trime:/fallback_colors
   # 悬浮窗
   border_color: back_color #悬浮窗边框
   label_color: hilited_text_color #标签（候选序号）
@@ -3483,7 +3483,7 @@ preset_keys:
   CommitComment: { label: 编码, send: Control+Shift+Return }
   DeleteCandidate: { label: 删词, send: Control+Delete }
   # rime状态
-  Mode_switch: { toggle: ascii_mode, send: Mode_switch, states: [中, 英] }
+  Mode_switch: { toggle: ascii_mode, send: Mode_switch, states: [中文, 英文] }
   Zenkaku_Hankaku:
     { toggle: full_shape, send: Mode_switch, states: [半角, 全角] }
   Henkan: { toggle: simplification, send: Mode_switch, states: [汉字, 汉字] }
