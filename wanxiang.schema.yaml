@@ -89,9 +89,6 @@ engine:
     - table_translator@melt_eng         # 英文输入
     - table_translator@cn_en            # 中英混合词汇
     - table_translator@chengyu            # 简码成语
-    - table_translator@custom_phrase_super_1jian   #超强tab 1码
-    - table_translator@custom_phrase_super_2jian   #超强tab 2码
-    - table_translator@custom_phrase_super_3jian   #超强tab 3码
     - table_translator@radical_lookup   # 部件拆字反查
     - lua_translator@*force_gc          # 暴力 GC 降低内存
   filters:
@@ -254,32 +251,6 @@ chengyu:
   enable_completion: false
   initial_quality: 1.2 #本表词和系统词重码居后
 
-# 超强tab 1码
-custom_phrase_super_1jian:
-  dictionary: ""
-  user_dict: jm_dicts/custom_phrase_super_1jian
-  db_class: stabledb
-  enable_sentence: false
-  enable_completion: false
-  initial_quality: -1 #本表词和系统词重码居后
-
-# 超强tab 2码
-custom_phrase_super_2jian:
-  dictionary: ""
-  user_dict: jm_dicts/custom_phrase_super_2jian
-  db_class: stabledb
-  enable_sentence: false
-  enable_completion: false
-  initial_quality: -1 #本表词和系统词重码居后
-
-# 超强tab 3码
-custom_phrase_super_3jian:
-  dictionary: ""
-  user_dict: jm_dicts/custom_phrase_super_3jian
-  db_class: stabledb
-  enable_sentence: false
-  enable_completion: false
-  initial_quality: -1 #本表词和系统词重码居后
 
 # 次翻译器，英文
 melt_eng:
