@@ -1,0 +1,99 @@
+#错音部分
+hun dun=馄饨=hún tun
+zhu jiao=主角=zhǔ jué
+jiao se=角色=júe sè
+chi pi sa=吃比萨=chī bǐ sà
+pi sa bing=比萨饼=bǐ sà bǐng
+shui fu=说服=shuō fú
+dao hang=道行=dào héng
+mo yang=模样=mú yàng
+you mo you yang=有模有样=yǒu mú yǒu yàng
+yi mo yi yang=一模一样=yī mú yī yàng
+zhuang mo zuo yang=装模作样=zhuāng mú zuò yàng
+ren mo gou yang=人模狗样=rén mú góu yàng
+mo ban=模板=mú bǎn
+a mi tuo fo=阿弥陀佛=ē mí tuó fó
+na mo a mi tuo fo=南无阿弥陀佛=nā mó ē mí tuó fó
+nan wu a mi tuo fo=南无阿弥陀佛=nā mó ē mí tuó fó
+nan wu e mi tuo fo=南无阿弥陀佛=nā mó ē mí tuó fó
+gei yu=给予=jǐ yǔ
+bin lang=槟榔=bīng láng
+zhang bai zhi=张柏芝=zhāng bó zhī
+teng man=藤蔓=téng wàn
+nong tang=弄堂=lòng táng
+xin kuan ti pang=心宽体胖=xīn kūan tǐ pán
+mai yuan=埋怨=mán yuàn
+xu yu wei she=虚与委蛇=xū yǔ wēi yí
+mu na=木讷=mù nè
+du le le=独乐乐=dú yuè lè
+zhong le le=众乐乐=zhòng yuè lè
+xun ma=荨麻=qián má
+qian ma zhen=荨麻疹=xún má zhěn
+mo ju=模具=mú jù
+cao zhi=草薙=cǎo tì
+cao zhi jing=草薙京=cǎo tì jīng
+cao zhi jian=草薙剑=cǎo tì jiàn
+jia ping ao=贾平凹=jià píng wā
+xue fo lan=雪佛兰=xuě fú lán
+qiang jin=强劲=qiáng jìng
+tong ti=胴体=dòng tǐ
+li neng kang ding=力能扛鼎=lì néng gāng dǐng
+ya lv jiang=鸭绿江=yā lù jiāng
+da fu bian bian=大腹便便=dà fù pián pián
+ka bo zi=卡脖子=qiǎ bó zi
+zhi sheng=吱声=zī shēng
+chan he=掺和=chān huo
+can huo=掺和=chān huo
+can he=掺和=chān huo
+cheng zhi=称职=chèn zhí
+luo shi fen=螺蛳粉=luó sī fěn
+tiao huan=调换=diào huàn
+tai xing shan=太行山=tài háng shān
+jie si di li=歇斯底里=xiē sī dǐ lǐ
+nuan he=暖和=nuǎn huo
+mo ling liang ke=模棱两可=mó léng liǎng kě
+pan yang hu=鄱阳湖=pó yáng hú
+bo jing=脖颈=bó gěng
+bo jing er=脖颈儿=bó gěng er
+jie zha=结扎=jié zā
+hai shen wei=海参崴=hǎi shēn wǎi
+hou pu=厚朴=hòu pò
+da wan ma=大宛马=dà yuān mǎ
+ci ya=龇牙=zī yá
+ci zhe ya=龇着牙=zī zhe yá
+ci ya lie zui=龇牙咧嘴=zī yá liě zuǐ
+tou pi xue=头皮屑=tóu pi xiè
+liu an shi=六安市=lù ān shì
+liu an xian=六安县=lù ān xiàn
+an hui sheng liu an shi=安徽省六安市=ān huī shěng lù ān shì
+an hui liu an=安徽六安=ān huī lù ān
+an hui liu an shi=安徽六安市=ān huī lù ān shì
+nan jing liu he=南京六合=nán jīng lù hé
+nan jing shi liu he=南京六合区=nán jīng lù hé qū
+nan jing shi liu he qu=南京市六合区=nán jīng shì lù hé qū
+
+#错词部分
+nuo da=偌大=偌(ruò)大
+yin jiu zhi ke=饮鸩止渴=饮鸩(zhèn)止渴
+yin jiu jie ke=饮鸩解渴=饮鸩(zhèn)解渴
+gong shang jiao zhi yu=宫商角徵羽=宫商角(jué)徵羽
+wan bo lin=万柏林=wàn bǎi lín
+pu jie=扑街=仆街
+pu gai=扑街=仆街
+pu jie zai=扑街仔=仆街仔
+pu gai zai=扑街仔=仆街仔
+ceng jin=曾今=曾经
+an nai=按耐=按捺(nà)
+an nai bu zhu=按耐不住=按捺(nà)不住
+bie jie=别介=别价(jie)
+beng jie=甭介=甭价(jie)
+xue mai pen zhang=血脉喷张=血脉贲(bēn)张 | 血脉偾(fèn)张
+qi ke fu=契科夫=契诃(hē)夫
+zhao cha=找茬=找碴
+zhao cha er=找茬儿=找碴儿
+da jia lai zhao cha=大家来找茬=大家来找碴
+da jia lai zhao cha er=大家来找茬儿=大家来找碴儿
+cou huo=凑活=凑合(he)
+ju hui=钜惠=巨惠
+mo xie zuo=魔蝎座=摩羯(jié)座
+pi sa=披萨=比(bǐ)萨

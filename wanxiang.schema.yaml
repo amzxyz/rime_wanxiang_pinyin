@@ -8,17 +8,12 @@ set_shuru_schema:         #配置此项就是选择什么输入法,同时拆分�
   __include: algebra_zrm  #可选解码规则有   algebra_pinyin, algebra_zrm, algebra_flypy,  algebra_ziguang, algebra_sogou, algebra_mspy, algebra_abc  选择一个填入
 set_algebra_fuzhu:        #配置此项就是选择什么辅助码
   __include: fuzhu_zrm    #可选辅助码有：fuzhu_kong，fuzhu_moqi, fuzhu_zrm, fuzhu_flypy, fuzhu_tiger, fuzhu_cj, fuzhu_wubi, fuzhu_jdh 选择一个填入
-#Lua 配置: 超级注释模块
-pro_comment_format:                   # 超级注释，子项配置 true 开启，false 关闭
-  fuzhu_code: true                    # 启用辅助码提醒，用于辅助输入练习辅助码，成熟后可关闭
-  candidate_length: 1                 # 候选词辅助码提醒的生效长度，0为关闭  但同时清空其它，应当使用上面开关来处理    
-  fuzhu_type: zrm                     # 用于匹配对应的辅助码注释显示，可选显示类型有：moqi, flypy, zrm, jdh, cj, tiger, wubi,选择一个填入，应与上面辅助码类型一致
-
-  corrector: true                     # 启用错音错词提醒，例如输入 geiyu 给予 获得 jiyu 提示
-  corrector_type: "{comment}"         # 新增一个显示类型，比如"【{comment}】" 
-
-__include: octagram/enable_for_sentence   #启用语言模型
-#__include: octagram/disable   #禁用语言模型
+pro_comment_format:           # 超级注释模块，子项配置 true 开启，false 关闭
+  fuzhu_code: true            # 启用辅助码提醒，用于辅助输入练习辅助码，成熟后可关闭
+  candidate_length: 1         # 候选词辅助码提醒的生效长度，0为关闭  但同时清空其它，应当使用上面开关来处理    
+  fuzhu_type: zrm             # 用于匹配对应的辅助码注释显示，基于默认词典的可选注释类型有：(moqi, flypy, zrm, jdh, cj, tiger, wubi)选择一个填入，之所以单独列出是因为这里有更多的可配置性，而真正的辅助码默认只有7种
+  corrector: true              # 启用错音错词提醒，例如输入 geiyu 给予 获得 jǐ yǔ 提示
+  corrector_type: "{comment}"  # 换一种显示类型，比如"({comment})" 
 ########################以下是方案配置######################################################
 
 # 方案说明
@@ -51,6 +46,11 @@ switches:
     reset: 1
   - name: full_shape
     states: [ 半, 全 ]
+  - name: fuzhu_type_switch
+    reset: 1
+    states: [ ◢, 辅 ]
+  - name: chaifen
+    states: [ ◢, 拆 ]
   - name: search_single_char  # search.lua 的功能开关，辅码查词时是否单字优先
     abbrev: [词, 单]
     states: [正常, 单字]
@@ -106,6 +106,7 @@ engine:
     - simplifier@traditionalize                     # 简繁切换
     - simplifier@mars                               #火星文
     - simplifier@chinese_english                    #中英翻译
+    - simplifier@chaifen
     - lua_filter@*pro_comment_format                #超级注释模块，支持简码前置、错词提示、辅助码显示，支持个性化配置和关闭相应的功能，详情搜索pro_comment_format进行详细配置
     - uniquifier                                    # 去重
 
@@ -294,6 +295,15 @@ chinese_english:
   comment_format:
     - "xform/-/ /"
 
+# 显示墨奇码拆分
+chaifen:
+  option_name: chaifen
+  opencc_config: moqi_chaifen.json
+  tips: char
+  show_in_comment: true
+  comment_format:
+    - "xform/	/ /"
+
 
 # 简繁切换
 traditionalize:
@@ -359,6 +369,10 @@ key_binder:
     - { when: has_menu, accept: semicolon, send: 2 }
 #使用Control+e进入翻译模式
     - { when: has_menu, accept: "Control+e", toggle: chinese_english}
+    - { when: has_menu, accept: "Control+p", toggle: chaifen }
+#使用快捷键Control+q开启和关闭辅助码显示，使用快捷键Control+p启用增强（外挂）辅助码显示
+    - { when: has_menu, accept: "Control+q", toggle: fuzhu_type_switch }
+#    - { when: composing, accept: "Control+o", toggle: "fuzhu_type_switch" }
 # 使用 tab 在不同音节之间跳转
     - { when: has_menu, accept: "Tab", send: "Control+Right" }
     - { when: composing, accept: "Tab", send: "Control+Right" }
@@ -747,7 +761,8 @@ mohuyin:
     - derive/^i([a-z])/c$1/
     - derive/^u([a-z])/s$1/
 
-
+__include: octagram/enable_for_sentence   #启用语言模型
+#__include: octagram/disable   #禁用语言模型
 #语言模型
 octagram:
   disable:

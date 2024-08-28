@@ -1,6 +1,10 @@
 # Rime schema settings
 # encoding: utf-8
+###############选择与之匹配的拼音方案#####################
+set_shuru_schema:
+  __include: algebra_zrm    #可选的选项有（algebra_pinyin, algebra_zrm, algebra_flypy, algebra_mspy, algebra_sogou, algebra_abc, algebra_ziguang）
 
+######################################################
 schema:
   schema_id: radical_pinyin
   name: "部件拆字 | 全拼双拼"
@@ -30,19 +34,12 @@ engine:
 key_binder:
   __include: default:/key_binder?
 
+
 speller:
   alphabet: "abcdefghijklmnopqrstuvwxyz;"
   delimiter: " '"
   algebra:
-    __include: wanxiang.schema:/set_shuru_schema        #配置此项就是选择什么输入法
-    # 根据当前所用拼音方案选择 __include 的值
-    #__include: algebra_pinyin           # 全拼
-    # __include: algebra_zrm  # 自然码双拼
-    # __include: algebra_flypy          # 小鹤双拼
-    # __include: algebra_mspy           # 微软双拼
-    # __include: algebra_sogou          # 搜狗双拼
-    # __include: algebra_abc            # 智能ABC双拼
-    # __include: algebra_ziguang        # 紫光双拼
+    __include: set_shuru_schema
 
 translator:
   dictionary: radical_pinyin

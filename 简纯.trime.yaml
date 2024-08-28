@@ -3176,12 +3176,13 @@ preset_keyboards:
       - {
           click: Keyboard_symbols,
           long_click: Color_switch,
+          composing: Tab,
           width: 11,
           __include: styl/off_key,
         }     
       - {
           click: Keyboard_number,
-          composing: Escape,
+          composing: "/",
           width: 12,      
           __include: styl/off_key,
           __patch: conf/key_height_last,
@@ -3211,7 +3212,7 @@ preset_keyboards:
         }
       - {
           click: 'Mode_switch',
-          composing: Tab,
+          composing: Escape,
           width: 11,
           __include: styl/off_key,  
         }
@@ -3370,7 +3371,41 @@ preset_keyboards:
 
 
 android_keys:
-  __include: trime:/android_keys
+  # 仅供编辑键盘时参考，实际不产生任何效果
+  when:
+    ascii: 西文標籤
+    paging: 翻頁標籤
+    has_menu: 選單標籤
+    composing: 輸入狀態標籤
+    #always: 始終
+    #hover: 滑過
+    combo: 並擊
+    click: 單按
+    long_click: 長按
+    #double_click: 雙按
+    swipe_left: 左滑
+    swipe_right: 右滑
+    swipe_up: 上滑
+    swipe_down: 下滑
+  property:
+    width: 寬度
+    height: 高度
+    gap: 間隔
+    preview: 預覽
+    hint: 提示
+    label: 標籤
+    states: 狀態標籤
+    repeatable: 連續按鍵
+    functional: 功能鍵
+    shift_lock: Shift鎖定 #ascii_long: 英文長按中文單按鎖定, long: 長按鎖定, click: 單按鎖定
+  action:
+    command: 命令
+    option: 參數
+    select: 選擇
+    toggle: 狀態
+    send: 按鍵
+    text: 文字
+    commit: 上屏
 
 preset_keys:
   # 安卓
@@ -3437,8 +3472,8 @@ preset_keys:
   Deploy: { label: 部署, command: broadcast, option: 'com.osfans.trime.deploy' }
   Sync: { label: 同步, command: broadcast, option: 'com.osfans.trime.sync' }
   # 编辑
-#  Shift_L: { label: Shift, functional: false, send: Shift_L, shift_lock: ascii_long }
-  Shift_L: { label: Shift, send: Shift_L, shift_lock: long }
+  Shift_L: { label: Shift, send: Shift_L, shift_lock: ascii_long }
+#  Shift_L: { label: Shift, send: Shift_L, shift_lock: long }
   Return: { label: Enter, send: Return }
   Return1: { label: 回车, send: Return }
   Hide: { label: '▼', send: BACK }
