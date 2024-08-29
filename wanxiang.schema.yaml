@@ -46,11 +46,11 @@ switches:
     reset: 1
   - name: full_shape
     states: [ 半, 全 ]
-  - name: fuzhu_type_switch
+  - name: fuzhu_switch
     reset: 1
-    states: [ ◢, 辅 ]
+    states: [ 无, 辅 ]
   - name: chaifen
-    states: [ ◢, 拆 ]
+    states: [ 原, 拆 ]
   - name: search_single_char  # search.lua 的功能开关，辅码查词时是否单字优先
     abbrev: [词, 单]
     states: [正常, 单字]
@@ -98,15 +98,15 @@ engine:
     - lua_filter@*autocap_filter                    # 英文自动大写
     - lua_filter@*pin_cand_filter                   # 置顶候选项（顺序要求：置顶候选项 > Emoji > 简繁切换）
     - lua_filter@*reduce_english_filter             # 降低部分英语单词在候选项的位置
-    - lua_filter@*search@radical_pinyin             # 部件拆字辅码
-#    - lua_filter@*is_in_user_dict                   # 根据是否在用户词典，在结尾加上一个星号 *
-#    - lua_filter@*cn_en_spacer                     #启用时中英混输为中英混输词条（cn_en.dict.yaml）自动增加空格，示例：`VIP中P` → `VIP 中 P`              
-#    - lua_filter@*en_spacer                         #启用时中文状态下输入英文单词后面自动追加空格
     - simplifier@emoji                              # Emoji
     - simplifier@traditionalize                     # 简繁切换
     - simplifier@mars                               #火星文
     - simplifier@chinese_english                    #中英翻译
     - simplifier@chaifen
+    - lua_filter@*search@radical_pinyin             # 部件拆字辅码
+#    - lua_filter@*is_in_user_dict                   # 根据是否在用户词典，在结尾加上一个星号 *
+#    - lua_filter@*cn_en_spacer                     #启用时中英混输为中英混输词条（cn_en.dict.yaml）自动增加空格，示例：`VIP中P` → `VIP 中 P`              
+#    - lua_filter@*en_spacer                         #启用时中文状态下输入英文单词后面自动追加空格
     - lua_filter@*pro_comment_format                #超级注释模块，支持简码前置、错词提示、辅助码显示，支持个性化配置和关闭相应的功能，详情搜索pro_comment_format进行详细配置
     - uniquifier                                    # 去重
 
@@ -371,7 +371,7 @@ key_binder:
     - { when: has_menu, accept: "Control+e", toggle: chinese_english}
     - { when: has_menu, accept: "Control+p", toggle: chaifen }
 #使用快捷键Control+q开启和关闭辅助码显示，使用快捷键Control+p启用增强（外挂）辅助码显示
-    - { when: has_menu, accept: "Control+q", toggle: fuzhu_type_switch }
+    - { when: has_menu, accept: "Control+q", toggle: fuzhu_switch }
 #    - { when: composing, accept: "Control+o", toggle: "fuzhu_type_switch" }
 # 使用 tab 在不同音节之间跳转
     - { when: has_menu, accept: "Tab", send: "Control+Right" }

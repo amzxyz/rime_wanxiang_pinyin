@@ -21,7 +21,8 @@ import_tables:
 #  - cn_dicts/cell     # 细胞词库
   - cn_dicts/base     # 基础词库
   - cn_dicts/ext      # 扩展词库
-  - cn_dicts/others   # 一些杂项 容错音和错字 可以不开
+#  - cn_dicts/41448      # 大字集词库
+  - cn_dicts/corrections   # 一般性容错码，同时支持错音和错字编码正确提示供超级注释lua使用
   - cn_dicts/tencent  # 腾讯词向量（大词库，部署时间较长 选择性开启）
 ...
 

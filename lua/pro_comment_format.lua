@@ -9,8 +9,8 @@
 --#Lua 配置: 超级注释模块
 --pro_comment_format:                   # 超级注释，子项配置 true 开启，false 关闭
 --  fuzhu_code: true                    # 启用辅助码提醒，用于辅助输入练习辅助码，成熟后可关闭
---  candidate_length: 3                 # 候选词辅助码提醒的生效长度，0为关闭  但同时清空其它，应当使用上面开关来处理    
---  fuzhu_type: zrm                     # 用于匹配对应的辅助码注释显示，可选显示类型有：moqi, flypy, zrm, jdh, cj, tiger, wubi,选择一个填入，应与上面辅助码类型一致
+--  candidate_length: 1                 # 候选词辅助码提醒的生效长度，0为关闭  但同时清空其它，应当使用上面开关来处理    
+--  fuzhu_type: zrm                     # 用于匹配对应的辅助码注释显示，可选显示类型有：moqi, flypy, zrm, jdh, cj, tiger, wubi, hanxin 选择一个填入，应与上面辅助码类型一致
 --
 --  corrector: true                     # 启用错音错词提醒，例如输入 geiyu 给予 获得 jiyu 提示
 --  corrector_type: "{comment}"         # 新增一个显示类型，比如"【{comment}】" 
@@ -23,77 +23,53 @@ local corrections_cache = nil  -- 用于缓存已加载的词典
 
 -- 加载纠正词典函数
 local function load_corrections(file_path)
-    if corrections_cache then
-        return corrections_cache  -- 如果缓存已存在，直接返回缓存
-    end
+    if corrections_cache then return corrections_cache end
 
     local corrections = {}
     local file = io.open(file_path, "r")
 
     if file then
         for line in file:lines() do
-            -- 跳过以 # 开头的行
             if not line:match("^#") then
-                -- 使用 = 分隔拼音、文本和注释
-                local pinyin, text, comment = line:match("^(.-)=(.-)=(.-)$")
-                if pinyin and text and comment then
-                    corrections[pinyin] = { text = text, comment = comment }
+                -- 使用制表符分隔字段
+                local text, code, weight, comment = line:match("^(.-)\t(.-)\t(.-)\t(.-)$")
+                if text and code then
+                    -- 去除首尾空格
+                    text = text:match("^%s*(.-)%s*$")
+                    code = code:match("^%s*(.-)%s*$")
+                    comment = comment and comment:match("^%s*(.-)%s*$") or ""
+
+                    -- 存储到 corrections 表中，以 code 为键
+                    corrections[code] = { text = text, comment = comment }
                 end
             end
         end
         file:close()
-        corrections_cache = corrections  -- 将加载的数据存入缓存
+        corrections_cache = corrections
     end
-
     return corrections
 end
-
 function CR.init(env)
     local config = env.engine.schema.config
 
-    -- 初始化分隔符和格式
-    local delimiter = config:get_string('speller/delimiter')
-    if delimiter and #delimiter > 0 and delimiter:sub(1, 1) ~= ' ' then
-        env.delimiter = delimiter:sub(1, 1)
-    end
-
-    env.settings.corrector_type = env.settings.corrector_type:gsub('^*', '')
+    -- 初始化 corrector_type 和样式
+    env.settings.corrector_type = (env.settings.corrector_type and env.settings.corrector_type:gsub('^*', '')) or '{comment}'
     CR.style = config:get_string("pro_comment_format/corrector_type") or '{comment}'
 
     -- 仅在 corrections_cache 为 nil 时加载词典
     if not corrections_cache then
-        local corrections_file_path = rime_api.get_user_data_dir() .. "/comments/corrections.txt"
+        local corrections_file_path = rime_api.get_user_data_dir() .. "/cn_dicts/corrections.dict.yaml"
         CR.corrections = load_corrections(corrections_file_path)
     end
 end
+
 function CR.run(cand, env)
-    -- 确保词典已经被加载
-    if not corrections_cache then
-        CR.init(env)
-    end
-
-    -- 提取拼音段
-    local pinyin_segments = {}
-    for segment in cand.comment:gmatch("[^%s]+") do
-        local pinyin = segment:match("([^;]+)")
-        if pinyin and #pinyin > 0 then
-            table.insert(pinyin_segments, pinyin)
-        end
-    end
-
-    -- 将提取的拼音片段用空格连接起来
-    local pinyin = table.concat(pinyin_segments, " ")
-    if pinyin and #pinyin > 0 then
-        if env.delimiter then
-            pinyin = pinyin:gsub(env.delimiter, ' ')
-        end
-
-        -- 从 corrections_cache 表中查找对应的修正
-        local correction = corrections_cache[pinyin]
-        if correction and cand.text == correction.text then
-            local final_comment = CR.style:gsub("{comment}", correction.comment)
-            return final_comment
-        end
+    -- 使用候选词的 comment 作为 code，在缓存中查找对应的修正
+    local correction = corrections_cache[cand.comment]
+    if correction and cand.text == correction.text then
+        -- 用新的注释替换默认注释
+        local final_comment = CR.style:gsub("{comment}", correction.comment)
+        return final_comment
     end
 
     return nil
@@ -104,132 +80,58 @@ end
 -- #########################
 
 local FZ = {}
-local cached_dictionaries = {}  -- 用于缓存已加载的词典
-
--- 加载词典函数
-local function load_dictionary(file_path)
-    local dictionary = {}
-    local file = io.open(file_path, "r")
-    if file then
-        for line in file:lines() do
-            -- 跳过以 # 开头的行
-            if not line:match("^#") then
-                -- 匹配格式：字[注释内容]
-                local char, comment = line:match("^(.-)%[(.-)%]$")
-                if char and comment then
-                    dictionary[char] = comment
-                end
-            end
-        end
-        file:close()
-    end
-    return dictionary
-end
-
--- 获取词典（懒加载和缓存）
-local function get_dictionary(fuzhu_type)
-    -- 如果词典已加载，则直接返回缓存中的词典
-    if cached_dictionaries[fuzhu_type] then
-        return cached_dictionaries[fuzhu_type]
-    end
-
-    -- 如果词典未加载，则从文件加载
-    local dictionary_file_path = rime_api.get_user_data_dir() .. "/comments/" .. fuzhu_type .. ".txt"
-    local dictionary = load_dictionary(dictionary_file_path)
-
-    -- 如果成功加载词典，则缓存起来
-    if dictionary and next(dictionary) then
-        cached_dictionaries[fuzhu_type] = dictionary
-    end
-
-    return dictionary
-end
-
--- 查找词典中对应的注释内容
-local function lookup_comment(dictionary, char)
-    return dictionary[char] or ""
-end
-
--- 分解候选词为单个字符列表
-local function split_word(word)
-    local characters = {}
-    for uchar in string.gmatch(word, ".[\128-\191]*") do
-        table.insert(characters, uchar)
-    end
-    return characters
-end
-
-function FZ.run(cand, env)
+function FZ.run(cand, env, initial_comment)
     local length = utf8.len(cand.text)
-    local final_comment = ""
+    local final_comment = nil
 
-    -- 定义外部 fuzhu_type 类型
-    local external_fuzhu_type = {
-        moqi_chaifen = true,
-        zrm_chaifen = true,
-    }
-
-    -- 定义内置 fuzhu_type 类型
-    local dict_fuzhu_tape = {
-        moqi = true,
-        flypy = true,
-        zrm = true,
-        jdh = true,
-        cj = true,
-        tiger = true,
-        wubi = true,
-    }
-
-    -- 检查候选词长度和辅助码设置
+    -- 确保候选词长度检查使用从配置中读取的值
     if env.settings.fuzhu_code_enabled and length <= env.settings.candidate_length then
         local fuzhu_comments = {}
 
-        -- 外部词典逻辑
-        if external_fuzhu_type[env.settings.fuzhu_type] then
-            local dictionary = get_dictionary(env.settings.fuzhu_type)  -- 获取词典
+        -- 先用空格将注释分成多个片段
+        local segments = {}
+        for segment in initial_comment:gmatch("[^%s]+") do
+            table.insert(segments, segment)
+        end
 
-            if dictionary then
-                -- 分解候选词并查找注释
-                local characters = split_word(cand.text)
-                for _, char in ipairs(characters) do
-                    local comment = lookup_comment(dictionary, char)
-                    if comment ~= "" then
-                        table.insert(fuzhu_comments, comment)
-                    end
-                end
-            end
+        -- 定义 fuzhu_type 与匹配模式的映射表
+        local patterns = {
+            moqi = "[^;]*;([^;]*);",
+            flypy = "[^;]*;[^;]*;([^;]*);",
+            zrm = "[^;]*;[^;]*;[^;]*;([^;]*);",
+            jdh = "[^;]*;[^;]*;[^;]*;[^;]*;([^;]*);",
+            cj = "[^;]*;[^;]*;[^;]*;[^;]*;[^;]*;([^;]*);",
+            tiger = "[^;]*;[^;]*;[^;]*;[^;]*;[^;]*;[^;]*;([^;]*);",
+            wubi = "[^;]*;[^;]*;[^;]*;[^;]*;[^;]*;[^;]*;[^;]*;([^;]*);",
+            hanxin = "[^;]*;[^;]*;[^;]*;[^;]*;[^;]*;[^;]*;[^;]*;[^;]*;([^;]*);"
+        }
 
-        -- 内置词典逻辑
-        elseif dict_fuzhu_tape[env.settings.fuzhu_type] then
-            -- 定义 fuzhu_type 与匹配模式的映射表
-            local patterns = {
-                moqi = "[^;]*;([^;]*);",
-                flypy = "[^;]*;[^;]*;([^;]*);",
-                zrm = "[^;]*;[^;]*;[^;]*;([^;]*);",
-                jdh = "[^;]*;[^;]*;[^;]*;[^;]*;([^;]*);",
-                cj = "[^;]*;[^;]*;[^;]*;[^;]*;[^;]*;([^;]*);",
-                tiger = "[^;]*;[^;]*;[^;]*;[^;]*;[^;]*;[^;]*;([^;]*);",
-                wubi = "[^;]*;[^;]*;[^;]*;[^;]*;[^;]*;[^;]*;[^;]*;([^;]*);"
-            }
+        -- 获取当前 fuzhu_type 对应的模式
+        local pattern = patterns[env.settings.fuzhu_type]
 
-            local pattern = patterns[env.settings.fuzhu_type]
-            if pattern then
-                local match = cand.comment:match(pattern)
+        if pattern then
+            -- 提取匹配内容
+            for _, segment in ipairs(segments) do
+                local match = segment:match(pattern)
                 if match then
                     table.insert(fuzhu_comments, match)
                 end
             end
         else
+            -- 如果类型不匹配，返回空字符串
             return ""
         end
 
-        -- 合并所有提取的注释片段
+        -- 将提取的拼音片段用空格连接起来
         if #fuzhu_comments > 0 then
             final_comment = table.concat(fuzhu_comments, "/")
         end
+    else
+        -- 如果候选词长度超过指定值，返回空字符串
+        final_comment = ""
     end
 
-    return final_comment
+    return final_comment or ""  -- 确保返回最终值
 end
 -- #########################
 -- 主函数：根据优先级处理候选词的注释
@@ -248,7 +150,7 @@ function C.init(env)
     }
 
     -- 检查开关状态
-    local is_fuzhu_enabled = env.engine.context:get_option("fuzhu_type_switch")
+    local is_fuzhu_enabled = env.engine.context:get_option("fuzhu_switch")
     
     -- 根据开关状态设置辅助码功能
     if is_fuzhu_enabled then
@@ -262,7 +164,6 @@ function C.func(input, env)
     C.init(env)
     CR.init(env)
 
-    local processed_candidates = {}  -- 用于存储处理后的候选词
 
     -- 遍历输入的候选词
     for cand in input:iter() do
@@ -292,12 +193,6 @@ function C.func(input, env)
         if final_comment ~= initial_comment then
             cand:get_genuine().comment = final_comment
         end
-
-        table.insert(processed_candidates, cand)  -- 存储其他候选词
-    end
-
-    -- 输出处理后的候选词
-    for _, cand in ipairs(processed_candidates) do
         yield(cand)
     end
 end
