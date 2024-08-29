@@ -24,6 +24,7 @@ menu:
 switcher:
   caption: 「方案选单」
   hotkeys:
+    - F4
     - Control+grave
     - Control+Shift+grave
     # - Alt+grave
