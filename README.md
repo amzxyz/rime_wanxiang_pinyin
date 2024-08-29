@@ -7,7 +7,7 @@
 
 ###### 打开```wanxiang.schema.yaml```文件，表头按照提示进行3个维度的选择，定义属于自己的输入法方案:
 
-```
+```yaml
 #本方案匹配词库解码顺序为：全拼拼音；墨奇;鹤形;自然码;简单鹤;仓颉首末;虎码首末;五笔前2
 #############DIY你想要的方案组合,试试搭配一个自然码+墨奇辅助的方案吧！###########################
 schema_name: 
@@ -27,7 +27,7 @@ pro_comment_format:           # 超级注释模块，子项配置 true 开启，
 
 再次打开```radical_pinyin.schema.yaml```和``` melt_eng.schema.yaml```表头进行选择，二者情况一致：
 
-```
+```yaml
 ###############选择与之匹配的拼音方案#####################
 set_shuru_schema:
   __include: algebra_zrm    #可选的选项有（algebra_pinyin, algebra_zrm, algebra_flypy, algebra_mspy, algebra_sogou, algebra_abc, algebra_ziguang）
@@ -195,7 +195,7 @@ set_shuru_schema:
     我们需要按照如下格式对`speller/algebra:`进行排序：
     
     ```YAML
-speller:
+    speller:
     # table_translator翻译器，支持自动上屏。例如 “zmhu”可以自动上屏“怎么回事”
 #  auto_select: true
     #  auto_select_pattern: ^[a-z]+/|^[a-df-zA-DF-Z]\w{3}|^e\w{4}
