@@ -7,10 +7,10 @@ schema_name:
 set_shuru_schema:         #配置此项就是选择什么输入法,同时拆分反查和中英文混输也将匹配该输入方案
   __include: algebra_zrm  #可选解码规则有   algebra_pinyin, algebra_zrm, algebra_flypy,  algebra_ziguang, algebra_sogou, algebra_mspy, algebra_abc  选择一个填入
 set_algebra_fuzhu:        #配置此项就是选择什么辅助码
-  __include: fuzhu_zrm    #可选辅助码有：fuzhu_kong，fuzhu_moqi, fuzhu_zrm, fuzhu_flypy, fuzhu_tiger, fuzhu_cj, fuzhu_wubi, fuzhu_jdh, fuzhu_hx 选择一个填入
+  __include: fuzhu_zrm    #可选辅助码有：fuzhu_kong，fuzhu_moqi, fuzhu_zrm, fuzhu_flypy, fuzhu_tiger, fuzhu_cj, fuzhu_wubi, fuzhu_jdh, fuzhu_hanxin 选择一个填入
 pro_comment_format:           # 超级注释模块，子项配置 true 开启，false 关闭
   candidate_length: 1         # 候选词辅助码提醒的生效长度，0为关闭  但同时清空其它，应当使用上面开关来处理    
-  fuzhu_type: zrm             # 用于匹配对应的辅助码注释显示，基于默认词典的可选注释类型有：(moqi, flypy, zrm, jdh, cj, tiger, wubi)选择一个填入，之所以单独列出是因为这里有更多的可配置性，而真正的辅助码默认只有7种
+  fuzhu_type: zrm             # 用于匹配对应的辅助码注释显示，基于默认词典的可选注释类型有：(moqi, flypy, zrm, jdh, cj, tiger, wubi, hanxin)选择一个填入，之所以单独列出是因为这里有更多的可配置性，而真正的辅助码默认只有7种
   corrector: true              # 启用错音错词提醒，例如输入 geiyu 给予 获得 jǐ yǔ 提示
   corrector_type: "{comment}"  # 换一种显示类型，比如"({comment})" 
 ########################以下是方案配置######################################################
@@ -23,7 +23,7 @@ schema:
   author:
     - gaboolic,amzxyz
   description: |
-    万象拼音 支持常见双拼方案和全拼输入，辅助码同时支持墨奇;鹤形;自然码;简单鹤;仓颉首末;虎码首末;五笔前2；采用万象归一的词库，换方案不换词库，不丢失用户词！
+    万象拼音 支持常见双拼方案和全拼输入，辅助码同时支持墨奇;鹤形;自然码;简单鹤;仓颉首末;虎码首末;五笔前2;汉心码；采用万象归一的词库，换方案不换词库，不丢失用户词！
   dependencies:
     - melt_eng        # 英文输入，作为次翻译器挂载到拼音方案
     - radical_pinyin  # 部件拆字，反查及辅码
@@ -50,9 +50,9 @@ switches:
     states: [ 无, 辅 ]
   - name: chaifen
     states: [ 原, 拆 ]
-  - name: search_single_char  # search.lua 的功能开关，辅码查词时是否单字优先
-    abbrev: [词, 单]
-    states: [正常, 单字]
+#  - name: search_single_char  # search.lua 的功能开关，辅码查词时是否单字优先
+#    abbrev: [词, 单]
+#    states: [正常, 单字]
 
 
 # 输入引擎
@@ -93,20 +93,20 @@ engine:
   filters:
     - lua_filter@*cold_word_drop.filter
     - lua_filter@*long_word_filter                  #长词优先      
-    - reverse_lookup_filter@radical_reverse_lookup  # 部件拆字滤镜
     - lua_filter@*autocap_filter                    # 英文自动大写
     - lua_filter@*pin_cand_filter                   # 置顶候选项（顺序要求：置顶候选项 > Emoji > 简繁切换）
     - lua_filter@*reduce_english_filter             # 降低部分英语单词在候选项的位置
+    - reverse_lookup_filter@radical_reverse_lookup  # 部件拆字滤镜，放在pro_comment_format前面，进一步被超级注释处理以获得拼音编码+辅助码的提示
     - simplifier@emoji                              # Emoji
     - simplifier@traditionalize                     # 简繁切换
     - simplifier@mars                               #火星文
     - simplifier@chinese_english                    #中英翻译
     - simplifier@chaifen
-    - lua_filter@*search@radical_pinyin             # 部件拆字辅码
-#    - lua_filter@*is_in_user_dict                   # 根据是否在用户词典，在结尾加上一个星号 *
+    - lua_filter@*search@radical_pinyin             # 部件拆字辅码放在简繁转换之后
+#    - lua_filter@*is_in_user_dict                  # 根据是否在用户词典，在结尾加上一个星号 *
 #    - lua_filter@*cn_en_spacer                     #启用时中英混输为中英混输词条（cn_en.dict.yaml）自动增加空格，示例：`VIP中P` → `VIP 中 P`              
-#    - lua_filter@*en_spacer                         #启用时中文状态下输入英文单词后面自动追加空格
-    - lua_filter@*pro_comment_format                #超级注释模块，支持简码前置、错词提示、辅助码显示，支持个性化配置和关闭相应的功能，详情搜索pro_comment_format进行详细配置
+#    - lua_filter@*en_spacer                        #启用时中文状态下输入英文单词后面自动追加空格
+    - lua_filter@*pro_comment_format                #超级注释模块，支持错词提示、辅助码显示，部件组字读音注释，支持个性化配置和关闭相应的功能，详情搜索pro_comment_format进行详细配置
     - uniquifier                                    # 去重
 
 
@@ -331,9 +331,9 @@ radical_lookup:
   tag: radical_lookup
   dictionary: radical_pinyin
   enable_user_dict: false
-  prefix: "F"  # 反查前缀（反查时前缀会消失影响打英文所以设定为两个字母，或可改成一个非字母符号），与 recognizer/patterns/radical_lookup 匹配
-  tips: "  〔拆字〕"
-  comment_format:
+  prefix: "az"  # 反查前缀（反查时前缀会消失影响打英文所以设定为两个字母，或可改成一个非字母符号），与 recognizer/patterns/radical_lookup 匹配
+  tips: "  〔部件组字〕"
+  comment_format: #{comment}
     - erase/^.*$//
 # 部件拆字滤镜
 radical_reverse_lookup:
@@ -341,16 +341,16 @@ radical_reverse_lookup:
   # dictionary 为拼音标注来源。目前是显示本方案词库的注音，可去部件拆字方案下载更全的、带声调的、已编译好的词典
   # https://github.com/mirtlecn/rime-radical-pinyin?tab=readme-ov-file#%E5%8F%8D%E6%9F%A5%E5%B8%A6%E5%A3%B0%E8%B0%83%E6%B3%A8%E9%9F%B3
   dictionary: wanxiang
-#  comment_format:     # 自定义 comment，例如在左右加上括号
-#    - xform/^/(/
-#    - xform/$/)/
+  comment_format:     # 自定义 comment，例如在左右加上括号
+    - xform/^/(/
+    - xform/$/)/
 
 # 处理符合特定规则的输入码，如网址、反查
 recognizer:
   import_preset: default  # 从 default.yaml 继承通用的
   patterns:  # 再增加方案专有的：
-    punct: "^/([0-9]|10|[A-Za-z]+)$"    # 响应 symbols_v.yaml 的 symbols
-    radical_lookup: "^F[a-z]+$"        # 响应部件拆字的反查，与 radical_lookup/prefix 匹配
+    punct: "^/([0-9]|10|[A-Za-z]+)$"    # 响应 symbols.yaml 的 symbols
+    radical_lookup: "^az[a-z]+$"        # 响应部件拆字的反查，与 radical_lookup/prefix 匹配
     unicode: "^U[a-f0-9]+"              # 脚本将自动获取第 2 个字符 U 作为触发前缀，响应 lua_translator@unicode，输出 Unicode 字符
     number: "^R[0-9]+[.]?[0-9]*"        # 脚本将自动获取第 2 个字符 R 作为触发前缀，响应 lua_translator@number_translator，数字金额大写
     gregorian_to_lunar: "^N[0-9]{1,8}"  # 脚本将自动获取第 2 个字符 N 作为触发前缀，响应 lua_translator@lunar，公历转农历，输入 N20240115 得到「二〇二三年腊月初五」
@@ -751,7 +751,7 @@ fuzhu_wubi:     ########################################位于词库第七个分
     - derive|^(\w+?);.*,(\w)(\w).*$|$1$2$3/| # 整句模式下，输入syff/ 出单字 增强单字性能
     - derive|^(.{2});.*,(\w)(\w).*$|$1$2$3/| # 整句模式下，输入syff/ 出单字 增强单字性能
 
-fuzhu_hx:     ########################################位于词库第八个分号后
+fuzhu_hanxin:     ########################################位于词库第八个分号后
   __append:
     - xform|^(.{2});.*?;.*?;.*?;.*?;.*?;.*?;.*?;(.*?);.*$|$1;$2|
     - xform|^(\w+?);.*?;.*?;.*?;.*?;.*?;.*?;.*?;(.*?);.*$|$1;$2|
