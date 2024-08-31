@@ -46,7 +46,6 @@ switches:
   - name: full_shape
     states: [ 半, 全 ]
   - name: fuzhu_switch
-    reset: 1
     states: [ 无, 辅 ]
   - name: chaifen
     states: [ 原, 拆 ]
