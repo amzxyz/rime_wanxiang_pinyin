@@ -1,5 +1,5 @@
 {
-  "name": "chaifen",
+  "name": "moqi_chaifen",
   "segmentation": {
     "type": "mmseg",
     "dict": {

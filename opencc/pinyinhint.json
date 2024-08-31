@@ -1,0 +1,19 @@
+{
+  "name": "pinyinhint",
+  "segmentation": {
+    "type": "mmseg",
+    "dict": {
+      "type": "text",
+      "file": "pinyinhint.txt"
+    }
+  },
+  "conversion_chain": [{
+    "dict": {
+      "type": "group",
+      "dicts": [{
+        "type": "text",
+        "file": "pinyinhint.txt"
+      }]
+    }
+  }]
+}

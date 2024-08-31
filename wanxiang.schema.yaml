@@ -40,15 +40,22 @@ switches:
     states: [ ¥, $ ]
   - name: traditionalization
     states: [ 简, 繁 ]
+  - name: full_shape
+    states: [ 半, 全 ]
   - name: emoji
     states: [ 💀, 😄 ]
     reset: 1
-  - name: full_shape
-    states: [ 半, 全 ]
+  - name: pinyinhint
+    states: [ 🔇, 🔊 ]
   - name: fuzhu_switch
-    states: [ 无, 辅 ]
-  - name: chaifen
-    states: [ 原, 拆 ]
+    states: [ 助, 辅 ]
+  - name: zrm_chaifen
+    states: [ 然, 自 ]
+  - name: moqi_chaifen
+    states: [ 奇, 墨 ]
+#  - name: prediction
+#    states: [ 测, 预 ]
+#    reset: 1
 #  - name: search_single_char  # search.lua 的功能开关，辅码查词时是否单字优先
 #    abbrev: [词, 单]
 #    states: [正常, 单字]
@@ -57,6 +64,7 @@ switches:
 # 输入引擎
 engine:
   processors:
+#    - predictor     #上屏预测组件
 #    - lua_processor@select_character          # 以词定字，有了辅助码了，想开启可以注释掉
     - lua_processor@*cold_word_drop.processor
     - ascii_composer
@@ -100,13 +108,16 @@ engine:
     - simplifier@traditionalize                     # 简繁切换
     - simplifier@mars                               #火星文
     - simplifier@chinese_english                    #中英翻译
-    - simplifier@chaifen
+    - simplifier@moqi_chaifen                      #墨奇拆分型辅助码查询
+    - simplifier@zrm_chaifen                        #自然码拆分型辅助码查询
+    - simplifier@pinyinhint                         #注释里显示汉字读音，多音字支持
     - lua_filter@*search@radical_pinyin             # 部件拆字辅码放在简繁转换之后
 #    - lua_filter@*is_in_user_dict                  # 根据是否在用户词典，在结尾加上一个星号 *
 #    - lua_filter@*cn_en_spacer                     #启用时中英混输为中英混输词条（cn_en.dict.yaml）自动增加空格，示例：`VIP中P` → `VIP 中 P`              
 #    - lua_filter@*en_spacer                        #启用时中文状态下输入英文单词后面自动追加空格
     - lua_filter@*pro_comment_format                #超级注释模块，支持错词提示、辅助码显示，部件组字读音注释，支持个性化配置和关闭相应的功能，详情搜索pro_comment_format进行详细配置
     - uniquifier                                    # 去重
+
 
 
 # Lua 配置: 日期、时间、星期、ISO 8601、时间戳的触发关键字
@@ -190,6 +201,7 @@ translator:
 #  user_dict: zrm.userdb  # 用户词典的文件名称
 #  db_class: tabledb  #开启后就不会产生zrm.userdb这样的文件夹，会直接输出文本zrm.txt同时无法使用同步能力
   enable_user_dict: true # 是否开启自动调频
+  enable_correction: false #是否开启自动纠错
   encode_commit_history: true   # 预留历史上屏自动编码成词
   initial_quality: 3       # 初始质量拼音的权重应该比英文大
 #  secondary_quality: 0.8  # 设置次要质量
@@ -261,14 +273,28 @@ chinese_english:
     - "xform/-/ /"
 
 # 显示墨奇码拆分
-chaifen:
-  option_name: chaifen
+moqi_chaifen:
+  option_name: moqi_chaifen
   opencc_config: moqi_chaifen.json
   tips: char
   show_in_comment: true
   comment_format:
     - "xform/	/ /"
 
+#显示自然码拆分
+zrm_chaifen:
+  option_name: zrm_chaifen
+  opencc_config: zrm_chaifen.json
+  tips: char
+  show_in_comment: true
+  comment_format:
+    - "xform/	/ /"
+#显示汉字读音，支持多音字
+pinyinhint:
+  option_name: pinyinhint
+  opencc_config: pinyinhint.json
+  tips: char
+  show_in_comment: true
 
 # 简繁切换
 traditionalize:
@@ -328,23 +354,49 @@ key_binder:
   search: "`"             # 辅码引导符，要添加到 speller/alphabet
   bindings:             # 也可以再增加方案专有的
     #- { when: composing, accept: Tab, send: '[' } ## 取消注释后：tab引导辅助码
-    - { when: composing, accept: Control+m, send: Return }
     - { when: composing, accept: Control+w, send: Control+BackSpace }
 #分号用于次选
     - { when: has_menu, accept: semicolon, send: 2 }
 #使用Control+e进入翻译模式
     - { when: has_menu, accept: "Control+e", toggle: chinese_english}
-    - { when: has_menu, accept: "Control+p", toggle: chaifen }
-#使用快捷键Control+q开启和关闭辅助码显示，使用快捷键Control+p启用增强（外挂）辅助码显示
+    - { when: has_menu, accept: "Control+m", toggle: moqi_chaifen }
+    - { when: has_menu, accept: "Control+z", toggle: zrm_chaifen }
+#使用快捷键Control+q开启和关闭辅助码显示
     - { when: has_menu, accept: "Control+q", toggle: fuzhu_switch }
 #    - { when: composing, accept: "Control+o", toggle: "fuzhu_type_switch" }
 # 使用 tab 在不同音节之间跳转
     - { when: has_menu, accept: "Tab", send: "Control+Right" }
     - { when: composing, accept: "Tab", send: "Control+Right" }
 #通过stick.lua显示到注释里，用来上屏带/的简码词汇。最好是用句号，这样可以与手机上可以做同样的定义，保持同样的习惯
-    - { match: "[a-z]{1,3}", accept: ".",  send_sequence: "/1" } 
-    # - { when: composing, match: "[a-z]{2}", accept: Tab, send: '|' }
-
+#    - { match: "[a-z]{1,3}", accept: ".",  send_sequence: "/1" } 
+#使用大写字母追加输入到上一个音节末尾
+    - { when: has_menu, accept: Shift+A, send_sequence: "{Control+Left}a{Control+Right}" }
+    - { when: has_menu, accept: Shift+B, send_sequence: "{Control+Left}b{Control+Right}" }
+    - { when: has_menu, accept: Shift+C, send_sequence: "{Control+Left}c{Control+Right}" }
+    - { when: has_menu, accept: Shift+D, send_sequence: "{Control+Left}d{Control+Right}" }
+    - { when: has_menu, accept: Shift+E, send_sequence: "{Control+Left}e{Control+Right}" }
+    - { when: has_menu, accept: Shift+F, send_sequence: "{Control+Left}f{Control+Right}" }
+    - { when: has_menu, accept: Shift+G, send_sequence: "{Control+Left}g{Control+Right}" }
+    - { when: has_menu, accept: Shift+H, send_sequence: "{Control+Left}h{Control+Right}" }
+    - { when: has_menu, accept: Shift+I, send_sequence: "{Control+Left}i{Control+Right}" }
+    - { when: has_menu, accept: Shift+J, send_sequence: "{Control+Left}j{Control+Right}" }
+    - { when: has_menu, accept: Shift+K, send_sequence: "{Control+Left}k{Control+Right}" }
+    - { when: has_menu, accept: Shift+L, send_sequence: "{Control+Left}l{Control+Right}" }
+    - { when: has_menu, accept: Shift+M, send_sequence: "{Control+Left}m{Control+Right}" }
+    - { when: has_menu, accept: Shift+N, send_sequence: "{Control+Left}n{Control+Right}" }
+    - { when: has_menu, accept: Shift+O, send_sequence: "{Control+Left}o{Control+Right}" }
+    - { when: has_menu, accept: Shift+P, send_sequence: "{Control+Left}p{Control+Right}" }
+    - { when: has_menu, accept: Shift+Q, send_sequence: "{Control+Left}q{Control+Right}" }
+    - { when: has_menu, accept: Shift+R, send_sequence: "{Control+Left}r{Control+Right}" }
+    - { when: has_menu, accept: Shift+S, send_sequence: "{Control+Left}s{Control+Right}" }
+    - { when: has_menu, accept: Shift+T, send_sequence: "{Control+Left}t{Control+Right}" }
+    - { when: has_menu, accept: Shift+U, send_sequence: "{Control+Left}u{Control+Right}" }
+    - { when: has_menu, accept: Shift+V, send_sequence: "{Control+Left}v{Control+Right}" }
+    - { when: has_menu, accept: Shift+W, send_sequence: "{Control+Left}w{Control+Right}" }
+    - { when: has_menu, accept: Shift+X, send_sequence: "{Control+Left}x{Control+Right}" }
+    - { when: has_menu, accept: Shift+Y, send_sequence: "{Control+Left}y{Control+Right}" }
+    - { when: has_menu, accept: Shift+Z, send_sequence: "{Control+Left}z{Control+Right}" }
+    - { when: has_menu, accept: Shift+BackSpace, send_sequence: "{Control+Left}{BackSpace}{Control+Right}" }
 
 
 
