@@ -91,7 +91,7 @@ style:
   keyboard_height: 280 #锁定键盘高度，避免切换时键盘高度变化而造成闪烁
   keyboard_height_land: 200 #锁定横屏下键盘高度，避免切换时键盘高度变化而造成闪烁
   horizontal: true #水平模式。改变方向键的功能 （true：方向键适配横排候选；false：方向键适配竖排候选）
-  keyboard_padding: 5 #竖屏模式下，屏幕左右两侧与键盘的距离（曲面屏减少误触）
+  keyboard_padding: 6 #竖屏模式下，屏幕左右两侧与键盘的距离（曲面屏减少误触）
   keyboard_padding_left: 0 #竖屏屏模式下，左手键盘布局，屏幕左侧与键盘的距离
   keyboard_padding_right: 40 #竖屏屏模式下，左手键盘布局，屏幕右侧与键盘的距离
   keyboard_padding_bottom: 5 #竖屏模式下，屏幕下边缘与键盘的距离（避免误触发全面屏手势）
@@ -178,9 +178,9 @@ style:
   candidate_text_size: 21 #候选字号
   ## 编码
   comment_on_top: false #编码提示在上方或右侧
-  comment_height: 18 #编码提示区高度
+  comment_height: 5 #编码提示区高度
   comment_font: comment.ttf #编码提示字型
-  comment_text_size: 15 #编码提示字号
+  comment_text_size: 18 #编码提示字号
 
   # 按键区
   proximity_correction: true #按键纠错
@@ -3171,23 +3171,24 @@ preset_keyboards:
           __include: styl/key,
         }
       - { click: 'm', long_click: 'fenhao', __include: styl/key }
-      - { click: BS, width: 15 }
+      - { click: BS, width: 15, 
+          swipe_up: 'Escape',
+        }
       # 第 4 行
       - {
           click: Keyboard_symbols,
           long_click: Color_switch,
-          composing: Tab,
           width: 11,
           __include: styl/off_key,
         }     
       - {
           click: Keyboard_number,
-          composing: "/",
+          composing: Tab,
           width: 12,      
           __include: styl/off_key,
           __patch: conf/key_height_last,
         }  
-      - { click: 'douhao', 
+      - { click: ',', 
           label: ' ，',
           long_click: '、', 
           width: 11, 
@@ -3204,7 +3205,7 @@ preset_keyboards:
           hilited_key_back_color: hilited_space_back_color,
         }      
       - {
-          click: 'juhao',
+          click: '.',
           label: ' 。',
           long_click: '? ',
           width: 11,
@@ -3212,7 +3213,7 @@ preset_keyboards:
         }
       - {
           click: 'Mode_switch',
-          composing: Escape,
+          composing: "/",
           width: 11,
           __include: styl/off_key,  
         }
@@ -3518,7 +3519,7 @@ preset_keys:
   CommitComment: { label: 编码, send: Control+Shift+Return }
   DeleteCandidate: { label: 删词, send: Control+Delete }
   # rime状态
-  Mode_switch: { toggle: ascii_mode, send: Mode_switch, states: [中文, 英文] }
+  Mode_switch: { toggle: ascii_mode, send: Mode_switch, states: [中, 英] }
   Zenkaku_Hankaku:
     { toggle: full_shape, send: Mode_switch, states: [半角, 全角] }
   Henkan: { toggle: simplification, send: Mode_switch, states: [汉字, 汉字] }

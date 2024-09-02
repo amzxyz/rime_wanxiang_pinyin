@@ -145,18 +145,38 @@ function AZ.run(cand, env, initial_comment)
     local pattern = patterns[env.settings.fuzhu_type]
 
     if pattern then
-        -- 提取拼音和辅助码
-        local pinyin = initial_comment:match("^%(([^;]+)")  -- 提取注释中的第一个部分作为拼音
-        local fuzhu = initial_comment:match(pattern)    -- 根据模式提取对应的辅助码
+        local pinyins = {}  -- 存储多个拼音
+        local fuzhu = nil   -- 辅助码
+
+        -- 使用空格将注释分割成多个片段
+        local segments = {}
+        for segment in initial_comment:gmatch("[^%s]+") do
+            table.insert(segments, segment)
+        end
+
+        -- 遍历分割后的片段，提取拼音和辅助码
+        for _, segment in ipairs(segments) do
+            local pinyin = segment:match("^[^;]+")  -- 提取注释中的拼音部分
+            local fz = segment:match(pattern)  -- 根据模式提取对应的辅助码
+
+            if pinyin then
+                table.insert(pinyins, pinyin)  -- 收集拼音
+            end
+
+            if fz then
+                fuzhu = fz  -- 获取第一个辅助码
+            end
+        end
 
         -- 生成最终注释
-        if pinyin and fuzhu then
-            final_comment = string.format("〔音%s 辅%s〕", pinyin, fuzhu)
+        if #pinyins > 0 and fuzhu then
+            local pinyin_str = table.concat(pinyins, ",")  -- 用逗号分隔多个拼音
+            final_comment = string.format("〔音%s 辅%s〕", pinyin_str, fuzhu)
         end
     end
+    
     return final_comment or ""  -- 确保返回最终值
 end
-
 -- 主函数：根据优先级处理候选词的注释
 local ZH = {}
 function ZH.init(env)
