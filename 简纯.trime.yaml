@@ -3220,32 +3220,32 @@ preset_keyboards:
       - {
           click: IME_switch1,
           width: 20,      
-          __include: styl/menu,
+          key_back_color: keyboard_back_color, 
           height: 25,
         }
       - {
           click: Left,
           width: 20, 
           height: 25,     
-          __include: styl/menu,
+          key_back_color: keyboard_back_color, 
         }  
       - {
           click: 'VOICE_ASSIST',
           width: 20,
           height: 25,
-          __include: styl/menu,
+          key_back_color: keyboard_back_color, 
         }
       - {
           click: Right,
           width: 20, 
           height: 25,     
-          __include: styl/menu,
+          key_back_color: keyboard_back_color, 
         } 
       - {
           click: 'Back1',
           width: 20,
           height: 25,
-          __include: styl/menu,
+          key_back_color: keyboard_back_color, 
         }
 
   letter:
