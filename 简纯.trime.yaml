@@ -1,7 +1,7 @@
 # Trime style settings
 # encoding: utf-8
 
-name: 简纯 #方案名称
+name: 简纯+ #方案名称
 author: 'amzxyz' #作者
 conf:
   # 数字、编辑、功能键盘
@@ -15,8 +15,8 @@ conf:
   # 主键盘
   main:
     height: 52 #按键高度
-    horizontal_gap: 3 #按键水平间距
-    vertical_gap: 5 #按键行距
+    horizontal_gap: 6 #按键水平间距
+    vertical_gap: 7 #按键行距
     key_symbol_offset_x: 3
     key_hint_offset_y: -1.3
     key_press_offset_x: 2
@@ -62,33 +62,11 @@ conf:
       - width: { __include: conf/sym_bottom_switch }
         height: { __include: conf/sym_bottom }
 
-plus:
-  'keys/@4/hint': ' '
-  'keys/@7/hint': ' '
-  'keys/@0/': { click: num1, __include: conf/num_line }
-  'keys/@after 0/': { click: num2 }
-  'keys/@after 1/': { click: num3 }
-  'keys/@after 2/': { click: num4 }
-  'keys/@after 3/': { click: num5 }
-  'keys/@after 4/': { click: num6 }
-  'keys/@after 5/': { click: num7 }
-  'keys/@after 6/': { click: num8 }
-  'keys/@after 7/': { click: num9 }
-  'keys/@after 8/': { click: num0 }
-
-pure:
-  plus:
-    height: 47 #按键高度
-    horizontal_gap: 6 #按键水平间距
-    vertical_gap: 7 #按键行距
-    key_hint_offset_y: 0
-  key_height_last: 46
 
 
 style:
-#  __include: trime:/style
   color_scheme: default #默认配色方案
-  keyboard_height: 280 #锁定键盘高度，避免切换时键盘高度变化而造成闪烁
+  keyboard_height: 270 #锁定键盘高度，避免切换时键盘高度变化而造成闪烁
   keyboard_height_land: 200 #锁定横屏下键盘高度，避免切换时键盘高度变化而造成闪烁
   horizontal: true #水平模式。改变方向键的功能 （true：方向键适配横排候选；false：方向键适配竖排候选）
   keyboard_padding: 6 #竖屏模式下，屏幕左右两侧与键盘的距离（曲面屏减少误触）
@@ -183,13 +161,13 @@ style:
   comment_text_size: 18 #编码提示字号
 
   # 按键区
-  proximity_correction: true #按键纠错
+  proximity_correction: false #按键纠错
   vertical_correction: -5 #按键偏移（上偏为正）
   horizontal_gap: 0 #键水平间距
   vertical_gap: 0 #键盘行距
   ## 主按键
-  key_height: 62 #键高
-  key_width: 10.2 #键宽，占屏幕宽的百分比
+  key_height: { __include: conf/sym_height } #键高
+  key_width: 12 #键宽，占屏幕宽的百分比
   round_corner: 10 #按键圆角半径
   shadow_radius: 0.0#按键阴影半径
   key_font: symbol.ttf #键盘字型
@@ -250,7 +228,6 @@ style:
     line_spacing_multiplier: 1.1 #候选词的行间距(倍数)
 
 fallback_colors:
-#  __include: trime:/fallback_colors
   # 悬浮窗
   border_color: back_color #悬浮窗边框
   label_color: hilited_text_color #标签（候选序号）
@@ -516,6 +493,8 @@ preset_color_schemes:
     # menu_text_color: off_sym_text_color #菜单文字 ※
     # hilited_menu_back_color: key_back_color #高亮菜单背景 ※
     # hilited_menu_text_color: enter_sym_back_color #高亮菜单文字 ※
+
+
 
 
 # 按键样式
@@ -3071,12 +3050,20 @@ preset_keyboards:
     width: 10
     __patch: 
       - conf/main
-      - plus
-      - pure/plus
-      - 'keys/@40/height': { __include: pure/key_height_last }
+      - 'keys/@40/height': { __include: conf/key_height_last }
     keys:
+      # 数字行
+      - {click: num1, __include: conf/num_line}
+      - {click: num2}
+      - {click: num3}
+      - {click: num4}
+      - {click: num5}
+      - {click: num6}
+      - {click: num7}
+      - {click: num8}
+      - {click: num9}
+      - {click: num0}
       # 第 1 行
-      - { width: 0 } #备用
       - { click: 'q', long_click: '!', swipe_down: 1, __include: styl/key }
       - { click: 'w', long_click: '@', swipe_down: 2, __include: styl/key }
       - { click: 'e', long_click: '#', swipe_down: 3, __include: styl/key }
@@ -3188,7 +3175,7 @@ preset_keyboards:
           __include: styl/off_key,
           __patch: conf/key_height_last,
         }  
-      - { click: ',', 
+      - { click: 'douhao', 
           label: ' ，',
           long_click: '、', 
           width: 11, 
@@ -3205,15 +3192,15 @@ preset_keyboards:
           hilited_key_back_color: hilited_space_back_color,
         }      
       - {
-          click: '.',
+          click: 'juhao',
           label: ' 。',
-          long_click: '? ',
+          long_click: '?',
           width: 11,
           __include: styl/key,
         }
       - {
           click: 'Mode_switch',
-          composing: "/",
+          composing: "xiegang",
           width: 11,
           __include: styl/off_key,  
         }
@@ -3267,9 +3254,7 @@ preset_keyboards:
     __include: preset_keyboards/default
     __patch:
       - 'keys/@33/long_click': Keyboard_default
-      - plus
-      - pure/plus
-      - 'keys/@40/height': { __include: pure/key_height_last }
+      - 'keys/@40/height': { __include: conf/key_height_last }
 
   number:
     name: 数字
@@ -3473,8 +3458,8 @@ preset_keys:
   Deploy: { label: 部署, command: broadcast, option: 'com.osfans.trime.deploy' }
   Sync: { label: 同步, command: broadcast, option: 'com.osfans.trime.sync' }
   # 编辑
-  Shift_L: { label: Shift, send: Shift_L, shift_lock: ascii_long }
-#  Shift_L: { label: Shift, send: Shift_L, shift_lock: long }
+#  Shift_L: { label: Shift, send: Shift_L, shift_lock: ascii_long }
+  Shift_L: { label: Shift, send: Shift_L, shift_lock: long }
   Return: { label: Enter, send: Return }
   Return1: { label: 回车, send: Return }
   Hide: { label: '▼', send: BACK }
