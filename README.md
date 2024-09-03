@@ -197,7 +197,8 @@ set_shuru_schema:
     ```YAML
     speller:
     # table_translator翻译器，支持自动上屏。例如 “zmhu”可以自动上屏“怎么回事”
-#  auto_select: true
+    auto_select: true
+
     #  auto_select_pattern: ^[a-z]+/|^[a-df-zA-DF-Z]\w{3}|^e\w{4}
       # 如果不想让什么标点直接上屏，可以加在 alphabet，或者编辑标点符号为两个及以上的映射
       alphabet: zyxwvutsrqponmlkjihgfedcbaZYXWVUTSRQPONMLKJIHGFEDCBA`/
