@@ -6,6 +6,15 @@ config_version: "2024-04-16"
 # [app_options]
 # 针对特定应用的设置
 app_options:
+  cmd.exe:
+      ascii_mode: true
+      ascii_punct: true
+  idea64.exe:
+      ascii_mode: false
+      ascii_punct: true
+  Code.exe:
+      ascii_mode: false
+      ascii_punct: true
   firefox.exe:
     inline_preedit: true # 行内显示预编辑区：规避 <https://github.com/rime/weasel/issues/946>
   # cmd.exe:               # 带 .exe 的进程名：Weasel 15.0 及之前版本须小写; PR #1049 合并后释出的版本大小写不敏感
@@ -37,7 +46,6 @@ global_ascii: false                        # 切换为 ascii 模式时，是否�
 # 字体；候选项、候选窗口的行为、布局及样式
 style:
   color_scheme: jianchun      # 默认配色方案
-  # color_scheme_dark: nord                # 深色模式下，Weasel 的配色方案，Windows 10 1809+ 可用
 
   # 全局字体
   # 格式：字体1:起始码位:结束码位:字重:字形,字体2……，字体会依次 fallback
@@ -94,8 +102,8 @@ style:
     shadow_radius: 0                       # 阴影区域半径，为 0 不显示阴影；需要同时在配色方案中指定非透明的阴影颜色
     shadow_offset_x: 4                     # 阴影左右偏移距离
     shadow_offset_y: 4                     # 阴影上下偏移距离
-    corner_radius: 12                       # 候选窗口圆角半径
-    round_corner: 0                        # 候选背景色块圆角半径，又名 hilited_corner_radius
+    corner_radius: 6                       # 候选窗口圆角半径
+    round_corner: 6                        # 候选背景色块圆角半径，又名 hilited_corner_radius
     # type: vertical                       # 布局设置，效果和 style 下的设置相同：
                                            # horizontal（横向）；vertical（竖向） ; vertical_text（竖排文本） ; vertical+fullscreen（全屏） ; horizontal+fullscreen（横向全屏）
 preset_color_schemes:
@@ -114,3 +122,56 @@ preset_color_schemes:
     candidate_text_color: '0x000000'
     comment_text_color: '0x000000'
     label_color: '0x91897e'
+
+  win11_light:
+    name: "Win11浅色 / Win11light"
+    text_color: 0x191919
+    label_color: 0x191919
+    hilited_label_color: 0x191919
+    back_color: 0xf9f9f9
+    border_color: 0x009e5a00
+    hilited_mark_color: 0xc06700
+    hilited_candidate_back_color: 0xf0f0f0
+    shadow_color: 0x20000000
+
+  win11_dark:
+    name: "Win11暗色 / Win11Dark"
+    text_color: 0xf9f9f9
+    label_color: 0xf9f9f9
+    back_color: 0x2C2C2C
+    hilited_label_color: 0xf9f9f9
+    border_color: 0x002C2C2C
+    hilited_mark_color: 0xFFC24C
+    hilited_candidate_back_color: 0x383838
+    shadow_color: 0x20000000
+
+  mac_light:
+    name: "Mac 白"
+    text_color: 0x000000
+    back_color: 0xffffff
+    border_color: 0xe9e9e9
+    label_color: 0x999999
+    hilited_text_color: 0x000000
+    hilited_back_color: 0xffffff
+    candidate_text_color: 0x000000
+    comment_text_color: 0x999999
+    hilited_candidate_text_color: 0xffffff
+    hilited_comment_text_color: 0xdddddd
+    hilited_comment_text_color: 0xdddddd
+    hilited_candidate_back_color: 16740656
+    hilited_label_color: 0xffffff
+
+  wechat:
+    name: "微信／Wechat"
+    text_color: 0x424242
+    label_color: 0x999999
+    back_color: 0xFFFFFF
+    border_color: 0xFFFFFF
+    comment_text_color: 0x999999
+    candidate_text_color: 0x3c3c3c
+    hilited_comment_text_color: 0xFFFFFF
+    hilited_back_color: 0x79af22
+    hilited_text_color: 0xFFFFFF
+    hilited_label_color: 0xFFFFFF
+    hilited_candidate_back_color: 0x79af22
+    shadow_color: 0x20000000

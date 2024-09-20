@@ -10,15 +10,14 @@ conf:
   # 添加数字行
   num_line:
     height: 39 # 数字行按键高度
-#  __patch:
-#    - 单静.patch.无障碍:/num?
-  # 主键盘
+  # 26主键盘
   main:
     height: 52 #按键高度
     horizontal_gap: 6 #按键水平间距
     vertical_gap: 7 #按键行距
-    key_symbol_offset_x: 3
-    key_hint_offset_y: -1.3
+    key_symbol_offset_x: 6
+    key_hint_offset_x: 0
+    key_hint_offset_y: -0.5
     key_press_offset_x: 2
     key_press_offset_y: 2
     keys/+:
@@ -26,6 +25,21 @@ conf:
         height: 1 #底部留白
   key_height_last: # 第4行 按键高度
     height: 50
+
+  # letter键盘
+  main_en:
+    height: 52 #按键高度
+    horizontal_gap: 6 #按键水平间距
+    vertical_gap: 7 #按键行距
+    key_symbol_offset_x: 3
+    key_hint_offset_x: 0
+    key_hint_offset_y: -0.5
+    key_press_offset_x: 2
+    key_press_offset_y: 2
+    keys/+:
+      - width: 0 #底部留白开关，0为关，1~100开
+        height: 1 #底部留白
+
   # 数字、编辑、功能键盘配置
   num:
     height: 60 #按键高度
@@ -41,8 +55,6 @@ conf:
   sym_bottom_switch: 0 #底部留白开关
   sym_bottom: 1 #底部留白
   sym_long_text_size: 20 #长标签字号
-#  __patch:
-#    - 单静.patch.无障碍:/main?
 
   # 符号键盘配置
   sym:
@@ -61,7 +73,6 @@ conf:
     keys/+:
       - width: { __include: conf/sym_bottom_switch }
         height: { __include: conf/sym_bottom }
-
 
 
 style:
@@ -141,7 +152,13 @@ style:
     - ywz61
     - ywz62
     - default
+    - 9jian
+    - 14jian
+    - 18jian
     - letter
+    - letter_18jian
+    - letter_14jian
+    - letter_9jian
     - number
     - func
     - edit
@@ -149,27 +166,27 @@ style:
   # 候选区
   ## 候选
   candidate_use_cursor: true #高亮候选项
-  candidate_view_height: 30 #候选区高度
+  candidate_view_height: 21 #候选区高度
   candidate_padding: 5 #候选项内边距
   candidate_spacing: 0.5 #候选间距
   candidate_font: han.ttf #候选字型
   candidate_text_size: 21 #候选字号
   ## 编码
   comment_on_top: false #编码提示在上方或右侧
-  comment_height: 5 #编码提示区高度
+  comment_height: 18 #编码提示区高度
   comment_font: comment.ttf #编码提示字型
   comment_text_size: 18 #编码提示字号
 
   # 按键区
-  proximity_correction: false #按键纠错
+  proximity_correction: true #按键纠错
   vertical_correction: -5 #按键偏移（上偏为正）
   horizontal_gap: 0 #键水平间距
   vertical_gap: 0 #键盘行距
   ## 主按键
   key_height: { __include: conf/sym_height } #键高
   key_width: 12 #键宽，占屏幕宽的百分比
-  round_corner: 10 #按键圆角半径
-  shadow_radius: 0.0#按键阴影半径
+  round_corner: 13 #按键圆角半径
+  shadow_radius: 0.9#按键阴影半径
   key_font: symbol.ttf #键盘字型
   latin_font: latin.ttf #西文字型
   hanb_font: hanb.ttf #扩充字型
@@ -445,7 +462,7 @@ preset_color_schemes:
     # candidate_text_color: hilited_text_color #候选文字
     comment_text_color: 0x808080 #提示
     # hilited_candidate_back_color: back_color #高亮候选背景
-    hilited_candidate_text_color: 0x333333 #高亮候选文字
+    hilited_candidate_text_color: 0x00A39C    #高亮候选文字
     # hilited_comment_text_color: hilited_candidate_text_color #高亮提示
 
     # 键盘通用
@@ -489,6 +506,74 @@ preset_color_schemes:
     enter_sym_back_color: 0x5CB5AB # enter背景 ※
     # enter_sym_text_color: on_key_text_color #enter文字 高亮enter文字※
     hilited_enter_sym_back_color: 0x00A39C #高亮enter背景 ※
+    # menu_back_color: off_sym_back_color #菜单背景 ※
+    # menu_text_color: off_sym_text_color #菜单文字 ※
+    # hilited_menu_back_color: key_back_color #高亮菜单背景 ※
+    # hilited_menu_text_color: enter_sym_back_color #高亮菜单文字 ※
+
+
+  white:
+    name: 黄昏 #方案名称
+    author: amzxyz #作者资讯
+    dark_scheme: google_black #夜间模式
+    # 悬浮窗
+    # border_color: back_color #悬浮窗边框
+    # label_color: hilited_text_color #标签（候选序号）
+    # text_back_color: back_color #编码区背景
+    text_color: 0xbc763c #编码 色
+    # hilited_back_color: back_color #高亮编码背景
+    hilited_text_color: 0xff5a676e #高亮编码 黑
+
+    # 候选栏
+    # candidate_separator_color: back_color #候选分割线
+    back_color: 0xf8fbf8 #候选栏背景 灰
+    # candidate_text_color: hilited_text_color #候选文字
+    comment_text_color: 0x7b868c #提示
+    # hilited_candidate_back_color: back_color #高亮候选背景
+    # hilited_candidate_text_color: text_color #高亮候选文字
+    # hilited_comment_text_color: hilited_candidate_text_color #高亮提示
+
+    # 键盘通用
+    # keyboard_back_color: back_color #键盘背景
+    # key_border_color: border_color #按键边框
+    # shadow_color: border_color #按键文字阴影
+    # preview_back_color: back_color #按键提示背景
+    # preview_text_color: key_text_color #按键提示文字
+    # key_text_color: candidate_text_color #按键文字
+    # key_symbol_color: comment_text_color #按键符号
+    # hilited_key_text_color: key_text_color #高亮按键文字
+    # hilited_key_symbol_color: key_symbol_color #高亮按键符号
+
+    # 主键盘
+    main_back_color: 0xf3f3f3 #按键背景 ※
+    hilited_main_back_color: 0xffd3d7da #高亮按键背景 ※
+    # space_back_color: 0xFAFAFA #空格背景 ※
+    # hilited_space_back_color: 0xD7D9DD #高亮空格背景 ※
+    off_key_back_color: 0xf8f4e6 #功能键背景
+    # off_key_text_color: key_text_color #功能键文字
+    # off_key_symbol_color: off_key_text_color #功能键符号 高亮功能键符号※
+    hilited_off_key_back_color: 0xffD7D6D6  #高亮功能键背景
+    # hilited_off_key_text_color: off_key_text_color #高亮功能键文字
+    on_key_back_color: 0xcbb994 #shift锁定时背景
+    on_key_text_color: 0xff37474f #shift锁定时文字
+    hilited_on_key_back_color: 0xffd3d7da #高亮shift锁定时背景
+    # hilited_on_key_text_color: on_key_text_color #高亮shift锁定时文字
+    enter_back_color: 0xcbb994 #enter背景 ※
+    enter_text_color: 0xff37474f #enter文字 高亮enter文字※
+    enter_symbol_color: 0xFFFFFF #enter符号 高亮enter符号※
+    hilited_enter_back_color: 0xffd3d7da #高亮enter背景 ※
+
+    # 附键盘
+    key_back_color: 0xf8fbf8 #按键背景
+    # hilited_key_back_color: back_color #高亮按键背景
+    # off_sym_back_color: back_color #功能键背景 ※
+    # off_sym_text_color: off_key_text_color #功能键文字 ※
+    # off_sym_fy_text_color: hilited_off_sym_back_color #翻页停止箭头文字 高亮※
+    hilited_off_sym_back_color: 0xede4cd #高亮功能键背景 ※
+    # hilited_off_sym_text_color: hilited_off_key_text_color #高亮功能键文字 ※
+    enter_sym_back_color: 0xe9e4d4 # enter背景 ※
+    # enter_sym_text_color: on_key_text_color #enter文字 高亮enter文字※
+    hilited_enter_sym_back_color: 0xe9e4d4 ##高亮enter背景 ※
     # menu_back_color: off_sym_back_color #菜单背景 ※
     # menu_text_color: off_sym_text_color #菜单文字 ※
     # hilited_menu_back_color: key_back_color #高亮菜单背景 ※
@@ -3042,14 +3127,14 @@ preset_keyboards:
       - { click: kb_ywz6, __include: styl/ywz_hilited_menu }
 
   default:
-    name: 默认26键
+    name: 26键
     author: 'amzxyz'
-    ascii_mode: 1
+    ascii_mode: 0
     label_transform: uppercase   #键盘字母转化为大写
     lock: true #切换程序时记忆键盘
     width: 10
     __patch: 
-      - conf/main
+      - conf/main_en
       - 'keys/@40/height': { __include: conf/key_height_last }
     keys:
       # 数字行
@@ -3083,78 +3168,61 @@ preset_keyboards:
           hint: 7,
           __include: styl/key,
         }
-      - { click: 'i', long_click: '°C', swipe_down: 8, __include: styl/key }
-      - { click: 'o', long_click: '(', swipe_down: 9, __include: styl/key }
-      - { click: 'p', long_click: ')', swipe_down: 0, __include: styl/key }
+      - { click: 'i', long_click: '*', swipe_down: 8, __include: styl/key }
+      - { click: 'o', long_click: '"', swipe_down: 9, __include: styl/key }
+      - { click: 'p', long_click: "danyinhao", swipe_down: 0, __include: styl/key }
       # 第 2 行
       - { width: 5 }
       - { click: 'a', long_click: select_all, __include: styl/key }
       - {
           click: 's',
-          long_click: '_',
-          swipe_down: '~',
-          hint: '~',
+          long_click: '<',
           __include: styl/key,
         }
       - {
           click: 'd',
-          long_click: 'jianhao',
-          swipe_down: '<',
-          hint: '<',
+          long_click: '>',
           __include: styl/key,
         }
       - {
           click: 'f',
-          long_click: '+',
-          swipe_down: '>',
-          hint: '>',
+          long_click: '{',
           __include: styl/key,
         }
       - {
           click: 'g',
-          long_click: 'dengyu',
+          long_click: '}',
           swipe_down: kb_edit,
           hint: '<ɪ>',
           __include: styl/key,
         }
       - {
           click: 'h',
-          long_click: '*',
-          swipe_down: '×',
-          hint: '×',
+          long_click: 'zkhz',
           __include: styl/key,
         }
       - {
           click: 'j',
-          long_click: 'xiegang',
-          swipe_down: '÷',
-          hint: '÷',
+          long_click: 'zkhy',
           __include: styl/key,
         }
-      - { click: 'k', long_click: '"', swipe_down: '￥', hint: '￥', __include: styl/key }
-      - { click: 'l', long_click: "danyinhao", __include: styl/key }
+      - { click: 'k', long_click: '(', __include: styl/key }
+      - { click: 'l', long_click: ")", __include: styl/key }
       # 第 3 行
-#      - { click: Shift_L, composing: split_word, width: 15 }   原来的样子
-      - { click: Shift_L, width: 15 }
+      - { click: Shift_L, composing: split_word, width: 15 }   
+#      - { click: Shift_L, width: 15 }
       - { click: 'z',long_click: 'fanyinhao', __include: styl/key }
       - { click: 'x', long_click: cut, __include: styl/key }
       - { click: 'c', long_click: copy, __include: styl/key }
       - { click: 'v', long_click: paste, __include: styl/key }
       - {
           click: 'b',
-          long_click: '√',
-#          swipe_down: '|',
-#          hint: '|',
+          long_click: 'xiegang',
           __include: styl/key,
         }
       - {
           click: 'n',
           long_click: ':',
-#          hint: '✜',
-#          swipe_up: Up,
-#          swipe_down: Down,
-#          swipe_left: Left,
-#          swipe_right: Right,
           __include: styl/key,
         }
       - { click: 'm', long_click: 'fenhao', __include: styl/key }
@@ -3217,49 +3285,327 @@ preset_keyboards:
           key_symbol_offset_x: 0,
         }
 #下面新增最后一排按钮
+      - { click: IME_switch1, width: 20, height: 25, key_back_color: keyboard_back_color }
+      - { click: Left, width: 20, height: 25, key_back_color: keyboard_back_color }  
+      - { click: 'VOICE_ASSIST', width: 20, height: 25, key_back_color: keyboard_back_color }
+      - { click: Right, width: 20, height: 25, key_back_color: keyboard_back_color } 
+      - { click: 'Back1', width: 20, height: 25, key_back_color: keyboard_back_color }
+
+
+  18jian:
+    name: 18键
+    author: 'amzxyz'
+    ascii_mode: 0
+    label_transform: uppercase   #键盘字母转化为大写
+    lock: true #切换程序时记忆键盘
+    width: 10
+    __patch: 
+      - conf/main
+      - 'keys/@40/height': { __include: conf/key_height_last }
+    keys:
+      # 数字行
+      - {click: num1, __include: conf/num_line}
+      - {click: num2}
+      - {click: num3}
+      - {click: num4}
+      - {click: num5}
+      - {click: num6}
+      - {click: num7}
+      - {click: num8}
+      - {click: num9}
+      - {click: num0}
+      # 第 1 行
+      - { click: '18keyq', long_click: '!', swipe_down: 'fanxiegang', hint: '\', width: 14.3, __include: styl/key }
+      - { click: '18keywe', long_click: '@', swipe_down: "{", hint: "{", width: 14.3, __include: styl/key }
+      - { click: '18keyrt', long_click: '#', swipe_down: "}", hint: "}", width: 14.3, __include: styl/key }
+      - { click: '18keyy', long_click: '$', swipe_down: "[", hint: "[", width: 14.3, __include: styl/key }
+      - { click: '18keyu', long_click: '%', swipe_down: "]", hint: "]", width: 14.3, __include: styl/key }
+      - { click: '18keyio', long_click: '^', swipe_down: "(", hint: "(", width: 14.3, __include: styl/key }
+      - { click: '18keyp', long_click: '&', swipe_down: ")", hint: ")", width: 14.3, __include: styl/key }
+      # 第 2 行
+      - { click: '18keya', long_click: 'select_all', width: 16.6, __include: styl/key }
+      - { click: '18keysd', long_click: '_', width: 16.6, __include: styl/key }
+      - { click: '18keyfg', long_click: "-", width: 16.6, __include: styl/key }
+      - { click: '18keyh', long_click: "*", width: 16.6, __include: styl/key }
+      - { click: '18keyjk', long_click: '"', __include: styl/key, width: 16.6 }
+      - { click: '18keyl', long_click: "'", __include: styl/key, width: 16.6 }
+      # 第 3 行
+      - { click: liquid_keyboard_clipboard, composing: split_word, width: 14.3 }   
+#      - { click: Shift_L, width: 15 }
+      - { click: '18keyz',long_click: 'fanyinhao', width: 14.3, __include: styl/key }
+      - { click: '18keyxc', long_click: copy, width: 14.3, __include: styl/key }
+      - { click: '18keyv', long_click: paste, width: 14.3, __include: styl/key }
+      - { click: '18keybn', long_click: ":", width: 14.3, __include: styl/key }
+      - { click: '18keym', long_click: ';', width: 14.3, __include: styl/key }
+      - { click: BS, width: 14.3, swipe_up: 'Escape' }
+      # 第 4 行
+      - { click: 18Keyboard_symbols, long_click: Color_switch, width: 11.5, __include: styl/off_key }     
+      - { click: 18Keyboard_number, composing: Tab, width: 11.5, __include: styl/off_key, __patch: conf/key_height_last }  
+      - { click: '，', label: '，', long_click: '、', width: 10, key_symbol_offset_x: 4, __include: styl/key,  } 
+      - { click: space, swipe_up: Clear, swipe_down: liquid_keyboard_clipboard, key_symbol_offset_x: 0, width: 30, key_back_color: space_back_color, hilited_key_back_color: hilited_space_back_color }      
+      - { click: '。', label: '。', long_click: '？', width: 10, key_symbol_offset_x: 4, __include: styl/key }
+      - { click: 'Keyboard_letter_18jian', composing: "xiegang", width: 11.5, __include: styl/off_key }
       - {
-          click: IME_switch1,
-          width: 20,      
-          key_back_color: keyboard_back_color, 
-          height: 25,
+          click: Return,
+          long_click: kb_func,
+          width: 16,
+          key_back_color: enter_back_color,
+          hilited_key_back_color: hilited_enter_back_color,
+          key_text_color: enter_text_color,
+          hilited_key_text_color: enter_text_color,
+          key_symbol_color: enter_symbol_color,
+          hilited_key_symbol_color: enter_symbol_color,
+          key_symbol_offset_x: 0,
         }
+#下面新增最后一排按钮
+      - { click: IME_switch1, width: 20, height: 25, key_back_color: keyboard_back_color }
+      - { click: Left, width: 20, height: 25, key_back_color: keyboard_back_color }  
+      - { click: 'VOICE_ASSIST', width: 20, height: 25, key_back_color: keyboard_back_color }
+      - { click: Right, width: 20, height: 25, key_back_color: keyboard_back_color } 
+      - { click: 'Back1', width: 20, height: 25, key_back_color: keyboard_back_color }
+
+
+
+  14jian:
+    name: 14键
+    author: 'amzxyz'
+    ascii_mode: 0
+    label_transform: uppercase   #键盘字母转化为大写
+    lock: true #切换程序时记忆键盘
+    width: 10
+    __patch: 
+      - conf/main
+      - 'keys/@40/height': { __include: conf/key_height_last }
+    keys:
+      # 数字行
+      - {click: num1, __include: conf/num_line}
+      - {click: num2}
+      - {click: num3}
+      - {click: num4}
+      - {click: num5}
+      - {click: num6}
+      - {click: num7}
+      - {click: num8}
+      - {click: num9}
+      - {click: num0}
+      # 第 1 行
+      - { click: '14keyqw', long_click: '!', swipe_down: '\', hint: '\', width: 20, __include: styl/key }
+      - { click: '14keyer', long_click: '@', swipe_down: "{", hint: "{", width: 20, __include: styl/key }
+      - { click: '14keyty', long_click: '#', swipe_down: "}", hint: "}", width: 20, __include: styl/key }
+      - { click: '14keyui', long_click: '$', swipe_down: "[", hint: "[", width: 20, __include: styl/key }
+      - { click: '14keyop', long_click: '%', swipe_down: "]", hint: "]", width: 20, __include: styl/key }
+      # 第 2 行
+      - { click: '14keyas', long_click: 'select_all', swipe_down: "(", hint: "(", width: 20, __include: styl/key }
+      - { click: '14keydf', long_click: '&', swipe_down: ")", hint: ")", width: 20, __include: styl/key }
+      - { click: '14keygh', long_click: '*', swipe_down: "<", hint: "<", width: 20, __include: styl/key }
+      - { click: '14keyjk', long_click: '"', width: 20, swipe_down: ">", hint: ">", __include: styl/key }
+      - { click: '14keyl', long_click: "danyinhao", swipe_down: "/", hint: "/", width: 20, __include: styl/key }
+      # 第 3 行
+      - { click: liquid_keyboard_clipboard, composing: split_word, width: 16 }
+      - { click: '14keyzx', long_click: "copy", width: 17, __include: styl/key }
+      - { click: '14keycv', long_click: 'paste', __include: styl/key, width: 17 }
+      - { click: '14keybn', long_click: ':', __include: styl/key, width: 17 }
+      - { click: '14keym', long_click: "fenhao", __include: styl/key, width: 17 }
+      - { click: BS, width: 16, swipe_up: 'Escape' }
+      # 第 4 行
+      - { click: 14Keyboard_symbols, long_click: Color_switch, width: 11.5, __include: styl/off_key }     
+      - { click: 14Keyboard_number, composing: Tab, width: 11.5, __include: styl/off_key, __patch: conf/key_height_last }  
+      - { click: '，', label: '，', long_click: '、', width: 10, key_symbol_offset_x: 4, __include: styl/key,  } 
+      - { click: space, swipe_up: Clear, swipe_down: liquid_keyboard_clipboard, key_symbol_offset_x: 0, width: 30, key_back_color: space_back_color, hilited_key_back_color: hilited_space_back_color }      
+      - { click: '。', label: '。', long_click: '？', width: 10, key_symbol_offset_x: 4, __include: styl/key }
+      - { click: 'Keyboard_letter_14jian', composing: "xiegang", width: 11.5, __include: styl/off_key }
       - {
-          click: Left,
-          width: 20, 
-          height: 25,     
-          key_back_color: keyboard_back_color, 
-        }  
-      - {
-          click: 'VOICE_ASSIST',
-          width: 20,
-          height: 25,
-          key_back_color: keyboard_back_color, 
+          click: Return,
+          long_click: kb_func,
+          width: 16,
+          key_back_color: enter_back_color,
+          hilited_key_back_color: hilited_enter_back_color,
+          key_text_color: enter_text_color,
+          hilited_key_text_color: enter_text_color,
+          key_symbol_color: enter_symbol_color,
+          hilited_key_symbol_color: enter_symbol_color,
+          key_symbol_offset_x: 0,
         }
+#下面新增最后一排按钮
+      - { click: IME_switch1, width: 20, height: 25, key_back_color: keyboard_back_color }
+      - { click: Left, width: 20, height: 25, key_back_color: keyboard_back_color }  
+      - { click: 'VOICE_ASSIST', width: 20, height: 25, key_back_color: keyboard_back_color }
+      - { click: Right, width: 20, height: 25, key_back_color: keyboard_back_color } 
+      - { click: 'Back1', width: 20, height: 25, key_back_color: keyboard_back_color }
+
+
+  9jian:
+    name: 9键
+    author: 'amzxyz'
+    ascii_mode: 0
+#    label_transform: uppercase   #键盘字母转化为大写
+    lock: true #切换程序时记忆键盘
+    width: 10
+    __patch: 
+      - conf/main
+    keys:
+      # 第 1 行
+      - { click: liquid_keyboard_clipboard, width: 16, long_click: cut } 
+      - { click: split_word, long_click: '1', width: 22, __include: styl/key } 
+      - { click: '9keyabc', long_click: '2', width: 22, __include: styl/key }
+      - { click: '9keydef', long_click: '3', width: 22, __include: styl/key }
+      - { click: BS, width: 18 }
+      # 第 2 行
+      - { click: '，', long_click: '、', width: 16, key_back_color: off_key_back_color }
+      - { click: '9keyghi', long_click: '4', width: 22, __include: styl/key }
+      - { click: '9keyjkl', long_click: '5', width: 22, __include: styl/key }
+      - { click: '9keymno', long_click: '6', width: 22, __include: styl/key }
+      - { click: 'Escape1', long_click: copy, width: 18, key_back_color: off_key_back_color }
+      # 第 3 行
+      - { click: '。', long_click: '？', width: 16, key_back_color: off_key_back_color }
+      - { click: '9keypqrs', long_click: '7', width: 22, __include: styl/key }
+      - { click: '9keytuv', long_click: '8', width: 22, __include: styl/key }
+      - { click: '9keywxyz', long_click: '9', width: 22, __include: styl/key }
+      - { click: '0', long_click: paste, width: 18, key_back_color: off_key_back_color }
+      # 第 4 行
+      - { click: 9Keyboard_symbols, long_click: Color_switch, width: 16, __include: styl/off_key }   
+      - { click: 9Keyboard_number, composing: Tab, width: 16, __include: styl/off_key, __patch: conf/key_height_last } 
+      - { click: space, swipe_up: Clear, swipe_down: liquid_keyboard_clipboard, key_symbol_offset_x: 0, width: 34, key_back_color: space_back_color, hilited_key_back_color: hilited_space_back_color } 
+      - { click: 'Keyboard_letter_9jian', composing: "xiegang", width: 16, __include: styl/off_key }    
       - {
-          click: Right,
-          width: 20, 
-          height: 25,     
-          key_back_color: keyboard_back_color, 
-        } 
-      - {
-          click: 'Back1',
-          width: 20,
-          height: 25,
-          key_back_color: keyboard_back_color, 
+          click: Return,
+          long_click: kb_func,
+          width: 18,
+          key_back_color: enter_back_color,
+          hilited_key_back_color: hilited_enter_back_color,
+          key_text_color: enter_text_color,
+          hilited_key_text_color: enter_text_color,
+          key_symbol_color: enter_symbol_color,
+          hilited_key_symbol_color: enter_symbol_color,
+          key_symbol_offset_x: 0,
         }
+#下面新增最后一排按钮
+      - { click: IME_switch1, width: 20, height: 25, key_back_color: keyboard_back_color }
+      - { click: Left, width: 20, height: 25, key_back_color: keyboard_back_color }  
+      - { click: 'VOICE_ASSIST', width: 20, height: 25, key_back_color: keyboard_back_color }
+      - { click: Right, width: 20, height: 25, key_back_color: keyboard_back_color } 
+      - { click: 'Back1', width: 20, height: 25, key_back_color: keyboard_back_color }
 
   letter:
     ascii_mode: 1
     lock: false
     __include: preset_keyboards/default
     __patch:
+      - conf/main_en
       - 'keys/@33/long_click': Keyboard_default
       - 'keys/@40/height': { __include: conf/key_height_last }
+
+
+  letter_9jian:
+    ascii_mode: 1
+    lock: false
+    __include: preset_keyboards/letter_18jian
+    __patch:
+      - conf/main_en
+      - 'keys/@39/click': 9Keyboard_symbolsen
+      - 'keys/@40/click': 9Keyboard_numberen
+      - 'keys/@44/click': Keyboard_9jian
+  letter_14jian:
+    ascii_mode: 1
+    lock: false
+    __include: preset_keyboards/letter_18jian
+    __patch:
+      - conf/main_en
+      - 'keys/@39/click': 14Keyboard_symbolsen
+      - 'keys/@40/click': 14Keyboard_numberen
+      - 'keys/@44/click': Keyboard_14jian
+      
+  letter_18jian:
+    ascii_mode: 1
+    lock: false
+    name: 英文键盘
+    author: 'amzxyz'
+    width: 10    
+    __patch:
+      - conf/main_en
+    keys:
+      # 数字行
+      - {click: num1, __include: conf/num_line}
+      - {click: num2}
+      - {click: num3}
+      - {click: num4}
+      - {click: num5}
+      - {click: num6}
+      - {click: num7}
+      - {click: num8}
+      - {click: num9}
+      - {click: num0}
+      # 第 1 行
+      - { click: 'q', long_click: '!', __include: styl/key }
+      - { click: 'w', long_click: '@', __include: styl/key }
+      - { click: 'e', long_click: '#', __include: styl/key }
+      - { click: 'r', long_click: '$', __include: styl/key }
+      - { click: 't', long_click: '%', __include: styl/key }
+      - { click: 'y', long_click: '^', __include: styl/key }
+      - { click: 'u', long_click: '&', __include: styl/key }
+      - { click: 'i', long_click: '*', __include: styl/key }
+      - { click: 'o', long_click: '(', __include: styl/key }
+      - { click: 'p', long_click: ')', __include: styl/key }
+      # 第 2 行
+      - { width: 5 }
+      - { click: 'a', long_click: select_all, __include: styl/key }
+      - { click: 's', long_click: '_', __include: styl/key }
+      - { click: 'd', long_click: '-', __include: styl/key }
+      - { click: 'f', long_click: '+', __include: styl/key }
+      - { click: 'g', long_click: '=', __include: styl/key }
+      - { click: 'h', long_click: '*', __include: styl/key }
+      - { click: 'j', long_click: '/', __include: styl/key }
+      - { click: 'k', long_click: '"', __include: styl/key }
+      - { click: 'l', long_click: "'", __include: styl/key }
+      # 第 3 行
+      - { click: Shift_L, width: 15 }
+      - { click: 'z',long_click: '`', __include: styl/key }
+      - { click: 'x', long_click: cut, __include: styl/key }
+      - { click: 'c', long_click: copy, __include: styl/key }
+      - { click: 'v', long_click: paste, __include: styl/key }
+      - { click: 'b', long_click: '√', __include: styl/key }
+      - { click: 'n', long_click: ':', __include: styl/key }
+      - { click: 'm', long_click: ';', __include: styl/key }
+      - { click: BS, width: 15, swipe_up: 'Escape' }
+      # 第 4 行
+      - { click: 18Keyboard_symbolsen, long_click: Color_switch, width: 11, __include: styl/off_key }     
+      - { click: 18Keyboard_numberen, width: 12, __include: styl/off_key, __patch: conf/key_height_last }  
+      - { click: ',', long_click: '、', width: 11, __include: styl/key } 
+      - {
+          click: space,                        
+          swipe_up: Clear,
+          swipe_down: liquid_keyboard_clipboard,
+          key_symbol_offset_x: 0,
+          width: 29,
+          key_back_color: space_back_color,
+          hilited_key_back_color: hilited_space_back_color,
+        }      
+      - { click: '.', long_click: '?', width: 11, __include: styl/key }
+      - { click: 'Keyboard_18jian', width: 11, __include: styl/off_key }
+      - {
+          click: Return,
+          long_click: kb_func,
+          width: 15,
+          key_back_color: enter_back_color,
+          hilited_key_back_color: hilited_enter_back_color,
+          key_text_color: enter_text_color,
+          hilited_key_text_color: enter_text_color,
+          key_symbol_color: enter_symbol_color,
+          hilited_key_symbol_color: enter_symbol_color,
+          key_symbol_offset_x: 0,
+        }
+#下面新增最后一排按钮
+      - { click: IME_switch1, width: 20, height: 25, key_back_color: keyboard_back_color }
+      - { click: Left, width: 20, height: 25, key_back_color: keyboard_back_color }  
+      - { click: 'VOICE_ASSIST', width: 20, height: 25, key_back_color: keyboard_back_color }
+      - { click: Right, width: 20, height: 25, key_back_color: keyboard_back_color } 
+      - { click: 'Back1', width: 20, height: 25, key_back_color: keyboard_back_color }
+
 
   number:
     name: 数字
     author: 'amzxyz'
-    ascii_mode: 1
+    ascii_mode: 0
     width: 16.6
     __patch:
       - conf/num
@@ -3273,21 +3619,21 @@ preset_keyboards:
       - { click: 3 }
       - { click: Back, __include: styl/off_func }
       # 第二行
-      - { click: '[]{Left}', long_click: '_' }
+      - { click: '[]{Left}', long_click: 'riqi' }
       - { click: '-', long_click: '±' }
       - { click: 4 }
       - { click: 5 }
       - { click: 6 }
       - { click: Delete, __include: styl/off_func }
       # 第三行
-      - { click: '(){Left}', long_click: '!' }
+      - { click: '(){Left}', long_click: 'jine' }
       - { click: '*', long_click: '×' }
       - { click: 7 }
       - { click: 8 }
       - { click: 9 }
       - { click: BackSpace, __include: styl/off_func }
       # 第四行
-      - { click: '=', long_click: '≠' }
+      - { click: '=', long_click: 'jisuan' }
       - { click: '/', long_click: '÷' }
       - { click: space2, long_click: paste}
       - { click: 0 }
@@ -3299,6 +3645,61 @@ preset_keyboards:
           key_text_color: enter_sym_text_color,
           hilited_key_text_color: enter_sym_text_color,
         }
+
+  9number:
+    __include: preset_keyboards/number
+    __patch:
+      - 'keys/@5/click': Back9
+
+  14number:
+    __include: preset_keyboards/number
+    __patch:
+      - 'keys/@5/click': Back14
+     
+  18number:
+    __include: preset_keyboards/number
+    __patch:
+      - 'keys/@5/click': Back18
+
+  9numberen:
+    __include: preset_keyboards/number
+    __patch:
+      - 'keys/@5/click': Back9en
+
+  14numberen:
+    __include: preset_keyboards/number
+    __patch:
+      - 'keys/@5/click': Back14en
+     
+  18numberen:
+    __include: preset_keyboards/number
+    __patch:
+      - 'keys/@5/click': Back18en
+
+  9symbols:
+    __include: preset_keyboards/symbols
+    __patch:
+      - 'keys/@7/click': Back9
+  14symbols:
+    __include: preset_keyboards/symbols
+    __patch:
+      - 'keys/@7/click': Back14
+  18symbols:
+    __include: preset_keyboards/symbols
+    __patch:
+      - 'keys/@7/click': Back18
+  9symbolsen:
+    __include: preset_keyboards/symbols
+    __patch:
+      - 'keys/@7/click': Back9en
+  14symbolsen:
+    __include: preset_keyboards/symbols
+    __patch:
+      - 'keys/@7/click': Back14en
+  18symbolsen:
+    __include: preset_keyboards/symbols
+    __patch:
+      - 'keys/@7/click': Back18en
 
   edit:
     name: 编辑
@@ -3354,6 +3755,10 @@ preset_keyboards:
       - { click: Google, __include: styl/off_func }
 #      - { click: VOICE_ASSIST, __include: styl/off_func }     #注释掉原因是配置到了长按空格键
       - { click: IME_switch, __include: styl/off_func }
+      - { click: kb_26jian, __include: styl/off_func }
+      - { click: kb_18jian, __include: styl/off_func }
+      - { click: kb_14jian, __include: styl/off_func }
+      - { click: kb_9jian, __include: styl/off_func }
 
 
 android_keys:
@@ -3467,7 +3872,11 @@ preset_keys:
   space: { label: '', preview: '{schema}', repeatable: false, functional: false, send: space}
   space1: {label: 空格, repeatable: false, functional: false, send: space}  #用于liquidkeyboard显示一致性
   space2: {label: ⎵, repeatable: false, functional: false, send: space}  #用与数字键盘空格的展现形式
+  jisuan: { label: '计算', send: V }
+  jine: { label: '金额', send: R }
+  riqi: { label: '日期', send: N }
   Escape: { label: Esc, send: Escape }
+  Escape1: { label: 重输, send: Escape }
   Clear: {label: 全清, send: Clear}
   Tab: { label: Tab, send: Tab }
   Home: { label: Home, send: Home }
@@ -3505,18 +3914,16 @@ preset_keys:
   DeleteCandidate: { label: 删词, send: Control+Delete }
   # rime状态
   Mode_switch: { toggle: ascii_mode, send: Mode_switch, states: [中, 英] }
-  Zenkaku_Hankaku:
-    { toggle: full_shape, send: Mode_switch, states: [半角, 全角] }
+
+  
+ # kb_qwertys: { label: ' ', send: "{Eisu_toggle}{Mode_switch}", select: qwertys }
+  Zenkaku_Hankaku: { toggle: full_shape, send: Mode_switch, states: [半角, 全角] }
   Henkan: { toggle: simplification, send: Mode_switch, states: [汉字, 汉字] }
-  Charset_switch:
-    { toggle: extended_charset, send: Mode_switch, states: [常用, 增广] }
+  Charset_switch: { toggle: extended_charset, send: Mode_switch, states: [常用, 增广] }
   Punct_switch: { toggle: ascii_punct, send: Mode_switch, states: [。，, ．，] }
-  Candidate_switch:
-    { toggle: _hide_candidate, send: Mode_switch, states: [有候选, 无候选] }
-  Comment_switch:
-    { toggle: _hide_comment, send: Mode_switch, states: [有注释, 无注释] }
-  Hint_switch:
-    { toggle: _hide_key_hint, send: Mode_switch, states: [有下标, 无下标] }
+  Candidate_switch: { toggle: _hide_candidate, send: Mode_switch, states: [有候选, 无候选] }
+  Comment_switch: { toggle: _hide_comment, send: Mode_switch, states: [有注释, 无注释] }
+  Hint_switch: { toggle: _hide_key_hint, send: Mode_switch, states: [有下标, 无下标] }
   # trime设定
   IME_switch: { label: 输入法, send: LANGUAGE_SWITCH } #弹出对话框选择输入法
   IME_last: { label: 上一输入法, send: LANGUAGE_SWITCH, select: .last } #直接切换到上一输入法
@@ -3532,24 +3939,61 @@ preset_keys:
   Schema_settings: { label: 方案, send: SETTINGS, option: 'schema' }
 
   # trime键盘
-  Mode_switch_space:
-    { toggle: ascii_mode, send: Mode_switch, states: [' ', 'ascii'] }
+  Mode_switch_space: { toggle: ascii_mode, send: Mode_switch, states: [' ', 'ascii'] }
   Keyboard_switch: { label: 键盘, send: Eisu_toggle, select: .next }
   Back: { label: 返回, send: Eisu_toggle, select: .default }
-
+  Back9: { label: 返回, send: Eisu_toggle, select: 9jian }
+  Back14: { label: 返回, send: Eisu_toggle, select: 14jian }
+  Back18: { label: 返回, send: Eisu_toggle, select: 18jian }
+  
+  Back9en: { label: 返回, send: Eisu_toggle, select: letter_9jian }
+  Back14en: { label: 返回, send: Eisu_toggle, select: letter_14jian }
+  Back18en: { label: 返回, send: Eisu_toggle, select: letter_18jian }
+  
   Keyboard_default: { label: ' ', send: Eisu_toggle, select: .default }
-  kb_qwerty: { label: ' ', send: Eisu_toggle, select: default }
   Keyboard_letter: { label: ' ', send: Eisu_toggle, select: letter }
-#  kb_qwertys: { label: ' ', send: Eisu_toggle, select: qwertys }
-#  kb_qwerty_: { label: ' ', send: Eisu_toggle, select: qwerty_ }
+#功能键盘切换区
+  kb_9jian: { label: '9键', send: Eisu_toggle, select: 9jian }
+  kb_14jian: { label: '14键', send: Eisu_toggle, select: 14jian }
+  kb_18jian: { label: '18键', send: Eisu_toggle, select: 18jian }
+  kb_26jian: { label: '26键', send: Eisu_toggle, select: default }
+#键盘相互跳转
+  Keyboard_26jian: { label: '英', send: Eisu_toggle, select: default }
+  Keyboard_letter_26jian: { label: '中', send: Eisu_toggle, select: letter }
+
+  Keyboard_18jian: { label: '英', send: Eisu_toggle, select: 18jian }
+  Keyboard_letter_18jian: { label: '中', send: Eisu_toggle, select: letter_18jian }
+
+  Keyboard_14jian: { label: '英', send: Eisu_toggle, select: 14jian }
+  Keyboard_letter_14jian: { label: '中', send: Eisu_toggle, select: letter_14jian }
+
+  Keyboard_9jian: { label: '英', send: Eisu_toggle, select: 9jian }
+  Keyboard_letter_9jian: { label: '中', send: Eisu_toggle, select: letter_9jian }
+
+#配合数字键盘相互跳转回到上一个键盘
   Keyboard_number: { label: '123', send: Eisu_toggle, select: number }
+  9Keyboard_number: { label: '123', send: Eisu_toggle, select: 9number }
+  14Keyboard_number: { label: '123', send: Eisu_toggle, select: 14number }
+  18Keyboard_number: { label: '123', send: Eisu_toggle, select: 18number }
+  
+  9Keyboard_numberen: { label: '123', send: Eisu_toggle, select: 9numberen }
+  14Keyboard_numberen: { label: '123', send: Eisu_toggle, select: 14numberen }
+  18Keyboard_numberen: { label: '123', send: Eisu_toggle, select: 18numberen }
+#配合符号键盘相互跳转回到上一个键盘  
   Keyboard_symbols: { label: '۞', send: Eisu_toggle, select: symbols }
+  9Keyboard_symbols: { label: '۞', send: Eisu_toggle, select: 9symbols }
+  14Keyboard_symbols: { label: '۞', send: Eisu_toggle, select: 14symbols }
+  18Keyboard_symbols: { label: '۞', send: Eisu_toggle, select: 18symbols }
+  9Keyboard_symbolsen: { label: '۞', send: Eisu_toggle, select: 9symbolsen }
+  14Keyboard_symbolsen: { label: '۞', send: Eisu_toggle, select: 14symbolsen }
+  18Keyboard_symbolsen: { label: '۞', send: Eisu_toggle, select: 18symbolsen }
+  
   kb_edit: { label: '编辑', send: Eisu_toggle, select: edit }
   kb_func: { label: '❖', send: Eisu_toggle, select: func }
   # 自定义按键
   BS: { label: '⌫', repeatable: true, send: BackSpace }
 #  select_second: { label: '.', send: . }
-#  split_word: { label: "'分词", send: apostrophe }     #取消分词功能
+  split_word: { label: "'分词", send: apostrophe }     #分词功能
 
 #符号键盘区，解决中文状态下shift锁定导致的符号映射发生变化的问题,由于已经合理布置需要的符号，没必要这种变化
   xiegang: { label: "/", text: "/" }
@@ -3560,8 +4004,66 @@ preset_keys:
   fenhao: { label: ";", text: ";" }
   douhao: { label: ",", text: "," }
   juhao: { label: ".", text: "." }
+  zkhz: { label: "[", text: "[" }
+  zkhy: { label: "]", text: "]" }
+#顶部数字排映射  
+  num1: { label: 1, send: 1 }
+  num2: { label: 2, send: 2 }
+  num3: { label: 3, send: 3 }
+  num4: { label: 4, send: 4 }
+  num5: { label: 5, send: 5 }
+  num6: { label: 6, send: 6 }
+  num7: { label: 7, send: 7 }
+  num8: { label: 8, send: 8 }
+  num9: { label: 9, send: 9 }
+  num0: { label: 0, send: 0 }
+#配合18键键盘布局实现共键单发
+  18keyq: { label: " Q ", send: "q" }
+  18keywe: { label: "W E", send: "w" }
+  18keyrt: { label: "R T", send: "r" }
+  18keyy: { label: " Y ", send: "y" }
+  18keyu: { label: " U ", send: "u" }
+  18keyio: { label: "I O", send: "i" }
+  18keyp: { label: " P ", send: "p" }
+  18keya: { label: " A ", send: "a" }
+  18keysd: { label: "S D", send: "s" }
+  18keyfg: { label: "F G", send: "f" }
+  18keyh: { label: " H ", send: "h" }
+  18keyjk: { label: "J K", send: "j" }
+  18keyl: { label: " L ", send: "l" }
+  18keyz: { label: " Z ", send: "z" }
+  18keyxc: { label: "X C", send: "x" }
+  18keyv: { label: " V ", send: "v" }
+  18keybn: { label: "B N", send: "b" }
+  18keym: { label: " M ", send: "m" }
 
-
+#配合14键键盘布局实现共键单发
+  14keyqw: { label: " Q W ", send: "q" }
+  14keyer: { label: "E R", send: "e" }
+  14keyty: { label: "T Y", send: "t" }
+  14keyui: { label: "U I", send: "u" }
+  14keyop: { label: "O P", send: "o" }
+  14keyas: { label: "A S", send: "a" }
+  14keydf: { label: "D F", send: "d" }
+  14keygh: { label: "G H", send: "g" }
+  14keyjk: { label: "J K", send: "j" }
+  14keyl: { label: " L ", send: "l" }
+  14keyzx: { label: "Z X", send: "z" }
+  14keycv: { label: "C V", send: "c" }
+  14keybn: { label: "B N", send: "b" }
+  14keym: { label: " M ", send: "m" }
+  
+#配合9键键盘布局实现共键单发
+  9keyabc: { label: "ABC", send: "a" }
+  9keydef: { label: "DEF", send: "d" }
+  9keyghi: { label: "GHI", send: "g" }
+  9keyjkl: { label: "JKL", send: "j" }
+  9keymno: { label: "MNO", send: "m" }
+  9keypqrs: { label: "PQRS", send: "p" }
+  9keytuv: { label: "TUV", send: "t" }
+  9keywxyz: { label: "WXYZ", send: "w" }
+  
+  
   kb_sym1: { label: '◀', send: Eisu_toggle, select: symbols }
   kb_sym2: { label: '▶', send: Eisu_toggle, select: sym211 }
 
@@ -3674,13 +4176,3 @@ preset_keys:
   kb_ywz6: { label: 无奈, send: Eisu_toggle, select: ywz61 }
   kb_ywz6u: { label: '▲', send: Eisu_toggle, select: ywz61 }
   kb_ywz6d: { label: '▼', send: Eisu_toggle, select: ywz62 }
-  num1: { label: 1, send: 1 }
-  num2: { label: 2, send: 2 }
-  num3: { label: 3, send: 3 }
-  num4: { label: 4, send: 4 }
-  num5: { label: 5, send: 5 }
-  num6: { label: 6, send: 6 }
-  num7: { label: 7, send: 7 }
-  num8: { label: 8, send: 8 }
-  num9: { label: 9, send: 9 }
-  num0: { label: 0, send: 0 }
