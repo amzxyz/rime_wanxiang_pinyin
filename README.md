@@ -1,11 +1,11 @@
-### 万象拼音  源于[墨奇万象](https://github.com/gaboolic/rime-shuangpin-fuzhuma)，简化配置，结合中英文混输，一个套词库，多种用法
-#### 词库设计7种辅助码，头部使用全拼编码，可以转化为任何双拼编码，词库解码顺序为：全拼拼音；墨奇;鹤形;自然码;简单鹤;仓颉首末;虎码首末;五笔前2;汉心码，因此万象拼音支持拼音和辅助码任意两两组合。
+### 万象拼音  源于[飞声词库](https://github.com/amzxyz/rime_feisheng_dict) 这是一种带音调的词库，具体可以跳转了解优势，结合中英文混输，一个套词库，多种用法
+#### 词库词语全部加音调，设计8种辅助码，头部使用全拼编码，可以转化为任何双拼编码，词库解码顺序为：全拼拼音；墨奇;鹤形;自然码;简单鹤;仓颉首末;虎码首末;五笔前2;汉心码，因此万象拼音支持拼音和辅助码任意两两组合。
 
 #### 使用方法：
 
 ###### 由于万象支持各种演变双拼编码方式，所以不能一一列举，且方案文件多了容易混乱。然而使用rime不可避免的要自定义，故而干脆将选项前置，初始化选择一番就是自己想要的方案，更深的定制再去修改其它地方。
 
-###### 打开```wanxiang.schema.yaml```文件，表头按照提示进行3个维度的选择，定义属于自己的输入法方案:
+###### 打开```wanxiang.schema.yaml```文件，表头按照提示进行4个维度的选择，定义属于自己的输入法方案:
 
 ```yaml
 #本方案匹配词库解码顺序为：全拼拼音；墨奇;鹤形;自然码;简单鹤;仓颉首末;虎码首末;五笔前2;汉心码
@@ -15,11 +15,11 @@ schema_name:
 set_shuru_schema:         #配置此项就是选择什么输入法,同时拆分反查和中英文混输也将匹配该输入方案
   __include: algebra_zrm  #可选解码规则有   algebra_pinyin, algebra_zrm, algebra_flypy,  algebra_ziguang, algebra_sogou, algebra_mspy, algebra_abc  选择一个填入
 set_algebra_fuzhu:        #配置此项就是选择什么辅助码
-  __include: fuzhu_zrm    #可选辅助码有：fuzhu_kong，fuzhu_moqi, fuzhu_zrm, fuzhu_flypy, fuzhu_tiger, fuzhu_cj, fuzhu_wubi, fuzhu_jdh 选择一个填入
+  __include: fuzhu_zrm    #可选辅助码有：fuzhu_kong，fuzhu_moqi, fuzhu_zrm, fuzhu_flypy, fuzhu_tiger, fuzhu_cj, fuzhu_wubi, fuzhu_jdh  fuzhu_hanxin 选择一个填入
 pro_comment_format:           # 超级注释模块，子项配置 true 开启，false 关闭
   fuzhu_code: true            # 启用辅助码提醒，用于辅助输入练习辅助码，成熟后可关闭
   candidate_length: 1         # 候选词辅助码提醒的生效长度，0为关闭  但同时清空其它，应当使用上面开关来处理    
-  fuzhu_type: zrm             # 用于匹配对应的辅助码注释显示，基于默认词典的可选注释类型有：(moqi, flypy, zrm, jdh, cj, tiger, wubi, hx)选择一个填入，之所以单独列出是因为这里有更多的可配置性，而真正的辅助码默认只有7种
+  fuzhu_type: zrm             # 用于匹配对应的辅助码注释显示，基于默认词典的可选注释类型有：(tone, moqi, flypy, zrm, jdh, cj, tiger, wubi, hanxin)选择一个填入，之所以单独列出是因为这里有更多的可配置性，而真正的辅助码默认只有7种
   corrector: true              # 启用错音错词提醒，例如输入 geiyu 给予 获得 jǐ yǔ 提示
   corrector_type: "{comment}"  # 换一种显示类型，比如"({comment})" 
 ########################以下是方案配置######################################################
@@ -256,10 +256,12 @@ set_shuru_schema:
     *  **/模式：**  通过输入 /sx 快捷输入关于“数学”的特殊符号，具体能输入什么可以打开 symbols.yaml学习。
     * **计算器：**  通过输入大写V引导继续输入如：V3+5  候选框就会有8和3+5=8，基础功能 `+ - * / % ^` 还支持 `sin(x) cos(x)` 等众多运算方式 [点击全面学习](https://github.com/gaboolic/rime-shuangpin-fuzhuma/blob/main/md/calc.md)
     * **自动上屏：**  例如：三位、四位简码唯一时，自动上屏如`jjkw岌岌可危` `zmhu怎么回事` 。默认未开启，方案文件中`speller:`字段下取消注释这两句开启 `#  auto_select: true  #  auto_select_pattern: ^[a-z]+/|^[a-df-zA-DF-Z]\w{3}|^e\w{4}`
-    * **错音错字提示：**  例如：输入`gei yu给予`，获得`jǐ yǔ`提示，此功能与双拼类型无关全部支持
-    * **辅助码提示：** 任意长度候选词的辅助码提示能力，默认开启1个字的辅助码，Ctrl+q开启和关闭辅助码，Ctrl+p墨奇专属拆字辅助
-    * **Tab循环切换音节：**  当输入多个字词时想要给前面补充辅助码，可以多次按下tab循环切换，这种可能比那些复杂的快捷键好用一些
+    * **错音错字提示：**  例如：输入`gei yu给予`，获得`jǐ yǔ`提示，此功能与双拼类型无关全部支持；
+    * **辅助码提示：** 任意长度候选词的辅助码提示能力，默认开启1个字的辅助码，Ctrl+q开启和关闭辅助码，Ctrl+p墨奇专属拆字辅助，Ctrl+z自然码拆分辅助，这些都是共用配置可在开关中按自己需求配置，保留一个；
+    * **音调显示：** 在辅助码配置中有tone这一参数，可以将音调拼音显示到注释里，通过Ctrl+w可以使得输入码显示全拼并加音调；
+    * **Tab循环切换音节：**  当输入多个字词时想要给前面补充辅助码，可以多次按下tab循环切换，这种可能比那些复杂的快捷键好用一些；
     * **翻译模式：**  输入状态按下Ctrl+E快捷键进入翻译模式，原理是opencc查表进行中英文互译，能否翻译取决于词表的丰富度；
+    * **反查：** 支持az、ab引导状态下的显示格式化，az是部件组字，ab是笔画组字。
     * 更多功能可以编辑方案文件依据注释说明开启
     
 5. **墨奇音形:**

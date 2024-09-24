@@ -18,6 +18,7 @@
 
 -- 定义 fuzhu_type 与匹配模式的映射表
 local patterns = {
+    tone = "([^;]*);",
     moqi = "[^;]*;([^;]*);",
     flypy = "[^;]*;[^;]*;([^;]*);",
     zrm = "[^;]*;[^;]*;[^;]*;([^;]*);",
@@ -206,6 +207,8 @@ function ZH.func(input, env)
         env.is_radical_mode = false  -- 当输入被清空时，退出部件拆字模式
     elseif context.input:find("^az") then
         env.is_radical_mode = true  -- 当输入以 "az" 开头时，激活部件拆字模式
+    elseif context.input:find("^ab") then
+        env.is_radical_mode = true  -- 当输入以 "ab" 开头时，激活笔画组字模式
     else
         env.is_radical_mode = false  -- 其他情况退出模式
     end

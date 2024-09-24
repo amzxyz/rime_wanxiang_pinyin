@@ -10,8 +10,7 @@ set_algebra_fuzhu:        #配置此项就是选择什么辅助码
   __include: fuzhu_zrm    #可选辅助码有：fuzhu_kong，fuzhu_moqi, fuzhu_zrm, fuzhu_flypy, fuzhu_tiger, fuzhu_cj, fuzhu_wubi, fuzhu_jdh, fuzhu_hanxin 选择一个填入
 pro_comment_format:           # 超级注释模块，子项配置 true 开启，false 关闭
   candidate_length: 1         # 候选词辅助码提醒的生效长度，0为关闭  但同时清空其它，应当使用上面开关来处理    
-  fuzhu_type: zrm             # 用于匹配对应的辅助码注释显示，基于默认词典的可选注释类型有：(moqi, flypy, zrm, jdh, cj, tiger, wubi, hanxin)选择一个填入，之所以单独列出是因为这里有更多的可配置性，而真正的辅助码默认只有7种
-  corrector: true              # 启用错音错词提醒，例如输入 geiyu 给予 获得 jǐ yǔ 提示
+  fuzhu_type: zrm             # 用于匹配对应的辅助码注释显示，基于默认词典的可选注释类型有：( moqi, flypy, zrm, jdh, cj, tiger, wubi, hanxin) tone (这个参数特殊，在注释里显示声调，不算辅助码，也填入此处)选择一个填入，之所以单独列出是因为这里有更多的可配置性，而真正的辅助码默认只有8种
   corrector_type: "{comment}"  # 换一种显示类型，比如"({comment})" 
 ########################以下是方案配置######################################################
 
@@ -19,7 +18,7 @@ pro_comment_format:           # 超级注释模块，子项配置 true 开启，
 schema:
   schema_id: wanxiang
   __include: schema_name
-  version: "2024-08-05"
+  version: "2024-09-30"
   author:
     - gaboolic,amzxyz
   description: |
@@ -45,17 +44,15 @@ switches:
   - name: emoji
     states: [ 💀, 😄 ]
     reset: 1
-  - name: pinyinhint
-    states: [ 🔇, 🔊 ]
+  - name: tone_display
+    states: [ 调, 音 ]
+    reset: 0
   - name: fuzhu_switch
     states: [ 助, 辅 ]
-  - name: zrm_chaifen
-    states: [ 然, 自 ]
-  - name: moqi_chaifen
-    states: [ 奇, 墨 ]
-#  - name: prediction
-#    states: [ 测, 预 ]
-#    reset: 1
+#  - name: zrm_chaifen
+#    states: [ 然, 自 ]
+#  - name: moqi_chaifen
+#    states: [ 奇, 墨 ]
 #  - name: search_single_char  # search.lua 的功能开关，辅码查词时是否单字优先
 #    abbrev: [词, 单]
 #    states: [正常, 单字]
@@ -64,7 +61,6 @@ switches:
 # 输入引擎
 engine:
   processors:
-#    - predictor     #上屏预测组件
 #    - lua_processor@select_character          # 以词定字，有了辅助码了，想开启可以注释掉
     - lua_processor@*cold_word_drop.processor
     - ascii_composer
@@ -81,6 +77,7 @@ engine:
     - matcher
     - abc_segmentor
     - affix_segmentor@radical_lookup  # 部件拆字自定义 tag
+    - affix_segmentor@reverse_stroke  #笔画反查
     - punct_segmentor
     - fallback_segmentor
   translators:
@@ -96,6 +93,7 @@ engine:
     - table_translator@cn_en            # 中英混合词汇
     - table_translator@chengyu            # 简码成语
     - table_translator@radical_lookup   # 部件拆字反查
+    - table_translator@reverse_stroke   #笔画反查
     - lua_translator@*force_gc          # 暴力 GC 降低内存
   filters:
     - lua_filter@*cold_word_drop.filter
@@ -104,6 +102,7 @@ engine:
     - lua_filter@*pin_cand_filter                   # 置顶候选项（顺序要求：置顶候选项 > Emoji > 简繁切换）
     - lua_filter@*reduce_english_filter             # 降低部分英语单词在候选项的位置
     - reverse_lookup_filter@radical_reverse_lookup  # 部件拆字滤镜，放在pro_comment_format前面，进一步被超级注释处理以获得拼音编码+辅助码的提示
+    - lua_filter@*pro_preedit_format                #输入码显示全拼并带上音调
     - simplifier@emoji                              # Emoji
     - simplifier@traditionalize                     # 简繁切换
     - simplifier@mars                               #火星文
@@ -289,12 +288,6 @@ zrm_chaifen:
   show_in_comment: true
   comment_format:
     - "xform/	/ /"
-#显示汉字读音，支持多音字
-pinyinhint:
-  option_name: pinyinhint
-  opencc_config: pinyinhint.json
-  tips: char
-  show_in_comment: true
 
 # 简繁切换
 traditionalize:
@@ -325,17 +318,25 @@ radical_lookup:
   enable_user_dict: false
   prefix: "az"  # 反查前缀（反查时前缀会消失影响打英文所以设定为两个字母，或可改成一个非字母符号），与 recognizer/patterns/radical_lookup 匹配
   tips: "  〔部件组字〕"
-  comment_format: #{comment}
+  comment_format:  #{comment}
     - erase/^.*$//
+
+reverse_stroke:
+  tag: reverse_stroke
+  dictionary: stroke 
+  db_class: stabledb
+  enable_completion: true
+  prefix: "ab"
+  suffix: "'"
+  tips: 〔笔画 hspnz〕 
+  preedit_format:
+    - xlit/hspnz/一丨丿丶乙/
+
 # 部件拆字滤镜
 radical_reverse_lookup:
-  tags: [ radical_lookup ]
-  # dictionary 为拼音标注来源。目前是显示本方案词库的注音，可去部件拆字方案下载更全的、带声调的、已编译好的词典
-  # https://github.com/mirtlecn/rime-radical-pinyin?tab=readme-ov-file#%E5%8F%8D%E6%9F%A5%E5%B8%A6%E5%A3%B0%E8%B0%83%E6%B3%A8%E9%9F%B3
-  dictionary: wanxiang
-  comment_format:     # 自定义 comment，例如在左右加上括号
-    - xform/^/(/
-    - xform/$/)/
+  tags: [ radical_lookup,reverse_stroke ]
+  overwrite_comment: true
+  dictionary: wanxiang #带音调的词典
 
 # 处理符合特定规则的输入码，如网址、反查
 recognizer:
@@ -343,6 +344,7 @@ recognizer:
   patterns:  # 再增加方案专有的：
     punct: "^/([0-9]|10|[A-Za-z]+)$"    # 响应 symbols.yaml 的 symbols
     radical_lookup: "^az[a-z]+$"        # 响应部件拆字的反查，与 radical_lookup/prefix 匹配
+    reverse_stroke: "^ab[A-Za-z]*$"     #响应笔画反查，与reverse_stroke/prefix 匹配
     unicode: "^U[a-f0-9]+"              # 脚本将自动获取第 2 个字符 U 作为触发前缀，响应 lua_translator@unicode，输出 Unicode 字符
     number: "^R[0-9]+[.]?[0-9]*"        # 脚本将自动获取第 2 个字符 R 作为触发前缀，响应 lua_translator@number_translator，数字金额大写
     gregorian_to_lunar: "^N[0-9]{1,8}"  # 脚本将自动获取第 2 个字符 N 作为触发前缀，响应 lua_translator@lunar，公历转农历，输入 N20240115 得到「二〇二三年腊月初五」
@@ -363,40 +365,13 @@ key_binder:
     - { when: has_menu, accept: "Control+z", toggle: zrm_chaifen }
 #使用快捷键Control+q开启和关闭辅助码显示
     - { when: has_menu, accept: "Control+q", toggle: fuzhu_switch }
-#    - { when: composing, accept: "Control+o", toggle: "fuzhu_type_switch" }
+    - { when: composing, accept: "Control+w", toggle: "tone_display" }
 # 使用 tab 在不同音节之间跳转
     - { when: has_menu, accept: "Tab", send: "Control+Right" }
     - { when: composing, accept: "Tab", send: "Control+Right" }
 #通过stick.lua显示到注释里，用来上屏带/的简码词汇。最好是用句号，这样可以与手机上可以做同样的定义，保持同样的习惯
 #    - { match: "[a-z]{1,3}", accept: ".",  send_sequence: "/1" } 
-#使用大写字母追加输入到上一个音节末尾
-    - { when: has_menu, accept: Shift+A, send_sequence: "{Control+Left}a{Control+Right}" }
-    - { when: has_menu, accept: Shift+B, send_sequence: "{Control+Left}b{Control+Right}" }
-    - { when: has_menu, accept: Shift+C, send_sequence: "{Control+Left}c{Control+Right}" }
-    - { when: has_menu, accept: Shift+D, send_sequence: "{Control+Left}d{Control+Right}" }
-    - { when: has_menu, accept: Shift+E, send_sequence: "{Control+Left}e{Control+Right}" }
-    - { when: has_menu, accept: Shift+F, send_sequence: "{Control+Left}f{Control+Right}" }
-    - { when: has_menu, accept: Shift+G, send_sequence: "{Control+Left}g{Control+Right}" }
-    - { when: has_menu, accept: Shift+H, send_sequence: "{Control+Left}h{Control+Right}" }
-    - { when: has_menu, accept: Shift+I, send_sequence: "{Control+Left}i{Control+Right}" }
-    - { when: has_menu, accept: Shift+J, send_sequence: "{Control+Left}j{Control+Right}" }
-    - { when: has_menu, accept: Shift+K, send_sequence: "{Control+Left}k{Control+Right}" }
-    - { when: has_menu, accept: Shift+L, send_sequence: "{Control+Left}l{Control+Right}" }
-    - { when: has_menu, accept: Shift+M, send_sequence: "{Control+Left}m{Control+Right}" }
-    - { when: has_menu, accept: Shift+N, send_sequence: "{Control+Left}n{Control+Right}" }
-    - { when: has_menu, accept: Shift+O, send_sequence: "{Control+Left}o{Control+Right}" }
-    - { when: has_menu, accept: Shift+P, send_sequence: "{Control+Left}p{Control+Right}" }
-    - { when: has_menu, accept: Shift+Q, send_sequence: "{Control+Left}q{Control+Right}" }
-    - { when: has_menu, accept: Shift+R, send_sequence: "{Control+Left}r{Control+Right}" }
-    - { when: has_menu, accept: Shift+S, send_sequence: "{Control+Left}s{Control+Right}" }
-    - { when: has_menu, accept: Shift+T, send_sequence: "{Control+Left}t{Control+Right}" }
-    - { when: has_menu, accept: Shift+U, send_sequence: "{Control+Left}u{Control+Right}" }
-    - { when: has_menu, accept: Shift+V, send_sequence: "{Control+Left}v{Control+Right}" }
-    - { when: has_menu, accept: Shift+W, send_sequence: "{Control+Left}w{Control+Right}" }
-    - { when: has_menu, accept: Shift+X, send_sequence: "{Control+Left}x{Control+Right}" }
-    - { when: has_menu, accept: Shift+Y, send_sequence: "{Control+Left}y{Control+Right}" }
-    - { when: has_menu, accept: Shift+Z, send_sequence: "{Control+Left}z{Control+Right}" }
-    - { when: has_menu, accept: Shift+BackSpace, send_sequence: "{Control+Left}{BackSpace}{Control+Right}" }
+
 
 
 
@@ -422,6 +397,7 @@ algebra_pinyin:
 algebra_zrm: 
   __append:
     #- erase/^xx;.*$/
+    - xlit/āáǎàōóǒòēéěèīíǐìūúǔùǖǘǚǜü/aaaaooooeeeeiiiiuuuuvvvvv/
     - derive/^([jqxy])u(;.*)$/$1v$2/
     - derive/^([aoe])([ioun])(;.*)$/$1$1$2$3/
     - xform/^([aoe])(ng)?(;.*)$/$1$1$2$3/
@@ -455,6 +431,7 @@ algebra_zrm:
 algebra_flypy: 
   __append:
     #- erase/^xx$/
+    - xlit/āáǎàōóǒòēéěèīíǐìūúǔùǖǘǚǜü/aaaaooooeeeeiiiiuuuuvvvvv/
     - derive/^([jqxy])u(;.*)$/$1v$2/
     - derive/^([aoe])([ioun])(;.*)$/$1$1$2$3/
     - xform/^([aoe])(ng)?(;.*)$/$1$1$2$3/
@@ -487,6 +464,7 @@ algebra_flypy:
     - xlit/ⓆⓌⓇⓉⓎⓊⒾⓄⓅⓈⒹⒻⒼⒽⒿⓀⓁⓏⓍⒸⓋⒷⓃⓂ/qwrtyuiopsdfghjklzxcvbnm/
 algebra_mspy: 
   __append:
+    - xlit/āáǎàōóǒòēéěèīíǐìūúǔùǖǘǚǜü/aaaaooooeeeeiiiiuuuuvvvvv/
     - derive/^([jqxy])u(;.*)$/$1v$2/
     - derive/^([aoe].*)(;.*)$/o$1$2/
     - xform/^([ae])(.*)(;.*)$/$1$1$2$3/
@@ -522,6 +500,7 @@ algebra_mspy:
     - xlit/ⓆⓌⓇⓉⓎⓊⒾⓄⓅⓈⒹⒻⒼⒽⓂⒿⒸⓀⓁⓏⓍⓋⒷⓃ/qwrtyuiopsdfghmjcklzxvbn/
 algebra_sogou: 
   __append:
+    - xlit/āáǎàōóǒòēéěèīíǐìūúǔùǖǘǚǜü/aaaaooooeeeeiiiiuuuuvvvvv/
     - derive/^([jqxy])u(;.*)$/$1v$2/
     - derive/^([aoe].*)(;.*)$/o$1$2/
     - xform/^([ae])(.*)(;.*)$/$1$1$2$3/
@@ -556,6 +535,7 @@ algebra_sogou:
     - xlit/ⓆⓌⓇⓉⓎⓊⒾⓄⓅⓈⒹⒻⒼⒽⓂⒿⒸⓀⓁⓏⓍⓋⒷⓃ/qwrtyuiopsdfghmjcklzxvbn/
 algebra_ziguang: 
   __append:
+    - xlit/āáǎàōóǒòēéěèīíǐìūúǔùǖǘǚǜü/aaaaooooeeeeiiiiuuuuvvvvv/
     - derive/^([jqxy])u(;.*)$/$1v$2/
     - xform/^([aoe].*)(;.*)$/Ⓞ$1$2/  # 添上固定的零聲母o，先標記爲大寫O
     - xform/^(\w+?)en(;.*)$/$1Ⓦ$2/
@@ -588,6 +568,7 @@ algebra_ziguang:
     - xlit/ⓌⓉⓎⓊⒾⓄⓅⒶⒼⓈⒹⒻⒽⒿⓀⓁⓏⓍⒷⓃⓂⓆⓇ/wtyuiopagsdfhjklzxbnmqr/
 algebra_abc: 
   __append:
+    - xlit/āáǎàōóǒòēéěèīíǐìūúǔùǖǘǚǜü/aaaaooooeeeeiiiiuuuuvvvvv/
     - xform/^([aoe].*)(;.*)$/Ⓞ$1$2/
     - xform/^(\w+?)ei(;.*)$/$1Ⓠ$2/
     - xform/^(\w+?)ian(;.*)$/$1Ⓦ$2/
