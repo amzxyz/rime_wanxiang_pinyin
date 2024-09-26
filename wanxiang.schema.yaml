@@ -46,7 +46,6 @@ switches:
     reset: 1
   - name: tone_display
     states: [ 调, 音 ]
-    reset: 0
   - name: fuzhu_switch
     states: [ 助, 辅 ]
 #  - name: zrm_chaifen
