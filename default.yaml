@@ -8,8 +8,6 @@ config_version: '2024-08-05'
 
 # 方案列表
 schema_list:
-  # 可以直接删除或注释不需要的方案，对应的 *.schema.yaml 方案文件也可以直接删除
-  # 除了 t9，它依赖于 rime_amz，用九宫格别删 rime_amz.schema.yaml
   - schema: wanxiang          # 自然码双拼
 
 
@@ -32,7 +30,6 @@ switcher:
     - emoji
     - tone_display
     - fuzhu_switch
-    - zrm_chaifen
     - full_shape
     - search_single_char
   fold_options: true            # 呼出时是否折叠，多方案时建议折叠 true ，一个方案建议展开 false
