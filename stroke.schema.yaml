@@ -1,0 +1,39 @@
+# Rime schema settings
+# encoding: utf-8
+
+schema:
+  schema_id: stroke
+  name: "反查：五笔画"
+  version: "0.5"
+  author:
+    - amzxyz
+  description: |
+    五笔画
+    h,s,p,n,z 代表橫、竖、撇、捺、折
+
+engine:
+  processors:
+    - ascii_composer
+    - recognizer
+    - key_binder
+    - speller
+    - punctuator
+    - selector
+    - navigator
+    - express_editor
+  segmentors:
+    - abc_segmentor
+  translators:
+    - punct_translator
+    - table_translator
+
+speller:
+  alphabet: "abcdefghijklmnopqrstuvwxyz"
+  delimiter: " '"
+
+translator:
+  dictionary: stroke
+  enable_user_dict: false
+
+key_binder:
+  __include: default:/key_binder?

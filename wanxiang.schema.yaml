@@ -25,7 +25,8 @@ schema:
     万象拼音 支持常见双拼方案和全拼输入，辅助码同时支持墨奇;鹤形;自然码;简单鹤;仓颉首末;虎码首末;五笔前2;汉心码；采用万象归一的词库，换方案不换词库，不丢失用户词！
   dependencies:
     - melt_eng        # 英文输入，作为次翻译器挂载到拼音方案
-    - radical_pinyin  # 部件拆字，反查及辅码
+    - radical_pinyin  # 反查：部件拆字，反查及辅码
+    - stroke          #反查：笔画组字
 
 
 # 开关
@@ -363,8 +364,8 @@ key_binder:
     - { when: has_menu, accept: "Control+m", toggle: moqi_chaifen }
     - { when: has_menu, accept: "Control+z", toggle: zrm_chaifen }
 #使用快捷键Control+q开启和关闭辅助码显示
-    - { when: has_menu, accept: "Control+q", toggle: fuzhu_switch }
-    - { when: composing, accept: "Control+w", toggle: "tone_display" }
+    - { when: has_menu, accept: "Control+a", toggle: fuzhu_switch }
+    - { when: composing, accept: "Control+s", toggle: "tone_display" }
 # 使用 tab 在不同音节之间跳转
     - { when: has_menu, accept: "Tab", send: "Control+Right" }
     - { when: composing, accept: "Tab", send: "Control+Right" }
