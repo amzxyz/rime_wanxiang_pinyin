@@ -1,5 +1,5 @@
 ### 万象拼音  源于[飞声词库](https://github.com/amzxyz/rime_feisheng_dict) 这是一种带音调的词库，具体可以跳转了解优势，结合中英文混输，一个套词库，多种用法
-**万象系列方案：** [万象基础版本](https://github.com/amzxyz/rime_feisheng_dict)  [同文定制版本](https://github.com/amzxyz/wanxiang_wanxiang)
+**万象系列方案：** 本方案为万象增强版 [万象基础版本](https://github.com/amzxyz/rime_feisheng_dict)  [同文定制版本](https://github.com/amzxyz/wanxiang_wanxiang)
 #### 词库词语全部加音调，设计8种辅助码，头部使用全拼编码，可以转化为任何双拼编码，词库解码顺序为：全拼拼音；墨奇;鹤形;自然码;简单鹤;仓颉首末;虎码首末;五笔前2;汉心码，因此万象拼音支持拼音和辅助码任意两两组合。
 
 #### 使用方法：
