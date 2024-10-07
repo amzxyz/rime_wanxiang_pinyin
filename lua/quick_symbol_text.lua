@@ -7,7 +7,6 @@
 -- 方案文件配置,
 -- recognizer/patterns/quick_symbol: "^'.*$"
 -- recognizer/patterns/quick_text: "^;.*$"
-
 -- 定义符号映射表
 local mapping = {
     q = "“",
@@ -42,13 +41,20 @@ local mapping = {
 local last_commit_symbol = ""  -- 存储符号的上屏历史
 local last_commit_text = ""    -- 存储文本（汉字/字母）的上屏历史
 
--- 判断字符是否为符号
+-- 判断字符是否为符号，包括半角和全角符号
 local function is_symbol(char)
-    local symbols = "!@#$%^&*()-_=+[]{}\\|;:'\",.<>/?`~"
-    return string.find(symbols, char) ~= nil
+    -- 检测半角符号范围
+    if string.match(char, "[!@#$%%%^&*()%-_=+%[%]{}\\|;:'\",.<>/?`~]") then
+        return true
+    end
+    -- 检测全角符号范围
+    if string.match(char, "[！＠＃＄％＾＆＊（）＿＋－＝［］｛｝；：‘’“”、，。／？｀～]") then
+        return true
+    end
+    return false
 end
 
--- 判断上屏内容是符号还是文本
+-- 判断上屏内容是符号还是文本（汉字/字母）
 local function classify_commit_text(commit_text)
     -- 如果上屏内容中全是符号，则认为是符号
     if commit_text and #commit_text > 0 then
@@ -97,10 +103,10 @@ end
 
 -- 捕获符号键盘事件并记录符号
 local function capture_symbol_key(key_event)
-    -- 读取键盘字符
-    local keychar = key_event:repr()  -- 获取按键字符表示
+    -- 获取按键字符表示
+    local keychar = key_event:repr()
 
-    -- 判断该字符是否为符号
+    -- 判断该字符是否为符号（半角或全角）
     if is_symbol(keychar) then
         return keychar  -- 返回符号字符
     end
@@ -113,15 +119,6 @@ local function processor(key_event, env)
     local engine = env.engine
     local context = engine.context
     local input = context.input  -- 当前输入的字符串
-
-    -- 检查键盘事件是否是符号输入
-    local symbol_input = capture_symbol_key(key_event)
-    if symbol_input then
-        engine:commit_text(symbol_input)  -- 上屏符号
-        last_commit_symbol = symbol_input  -- 保存符号到 last_commit_symbol
-        context:clear()  -- 清空输入
-        return 1  -- 捕获事件，处理完成
-    end
 
     -- 1. 检查是否输入的编码为双引导符 ;;，用于汉字或字母重复上屏
     if string.match(input, env.double_symbol_pattern_text) then
@@ -159,9 +156,4 @@ end
 
 -- 导出到 RIME
 return { init = init, func = processor }
-
-
-
-
-
 
