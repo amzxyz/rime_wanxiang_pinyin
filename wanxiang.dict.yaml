@@ -22,6 +22,8 @@ import_tables:
   - cn_dicts/base     # 基础词库
   - cn_dicts/ext1      # 扩展词库1
   - cn_dicts/ext2      # 扩展词库2
+  - cn_dicts/ext3      # 扩展词库3
+  - cn_dicts/ext4      # 扩展词库4
   - cn_dicts/corrections   # 一般性容错码，同时支持错音和错字编码正确提示供超级注释lua使用
   - cn_dicts/others   # 
 ...
