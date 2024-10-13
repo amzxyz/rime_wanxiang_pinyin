@@ -246,7 +246,7 @@ sort: by_weight
 䍩	ang;yw;;yw;;tk;gh;ud;;	0
 䒢	áng;ce;;ca;;tl;lz;aq;;	0
 䩕	áng;ge;;ga;;tl;tz;af;;	0
-䬓	àn;fo;;fy;;ha;ox;mt;;	0
+䬓	ang;fo;;fy;;ha;ox;mt;;	0
 䭹	áng;me;;ma;;sl;nz;cq;;	0
 䭺	ǎng;mj;;mk;;sn;no;cy;;	0
 岇	áng;ue;;ue,uy;;ul;vz;mq;;	0
@@ -479,7 +479,7 @@ sort: by_weight
 䒔	bài;cb;;cb;;tc;lh;aw;;	0
 䙓	bǎi;pq;;yb;;li;tk;pu;;	0
 䢙	bài;zb;;zb;;yc;ou;mp;;	0
-䥯	bà;jb;;jb;;cp;zv;ql;;	0
+䥯	bai;jb;;jb;;cp;zv;ql;;	0
 䳆	bái;bn;;nb;;hf;ux;rw;;	0
 䴽	bai;lu;;mb;;jj;en;sw;;	0
 庍	bài;gj;;gj;;il;xt;yr;;	0
@@ -1204,7 +1204,7 @@ sort: by_weight
 𧏻	bì;if;;ib;;lj;cu;jj;;	0
 𧒀	bì;iw;;ib;;lk;ch;ju;;	0
 𧓄	bì;ix;;ib;;lj;cn;jn;;	0
-𧓎	pí;pi;;bk;;hi;uc;rt;;	0
+𧓎	bī;pi;;bk;;hi;uc;rt;;	0
 𧝬	bì;xy;;yb,by;;fv;ft;um;;	0
 𧤃	bī;dw;;jb;;nl;xl;qe;;	0
 𧥑	bì;gy;;hj,jh;;ib;pt;ak;;	0
@@ -1420,7 +1420,7 @@ sort: by_weight
 𩴩	biāo;gh;;gy;;hf;ac;rq;;	0
 𩽁	biāo;yh;;yb,yh;;nf;wc;qo;;	0
 別	bié;kd;;dd,dl;;rn;dp;kq;;	351
-柲	bì;mb;;mb;;dh;et;sn;;	4
+柲	bié;mb;;mb;;dh;et;sn;;	4
 彆	biè;xg;;gb,gw;;fn;fb;um;;	19
 莂	bié;cd;;cb;;tn;lp;ak;;	16
 蟞	biē;xi;;ib,iw;;fi;fc;um;;	8
@@ -1429,9 +1429,9 @@ sort: by_weight
 柭	biē;my;;mb;;de,dk;ei;sd;;	1
 癟	biě;bc;;bl;;kb;aj;ut;;	1
 蛂	bié;iy;;ib;;le,lk;ci;jd;;	1
-㓖	bì;df;;db;;ij;wu;uj;;	0
+㓖	bie;df;;db;;ij;wu;uj;;	0
 㢼	biè;gx;;gb;;nf;bf;xu;;	0
-㱸	bì;dx;;db;;mj;gn;gq;;	0
+㱸	bie;dx;;db;;mj;gn;gq;;	0
 㲢	bie;hm;;mb;;iu;mv;yn;;	0
 㿜	biě;bc;;by;;kb;ad;ut;;	0
 䇷	bié;vd;;vb;;hn;rp;tk;;	0
@@ -1554,7 +1554,7 @@ sort: by_weight
 寎	bìng;bn;;bb;;jb;wj;pn;;	1
 窉	bǐng;bn;;xb,bb;;jb;ej;pw;;	1
 陃	bǐng;en;;eb;;nb;tj;bg;;	1
-梹	bīn;mb;;mb;;dc;eh;sr;;	1
+梹	bīng;mb;;mb;;dc;eh;sr;;	1
 鋲	bīng;jb;;jb;;cc;zh;qr;;	1
 㓈	bìng;du;;du;;ir;wm;ud;;	0
 㨀	bǐng;fr;;fb;;ql;ub;rt;;	0
@@ -1569,12 +1569,12 @@ sort: by_weight
 庰	bìng;gk;;gb;;it;xl;yu;;	0
 怲	bǐng;xn;;xb;;pb;hj;ng;;	0
 栤	bìng;mu;;mb;;de;ek;su;;	0
-檳	bīn;mb;;mb;;dc;eo;sp;;	0
+檳	bīng;mb;;mb;;dc;eo;sp;;	0
 琕	bǐng;wu;;wb;;mj;nn;gr;;	0
 眪	bǐng;on;;ob;;bb;qj;hg;;	0
 絣	bīng;sk;;sb;;vt;il;xu;;	0
 誁	bìng;yk;;yb;;yt;sl;yu;;	0
-鞸	bì;gf;;gb;;tj;tu;af;;	0
+鞸	bǐng;gf;;gb;;tj;tu;af;;	0
 鮩	bìng;yk;;yb;;nt;wl;qo;;	0
 𠊧	bìng;ry;;rb;;oc;jc;wu;;	0
 𠒝	bǐng;gn;;gb;;fb;mj;iq;;	0
@@ -1939,7 +1939,7 @@ sort: by_weight
 扐	cái;fl;;fl;;qs;us;rl;;	1
 㒲	cái;ro;;ro;;oa;jo;ty;;	0
 㥒	cǎi;xc;;xc;;pd;he;ne;;	0
-䌨	cā;su;;sc;;vf;if;xa;;	0
+䌨	cài;su;;sc;;vf;if;xa;;	0
 䌽	cǎi;sc;;sc;;vd;ie;xe;;	0
 䐆	cǎi;oc;;oc;;bd;ve;ee;;	0
 䞗	cāi;tc;;zc;;gh;pt;fh;;	0
@@ -2343,14 +2343,14 @@ sort: by_weight
 㾹	chái;bm;;bi;;kd;ae;uh;;	0
 䓱	chái;cm;;ci;;td;le;ah;;	0
 䘍	chài;ci;;wk;;ti;lc;aj;;	0
-䡨	chà;yi;;ii;;tj;gy;ud;;	0
+䡨	chai;yi;;ii;;tj;gy;ud;;	0
 喍	chái;km;;ki;;rd,xd;de;kh;;	0
 囆	chài;ki;;ki;;ri,xi;dc;ka;;	0
-肞	chā;oi;;oi;;bi,bk,xk;vb;ec;;	0
+肞	chai;oi;;oi;;bi,bk,xk;vb;ec;;	0
 芆	chāi;ci;;ci;;ti,tk;li;ac;;	0
 袃	chài;qy;;yq;;pv;rt;av;;	0
 訍	chài;yi;;yi;;yi;si;yc;;	0
-𠞊	chā;yd;;id;;tn;gp;ud;;	0
+𠞊	chāi;yd;;id;;tn;gp;ud;;	0
 𡟭	chái;nx;;nx;;vj;bn;vn;;	0
 𡺵	chái;uc;;ui;;uh;vt;me;;	0
 𢹓	chāi;fx;;fv;;qf;uy;ry;;	0
@@ -2943,7 +2943,7 @@ sort: by_weight
 㼩	chéng;iw;;wi;;in;nr;dn;;	0
 䀕	cheng;ol;;oy;;bl;qg;hx;;	0
 䁎	chéng;od;;ot;;bn;qa;hy;;	0
-䁤	chè;og;;od;;bb;qc;hu;;	0
+䁤	cheng;og;;od;;bb;qc;hu;;	0
 䄇	chéng;pw;;ui;;ig;fn;py;;	0
 䆑	chéng;bd;;xd;;jn;ea;pw;;	0
 䆵	chéng;bo;;xc;;ja;eo;pw;;	0
@@ -2966,7 +2966,7 @@ sort: by_weight
 悜	chěng;xw;;xi;;pg;hn;nk;;	0
 憆	chēng;xt;;xt;;pg;hg;ni;;	0
 挰	chéng;fw;;fi;;qg;un;rk;;	0
-揨	chén;fd;;ft;;qn;ua;ry;;	0
+揨	cheng;fd;;ft;;qn;ua;ry;;	0
 摚	chēng;ft;;ft;;qg;ug;ri;;	0
 撜	chéng;fb;;fd;;qt;uz;rw;;	0
 晿	cheng;oo;;oi;;aa,xa;oo;jj;;	0
@@ -3058,7 +3058,7 @@ sort: by_weight
 蚳	chí;iu;;id;;lm,li;ci;jq;;	6
 奓	chǐ;dx;dx;dd;xf;kn;ml;dq;dx;	0
 鶒	chì;un;;nl,un;;df;xx;gk;;	0
-柢	dǐ;mu;md;md;wh;dm,di;ei;sq;ld;	0
+柢	chí;mu;md;md;wh;dm,di;ei;sq;ld;	0
 鶗	chí;on;;nu,un;;af;ox;jg;;	2
 柅	chì;mb;;mn;;dp;ev;sn;;	2
 遟	chí;zx;;zx;;yj;cu;nu;;	4
@@ -3563,7 +3563,7 @@ sort: by_weight
 埱	chù;ty;;tu;;ge;gr;fh;;	0
 媰	chú;nc;;nc,ni;;vu;bs;vq;;	0
 幮	chú;jc;;jc,ji;;li;rk;mh;;	0
-摢	hù;fh;;fh;;qd;un;rh;;	0
+摢	chū;fh;;fh;;qd;un;rh;;	0
 榋	chu;me;;mx;;ds;eb;sv;;	0
 橻	chu;mi;;mi;;dg;eg;sn;;	0
 檚	chǔ;mz;;mi;;do;et;ss;;	0
@@ -3893,7 +3893,7 @@ sort: by_weight
 䃗	chuo;ud;;ub;;mn;mp;dv;;	0
 䄪	chuo;hu;;hu;;hi;xi;tq;;	0
 䆯	chuo;bn;;vn;;jv;eb;pw;;	0
-䇍	chù;lz;;lz;;yo;ip;uk;;	0
+䇍	chuo;lz;;lz;;yo;ip;uk;;	0
 䋘	chuò;sl;;sl;;vd;ia;xd;;	0
 䍳	chuò;yy;;yv;;te;gr;ud;;	0
 䓎	chuò;cu;;cv;;ti;li;ao;;	0
@@ -3906,7 +3906,7 @@ sort: by_weight
 磭	chuò;uo;;ui,uo,uy;;mb;mv;dd;;	0
 箹	chuò;vu;;vy;;hi;ri;tx;;	0
 繛	chuò;fu;;sv,vs;;qj;an;gx;;	0
-踀	chù;zz;;zz;;ro;pp;kh;;	0
+踀	chuo;zz;;zz;;ro;pp;kh;;	0
 輟	chuò;iy;;iu,iv;;je;yr;lc;;	0
 酫	chuò;yw;;yq;;mg;yn;sg;;	0
 餟	chuo;uy;;uu,uv;;oe;qr;wp,wy;;	0
@@ -3918,7 +3918,7 @@ sort: by_weight
 𣤌	chuò;yk;;qv,qk,vq;;eo;re;cc;;	0
 𣬋	chuò;db;;bs,pb;;np;xv;ql;;	0
 𤿫	chuò;bp;;pd,dp;;ce;hr;uk;;	0
-𥁯	chù;zm;;mz,zm;;rt;pa;kh;;	0
+𥁯	chuò;zm;;mz,zm;;rt;pa;kh;;	0
 𥓑	chuò;ud;;uu;;mn;mp;dq;;	0
 𦁶	chuò;sr;;sg;;vo;ij;xy;;	0
 𧣺	chuò;du;;jv;;nj;xn;qe;;	0
@@ -4159,7 +4159,7 @@ sort: by_weight
 𦺀	còu;cf;;cf;;to;lh;as;;	0
 𧡣	cóu;hj;;jq,qj;;hu;xe;to;;	0
 𧱪	còu;ut;;uz;;mk;jm;ed;;	0
-𨓭	qǔ;zy;;zq;;ye;qu;bc;;	0
+𨓭	còu;zy;;zq;;ye;qu;bc;;	0
 𨨯	còu;jt;;jz;;ck;zm;qd;;	0
 𩹀	còu;yt;;yz;;nk;wm;qo;;	0
 𪉮	còu;vt;;lz,bz;;yk;ym;hl;;	0
@@ -4406,7 +4406,7 @@ sort: by_weight
 䟶	cuò;zr;;zz;;rg;pg;kh;;	0
 䠡	cuó;zq;;zq;;rm;pf;kh;;	0
 䣜	cuó;he;;ec;;yl;zt;ha;;	0
-䥘	cù;jo;;jo;;ca;zo;qw;;	0
+䥘	cuo;jo;;jo;;ca;zo;qw;;	0
 䰈	cuó;eg;;ii;;sm;pu;de;;	0
 䱜	cuò;yo;;yx;;na;wo;qo;;	0
 䴾	cuó;lg;;mi;;jm;eu;sw;;	0
@@ -4628,7 +4628,7 @@ sort: by_weight
 紞	dǎn;se;;sg,sy;;vu;ip;xp;;	4
 黕	dǎn;le;;hg,hy;;wu;pp;lf;;	4
 髧	dàn;ee;;ig,iy;;su;pp;de;;	3
-呾	dá;kd;;kd;;rm;df;kj;;	2
+呾	dàn;kd;;kd;;rm;df;kj;;	2
 褝	dān;pu;;yd;;lj;tn;pu;;	3
 僤	dàn;ru;;rd;;oj;jn;wk;;	2
 憚	dàn;xu;;xd;;pj;hn;nk;;	1
@@ -4719,7 +4719,7 @@ sort: by_weight
 𢋃	dǎn;gd;;gd;;im;xf;yy;;	0
 𢎪	dàn;gj;;gj;;nn;bo;xm;;	0
 𢑝	dān;ee;;xb;;su;bp;vv;;	0
-𢘇	dá;ox;;xd,dx;;ap;oh;jg;;	0
+𢘇	dàn;ox;;xd,dx;;ap;oh;jg;;	0
 𢻼	dǎn;by;;wy,pb;;le;wh;pq;;	0
 𣅟	dān;oe;;oy,ob;;au;op;jp;;	0
 𣋊	dàn;od;;od;;am;of;jy;;	0
@@ -4741,7 +4741,7 @@ sort: by_weight
 𥾚	dǎn;sj;;sr;;vn;io;xp;;	0
 𦅼	dān;sk;;sv;;vr;is;xq;;	0
 𦋪	dàn;sv;;sy;;wv;yu;lf;;	0
-𦬹	dá;cd;;cd;;tm;lf;aj;;	0
+𦬹	dàn;cd;;cd;;tm;lf;aj;;	0
 𦻁	dàn;cq;;ck;;to;le;aq;;	0
 𦽜	dàn;cj;;cj;;tx;lp;ap;;	0
 𦽫	dǎn;cx;;cg;;tp;lh;ad;;	0
@@ -5227,7 +5227,7 @@ sort: by_weight
 䓦	diǎn;cb;;cd;;tc;lh;am;;	0
 䟍	dián;tf;;zm;;gs;pl;fh;;	0
 䧃	dian;et;;et;;nw;tq;bl;;	0
-䩚	dì;gu;;gd;;ti;ti;af;;	0
+䩚	dian;gu;;gd;;ti;ti;af;;	0
 厧	diān;ib;;iv;;mc;xh;df;;	0
 壂	diàn;ut;;td,tu;;sg,xg;cg;na;;	0
 婝	diàn;nz;;nd;;vo,xo;bt;vp;;	0
@@ -6405,7 +6405,7 @@ sort: by_weight
 𪘐	è;vw;;iw;;yi;lp;hb;;	0
 𪙯	è;wr;;iw;;yu;zl;yd;;	0
 誒	éi;yu;;yy;;yk;so;yc;;	4
-𡅅	é;ky;;ke;;rc;dw;kp;;	0
+𡅅	éi;ky;;ke;;rc;dw;kp;;	0
 奀	ēn;bd;bd;bd;dx;mk;cm;gi;bd;	15
 煾	ēn;hx;;he;;fp;ch;ol;;	1
 䅰	ěn;hx;;he;;hp;xh;tl;;	0
@@ -6708,7 +6708,7 @@ sort: by_weight
 㧍	fǎng;ff;;ff;;qs;ul;ry;;	0
 㯐	fǎng;em;;ms;;nd;te;bd;;	0
 䄱	fāng;hf;;hf;;hs;xl;ty;;	0
-䉊	fàn;vi;;vi;;hj;ry;tc;;	0
+䉊	fang;vi;;vi;;hj;ry;tc;;	0
 䢍	fǎng;zf;;zf;;ys;lu;yp;;	0
 䦈	fang;eg;;iz;;sm;pu;dd;;	0
 䲱	fǎng;nf;;nf;;hs;xl;wv;;	0
@@ -7486,7 +7486,7 @@ sort: by_weight
 玍	gǎ;pw;;pw,rt;;og,xg;eg;tf;;	4
 嘠	gā;kg;;kg,kj;;ri;dp;kd;;	2
 釓	gá;jv;;jg;;cu;za;qn;;	2
-軋	yà;iv;;ig;;ju;ya;ln;;	1
+軋	gá;iv;;ig;;ju;ya;ln;;	1
 錷	gá;jv;;jv;;cu;za;ql;;	1
 朒	ga;or;or;or;le;bo;vj;em;or;	0
 魀	gà;gj;;gj;;hl;ap;rq;;	0
@@ -7588,7 +7588,7 @@ sort: by_weight
 佄	gàn;rg;;rg;;om;jz;wa;;	0
 凲	gān;jj;;jj;;hc;oc;mu;;	0
 尶	gān;wm;;wj;;mt;fa;gq;;	0
-玵	án;wg;;wg;;mm;nz;ga;;	0
+玵	gān;wg;;wg;;mm;nz;ga;;	0
 盰	gàn;og;;og;;bj;qe;hf;;	0
 篢	gǎn;vb;;vg;;hc;ro;ta;;	0
 粓	gān;mg;;mg;;fm;pz;oa;;	0
@@ -7928,7 +7928,7 @@ sort: by_weight
 㾘	gěng;bg;;bg;;kk;ab;ug;;	0
 䋁	gěng;sj;;sk;;vn;io;xy;;	0
 䌄	gěng;sy;;sg;;ve;ih;xg;;	0
-䨣	gé;yg;;yg;;mj;tt;fa;;	0
+䨣	geng;yg;;yg;;mj;tt;fa;;	0
 䱍	gèng;yh;;yg;;nm;wf;qo;;	0
 䱎	gèng;yd;;yg;;nm;wf;qo;;	0
 䱭	gèng;yh;;yh;;nm;wf;qo;;	0
@@ -8334,7 +8334,7 @@ sort: by_weight
 𩢍	guā;mg;;mg;;so;ny;cr;;	0
 𩻎	guā;yr;;yq;;nw;wj;qo;;	0
 𪇜	guá;cn;;nx,nh,cn;;tf;lx;ap;;	0
-罫	guà;sb;;sg;;wy;yy;lf;;	2
+罫	guǎi;sb;;sg;;wy;yy;lf;;	2
 恠	guài;xt;;xz;;pg;hg;nd;;	4
 柺	guǎi;ml;;ml;;ds;es;sk;;	3
 㧔	guài;fw;;fw;;qh;un;rd;;	0
@@ -8863,7 +8863,7 @@ sort: by_weight
 䂤	hai;uc;;uf;;mi;mk;dw;;	0
 䇋	hài;lx;;ld;;yn;il;uq;;	0
 䍖	hai;sb;;sb;;wu;yv;lq;;	0
-䠹	ái;ur;;uh;;ho;zk;tm;;	0
+䠹	hai;ur;;uh;;ho;zk;tm;;	0
 䠽	hái;ub;;uq;;ht;zz;tm;;	0
 䯐	hái;gr;;gr;;bo;fj;me;;	0
 䱺	hái;yb;;yq;;nt;wz;qo;;	0
@@ -9108,7 +9108,7 @@ sort: by_weight
 𩹼	hàn;uy;;yr,uy;;jf;nw;fj;;	0
 𩼉	hān;yt;;yd;;nw;wq;qo;;	0
 𩾝	hàn;ng;;ng;;hj;xe;wv;;	0
-𪁟	ān;rn;;nh,hn;;of;jx;wy;;	0
+𪁟	hàn;rn;;nh,hn;;of;jx;wy;;	0
 桁	háng;md;mi;mx;ws;dn;ep;st;ld;	0
 忼	hāng;xj;;xk;;pn;ho;ny;;	2
 迒	háng;zj;;zk;;yn;zu;ym;;	3
@@ -9672,7 +9672,7 @@ sort: by_weight
 𩶥	hóng;yi;;yi;;ni;wc;qo;;	0
 𪈘	hōng;cn;;nh,hn;;tf;lx;al;;	0
 後	hòu;rw;;xw;hj;he;wh;tx;rw;	4214
-吽	ōu;kn;kn;kn;ob;rq;dq;kr;kn;	0
+吽	hǒu;kn;kn;kn;ob;rq;dq;kr;kn;	0
 睺	hóu;ou;;oh;;bk;qo;hw;;	27
 犼	hǒu;qv;qv;qk;br;ku;ma;qt;qk;	15
 矦	hóu;du;;du,ui;;nk;xo;qd;;	8
@@ -10138,12 +10138,12 @@ sort: by_weight
 𩗐	huà;fm;;fm;;hd;op;mt;;	0
 𩝨	huā;ub;;uu,ua;;op;qv;wy;;	0
 𩤉	huá;mb;;mh;;sp;nv;ca;;	0
-𩨔	hú;jo;;gj;;kb;kf;vm;;	0
+𩨔	huá;jo;;gj;;kb;kf;vm;;	0
 𩲏	huà;rg;;gh,hg;;oi;ja;wx;;	0
 𩵏	huà;yb;;yb,yh;;np;wv;qo;;	0
 𩸄	huà;yg;;yg;;nd;we;qo;;	0
 𪗽	huá;vu;;iu;;yr;la;hb;;	0
-划	huà;gd;gd;dg,gd;ai;in;pp;aj;gd;	0
+划	huai;gd;gd;dg,gd;ai;in;pp;aj;gd;	0
 壞	huài;tx;;th,ty;;gv;gk;fy;;	68
 懷	huái;xx;;xh,xy;;pv;hk;ny;;	33
 壊	huài;ty;;ty;;gv;gt;ff;;	25
@@ -10223,7 +10223,7 @@ sort: by_weight
 㼫	huàn;gw;;wg;;wn;qr;js;;	0
 㿪	huán;pw;;pw;;di;ri;hc;;	0
 䀓	huàn;ow;;ow;;bi;qi;hv;;	0
-䀨	huà;ou;;ou;;br;qa;ht;;	0
+䀨	huan;ou;;ou;;br;qa;ht;;	0
 䁔	huan;oy;;oy;;be;qr;he;;	0
 䆠	huàn;bi;;xi;;jl;eq;pw;;	0
 䈠	huǎn;vy;;vy;;he;rr;te;;	0
@@ -10326,7 +10326,7 @@ sort: by_weight
 熿	huáng;hb;;hh;;fc;cn;oa;;	5
 騜	huáng;mw;;mh;;sg;nn;cr;;	4
 愰	huàng;xg;;xh;;pu;hm;nj;;	4
-汻	hǔ;dw;;dw;;ej;kn;it;;	2
+汻	huǎng;dw;;dw;;ej;kn;it;;	2
 鐄	huáng;jb;;jh;;cc;zn;qa;;	3
 巟	huāng;wi;;wi;;yu;fo;yn;;	3
 謊	huǎng;yi;;yh;;yu;so;ya;;	2
@@ -10515,7 +10515,7 @@ sort: by_weight
 㷄	huǐ;hg;;hg;;fd;ce;oj;;	0
 㷐	huǐ;ht;;ht;;fg;cg;ov;;	0
 㻅	huì;wy;;wh;;mi;nb;gw;;	0
-㽇	hú;jw;;wx;;hn;pr;wf;;	0
+㽇	hui;jw;;wx;;hn;pr;wf;;	0
 䂕	huì;uu;;uh;;oo;oj;td;;	0
 䃣	huǐ;uw;;uw;;mf;mc;de;;	0
 䅏	huì;hm;;hw;;hu;xv;tn;;	0
@@ -10784,7 +10784,7 @@ sort: by_weight
 煷	huo;hj;;hl;;fn,fu;co;oy;;	1
 艧	huò;vy;;vh,vy;;he;ir;te;;	1
 鍃	huō;jx;;jh;;cp;zh;qq;;	1
-韄	hù;gy;;gh,gy;;te;tr;af;;	1
+韄	huo;gy;;gh,gy;;te;tr;af;;	1
 㓉	huò;du;;du;;ir;wa;ut;;	0
 㕡	huo;bg;;yj;;ye;gr;hp;;	0
 㗲	huò;ka;;kh;;rm;df;kv;;	0
@@ -10796,7 +10796,7 @@ sort: by_weight
 㨰	huo;fg;;fg;;qv;uk;ru;;	0
 㩇	huò;fa;;fh;;qm;uf;rv;;	0
 㯉	huò;mh;;mh;;dd;en;sh;;	0
-㯛	hú;my;;mh;;dm;ec;sf;;	0
+㯛	huo;my;;mh;;dm;ec;sf;;	0
 㶡	huǒ;jh;;jh,hj;;hf;oc;mo;;	0
 䁨	huò;oe;;og;;bl;qt;hy;;	0
 䂄	huò;oy;;oj;;be;qr;hh;;	0
@@ -10904,7 +10904,7 @@ sort: by_weight
 雞	jī;vv;;vx;;bg;yu;ex;;	71
 済	jì;do;;dq;;el,xl;kq;iy;;	69
 紀	jì;sj;;sj;;vu;iv;xn;;	75
-乁	yí;nn;;aa,vv,yi;;mo,xo;ae;yy;;	5
+乁	jí;nn;;aa,vv,yi;;mo,xo;ae;yy;;	5
 蹟	jī;zb;;zz;;rc;po;kh;;	39
 計	jì;yu;;yu;;yj;sn;yf;;	36
 旣	jì;bw;;bg,bj,jb;;hu;ud;rx;;	33
@@ -10965,7 +10965,7 @@ sort: by_weight
 剤	jì;wd;;dq;;yn,xn;qp;yj;;	2
 彶	jí;rj;;xj;;he;wc;te;;	2
 摖	ji;fu;;fj;;qf;uf;rw;;	1
-苙	lì;cl;;cl;;tt;li;au;;	1
+苙	jī;cl;;cl;;tt;li;au;;	1
 譏	jī;yr;;yj;;yi;si;yx;;	2
 韲	jī;wj;;dh,wa,wj;;ym;qf;yd,yv;;	2
 嘰	jī;kr;;kj;;ri;di;kx;;	2
@@ -10988,7 +10988,7 @@ sort: by_weight
 羈	jī;sm;;sm;;wf;yn;la;;	1
 蘮	jì;cd;;cd,cj;;tn,xa;lp;al;;	1
 轚	jí;ii;;iu;;jj;yy;lb;;	1
-魥	è;yj;;yj;;ne;wc;qo;;	1
+魥	jì;yj;;yj;;ne;wc;qo;;	1
 鮆	jì;vy;;yc;;yf;sw;hx;;	1
 鯽	jì;ye;;yj;;nl;wz;qo;;	1
 鰶	jì;yu;;yj;;nf;wf;qo;;	1
@@ -12069,7 +12069,7 @@ sort: by_weight
 㽲	jiǎo;bk;;bk;;ks;aa;ug;;	0
 㿟	jiao;bb;;bb;;ha;uu;rr;;	0
 䀊	jiǎo;dm;;ml;;et;ka;in;;	0
-䁶	jī;ow;;oj;;bk;qh;hr;;	0
+䁶	jiǎo;ow;;oj;;bk;qh;hr;;	0
 䂃	jiào;oc;;oj;;bi;qk;he;;	0
 䆗	jiao;bj;;xj;;jl;ei;pw;;	0
 䘨	jiǎo;pf;;yj;;lk;tb;pu;;	0
@@ -12198,7 +12198,7 @@ sort: by_weight
 𩊔	jiào;gf;;gj;;tk;tb;af;;	0
 𩎔	jiāo;wx;;wx;;dk;gb;nh;;	0
 𩏷	jiào;mf;;mj,wj;;ff;pc;on;;	0
-𩥊	āo;wm;;mg;;yf;gn;ym;;	0
+𩥊	jiāo;wm;;mg;;yf;gn;ym;;	0
 𩯘	jiào;ek;;iq;;sb;pd;de;;	0
 𩱞	jiào;gz;;gg,gx;;nb;bn;xf;;	0
 𩴧	jiāo;gh;;gj;;hf;ac;rq;;	0
@@ -12213,7 +12213,7 @@ sort: by_weight
 結	jié;sk;;sj;;vr;id;xf;;	73
 卩	jié;vl;;er,ga;;sl;zj;bn,zz;;	64
 節	jié;ve;;vj;;hl;rz;tv;;	63
-偈	jì;rr;rv;rh;xr;ov;jf;wj;rv;	0
+偈	jié;rr;rv;rh;xr;ov;jf;wj;rv;	0
 屆	jiè;ut;;uk;;sg;cm;nf;;	29
 階	jiē;eb;;ej;;na;tu;bx;;	29
 詰	jié;yk;;yj;;yr;sd;yf;;	21
@@ -12234,7 +12234,7 @@ sort: by_weight
 楬	jié;mr;;mh;;dv;ef;sj;;	4
 鶡	jie;on;;nh;;af;ox;jq;;	2
 丯	jiè;sl;;pa;;qj,xj;af;eh;;	4
-耤	jí;lo;lo;lx;av;qa;ao;di;fo;	0
+耤	jiè;lo;lo;lx;av;qa;ao;di;fo;	0
 衱	jié;pj;;yj;;le;tc;pu;;	0
 袺	jié;pk;;yj;;lr;td;pu;;	4
 誡	jiè;yc;;yj;;yt;sl;ya;;	3
@@ -12249,7 +12249,7 @@ sort: by_weight
 滐	jié;dm;;dj,dm;;ed;ke;iq;;	2
 煯	jiē;hb;;hj;;fa;cu;ox;;	2
 鉣	jié;jq;;jq;;ci;zk;qf;;	2
-哜	jì;kq;;kq;;rl;dq;ky;kq;	1
+哜	jie;kq;;kq;;rl;dq;ky;kq;	1
 啑	jié;kz;;kj;;ro;ds;kg;;	1
 岕	jiè;uj;;uj;;ul;vp;mw;;	1
 嵥	jié;um;;uj,um;;ud;ve;mq;;	1
@@ -12261,9 +12261,9 @@ sort: by_weight
 昅	jié;oj;;oj;;ae;oc;je;;	1
 洯	jié;fu;;ud;;qe,xe;ak;dh;;	1
 砎	jiè;uj;;uj;;ml;mp;dw;;	1
-紒	jì;sj;;sj;;vl;ip;xw;;	1
+紒	jié;sj;;sj;;vl;ip;xw;;	1
 蠽	jié;xi;;ig;;fi;yc;iw;;	1
-趌	jí;tk;;zj;;gr;pd;fh;;	1
+趌	jié;tk;;zj;;gr;pd;fh;;	1
 鍻	jié;jr;;jh;;cv;zf;qj;;	1
 她	jiě;ny;ny;ny;yr;vd;be;vb;ny;	0
 家	jie;bu;bu;bu;ih;jo;wj;pe;gn;	0
@@ -12276,7 +12276,7 @@ sort: by_weight
 㝌	jie;bj;;bj;;jo;wi;pq;;	0
 㝏	jiè;bj;;bj;;jl;wp;pw;;	0
 㞯	jié;ju;;uj;;su;vv;nm;;	0
-㠍	jí;um;;uj;;ud;ve;mw;;	0
+㠍	jie;um;;uj;;ud;ve;mw;;	0
 㠹	jiè;jj;;jj;;ll;rp;mh;;	0
 㦢	jié;xe;;xj;;pl;hz;nt;;	0
 㨗	jié;fz;;fj;;qo;us;rh;;	0
@@ -12284,7 +12284,7 @@ sort: by_weight
 㨰	jie;fg;;fg;;qv;uk;ru;;	0
 㮞	jié;mk;;mz;;dr;ed;su;;	0
 㮮	jié;mu;;mq;;dq;eu;sd;;	0
-㸄	jì;ho;;hq;;fx;cq;oy;;	0
+㸄	jie;ho;;hq;;fx;cq;oy;;	0
 㸅	jié;he;;hj;;fl;cz;ot;;	0
 㾏	jiè;bt;;bg;;kg;ag;uf;;	0
 㿍	jiè;bn;;bj;;kq;aq;uq;;	0
@@ -12306,7 +12306,7 @@ sort: by_weight
 䘁	jie;gi;;ij;;ji;nc;fa;;	0
 䛺	jiè;yj;;yj;;yl;sp;yl;;	0
 䞦	jie;tk;;zg;;gr;ps;fh;;	0
-䟌	jí;tv;;zj;;gg;pu;fh;;	0
+䟌	jie;tv;;zj;;gg;pu;fh;;	0
 䣠	jié;fe;;et;;ql;ht;fw;;	0
 䥛	jiē;jx;;jj;;cf;zi;qd;;	0
 䯰	jiè;ej;;ij;;sl;pp;de;;	0
@@ -12317,7 +12317,7 @@ sort: by_weight
 偼	jié;rz;;rv;;oo;js;wh;;	0
 刧	jié;qd;;dq;;gh;gp;fc;;	0
 吤	jiè;kj;;kj;;rl;dp;kw;;	0
-嚌	jì;ko;;kq;;rx;dq;ky;;	0
+嚌	jiē;ko;;kq;;rx;dq;ky;;	0
 妎	jiè;nj;;nj;;vl;bp;vw;;	0
 媎	jiě;no;;nv;;va;bo;vf;;	0
 媘	jiē;nb;;nj;;va;bu;vx;;	0
@@ -12341,7 +12341,7 @@ sort: by_weight
 楐	jiè;mj;;mj;;dl;ep;sl;;	0
 榤	jié;mm;;mj,mm;;dd;ee;sq;;	0
 犗	jiè;nk;;nh;;hr;qd;tr;;	0
-狤	jí;qk;;qj;;kr;md;qt;;	0
+狤	jié;qk;;qj;;kr;md;qt;;	0
 琾	jiè;wj;;wj;;ml;np;gl;;	0
 瑎	jie;wb;;wj;;ma;nu;gx;;	0
 畍	jiè;tj;;tj;;wl,xl;qp;lw;;	0
@@ -12415,7 +12415,7 @@ sort: by_weight
 𣮌	jié;um;;mj;;ju;fv;gv;;	0
 𣮍	jié;mn;;mq;;hv;vb;tf;;	0
 𣰞	jié;mv;;mv;;hg;vu;tf;;	0
-𣲡	jí;dn;;dj;;eo;ki;ii;;	0
+𣲡	jié;dn;;dj;;eo;ki;ii;;	0
 𣳟	jié;dz;;dp;;eo;kt;in;;	0
 𣶏	jiē;dz;;dy;;eo;ks;ig;;	0
 𤁢	jié;dg;;dg;;ei;kp;ii;;	0
@@ -12638,7 +12638,7 @@ sort: by_weight
 暻	jǐng;ox;;oj;;af;oy;jj;;	32
 驚	jīng;cm;;mj;;tf;ln;aq;;	57
 箐	jīng;vo;vo;vq;nl;hb;rv;tg;vo;	0
-勁	jìn;jl;;lg,lj;;ms;fs;gv;;	5
+勁	jìng;jl;;lg,lj;;ms;fs;gv;;	5
 瀞	jìng;dy;;dj;;ed;kb;ig;;	16
 鏡	jìng;je;;jj;;cu;zp;qu;;	27
 淨	jìng;dy;;dv;;ed;kb;ie;;	3
@@ -12681,13 +12681,13 @@ sort: by_weight
 㬌	jìng;ox;;oj;;af;oy;jy;;	0
 㵾	jìng;dj;;dl;;eu;ke;ig;;	0
 㹵	jing;qg;;qj;;km;mu;qt;;	0
-䑤	jìn;vv;;vj;;hn;ia;te;;	0
+䑤	jing;vv;;vj;;hn;ia;te;;	0
 䔔	jìng;ce;;cj;;tu;lp;au;;	0
 䜘	jǐng;yw;;yj;;yk;sh;ya;;	0
 䡖	jing;it;;it;;jg;yg;lg;;	0
 䲔	jing;yj;;yj;;nm;wf;qo;;	0
 䵞	jìng;ld;;hd;;wn;pp;lf;;	0
-劤	jìn;jl;;lj;;hs;ts;rl;;	0
+劤	jing;jl;;lj;;hs;ts;rl;;	0
 坓	jǐng;jt;;tj;;tg;qg;fj;;	0
 坕	jīng;vt;;vt;;hg;yg;rh;;	0
 婙	jìng;ny;;nv;;vd;bb;vq;;	0
@@ -12934,7 +12934,7 @@ sort: by_weight
 𩱼	jiū;jg;;gj,jg;;ki;ka;vr;;	0
 𩶧	jiù;yj;;yj;;nx;wp;qo;;	0
 𪀏	jiū;nj;;nj;;hs;xn;wv;;	0
-瞿	qú;ov;of;vo,ov,vm;sa;bg;qu;hh;ma;	0
+瞿	jù;ov;of;vo,ov,vm;sa;bg;qu;hh;ma;	0
 渠	jù;dm;dm;mj;kw;ed;ke;ia;dl;	0
 據	jù;fu;;fj,fu;;qo;uj;rh;;	140
 劇	jù;hd;;dj,du;;yn,xn;zp;ha;;	37
@@ -13636,7 +13636,7 @@ sort: by_weight
 愾	kài;xm;;xq;;pd;hp;nr;;	1
 暟	kǎi;ob;;od,oq;;at;oz;jm;;	1
 欯	kài;tq;;qj;;go,xo;ge;fk;;	1
-濭	ǎi;dm;;dg,dm;;et;ka;ia;;	1
+濭	kài;dm;;dg,dm;;et;ka;ia;;	1
 烗	kài;hr;;hh;;fo;ck;oy;;	1
 鍇	kǎi;jb;;jj;;ca;zu;qx;;	1
 鎎	kài;jm;;jq;;cd;zp;qr;;	1
@@ -13708,7 +13708,7 @@ sort: by_weight
 鬫	kan;mw;;dg;;lk;jh;hg;;	0
 龕	kān;rl;;lh;;op;jt;wg;;	0
 𠝲	kǎn;hd;;xd;;hn;xp;tj;;	0
-𠪚	ǎn;iw;;ig;;mk;xh;dn;;	0
+𠪚	kǎn;iw;;ig;;mk;xh;dn;;	0
 𡚜	kàn;dv;;dg;;kg;mu;da;;	0
 𡶪	kàn;uu;;uu;;mu;mv;dm;;	0
 𡸞	kǎn;uj;;ud;;ux;vp;mq;;	0
@@ -13821,7 +13821,7 @@ sort: by_weight
 趷	kē;zv;;zq;;rn;pa;kh;;	5
 頦	kē;wy;;yh;;yc;kw;yn;;	4
 砢	kē;uk;;uk;tj;mr;mz;ds;;	2
-痾	ē;bk;;ba;;kr;az;ub;;	2
+痾	kē;bk;;ba;;kr;az;ub;;	2
 鉿	kē;jk;;jh;;cr;zd;qw;;	2
 勊	kè;ul;;lk;;js,xs;cs;dq;;	2
 樖	kē;rk;;hk;;or;jz;wg;;	2
@@ -13833,7 +13833,7 @@ sort: by_weight
 硞	kè;uk;;ug;;mr;md;dt;;	1
 礚	kē;um;;ug,um;;mt;ma;da;;	1
 窼	kē;bg;;xi,bi;;jd;ee;pw;;	1
-閜	ě;mk;;mk;;ar;az;us;;	1
+閜	ke;mk;;mk;;ar;az;us;;	1
 勀	kè;ul;;lk;;js;cs;dq;;	1
 愘	kè;xk;;xk;;pr;hs;np;;	1
 濭	kè;dm;;dg,dm;;et;ka;ia;;	1
@@ -13912,7 +13912,7 @@ sort: by_weight
 𤛗	kè;tn;;kn,un,nu;;gq;gq;fn;;	0
 𤰙	kē;jt;;jt,tj;;kw;kq;vl;;	0
 𤸎	kě;br;;bh;;kv;af;uj;;	0
-𤸱	è;bm;;bg,bh;;kt;aa;uf;;	0
+𤸱	kè;bm;;bg,bh;;kt;aa;uf;;	0
 𥃕	kē;tm;;hg;;gt;ga;fp;;	0
 𥊉	kè;ok;;oa,oh;;br;qd;hp;;	0
 𥔽	kè;uk;;ud,uh;;mr;md;da;;	0
@@ -13942,7 +13942,7 @@ sort: by_weight
 𪃭	kè;bn;;nk,kn;;jf;wx;pt;;	0
 𪍎	kē;ld;;mk;;dj,jj;ej;sw;;	0
 𪓮	kě;od;;mh,hm;;au;od;jq;;	0
-尅	kè;uc;;ck,kc;sk;ji;ck;dq;;	3
+尅	kēi;uc;;ck,kc;sk;ji;ck;dq;;	3
 龈	kěn;vg;vg;ig;rh;yv,xv;li;hw;vh;	0
 龂	ken;vj;vj;ij;rp;yl,xm;lt;hw;vj;	0
 褃	kèn;po;;yk;;lb;tv;pu;;	3
@@ -14040,7 +14040,7 @@ sort: by_weight
 㓂	kòu;bn;;bn;;bv;wb;pf;;	0
 㔚	kou;ul;;lu;;hs;as;td;;	0
 㲄	kou;tu;;uu;;ge;gr;fp;;	0
-㸸	ǒu;nk;;nh;;hr;qd;tr;;	0
+㸸	kǒu;nk;;nh;;hr;qd;tr;;	0
 䁱	kōu;ow;;oy;;bu;qp;hf;;	0
 䍍	kòu;tf;;uf;;ge;gr;fp;;	0
 䧆	kou;eg;;eg;;nc;th;ba;;	0
@@ -14066,7 +14066,7 @@ sort: by_weight
 𢚫	kòu;dx;;xy,ax;;np;th;xh;;	0
 𢟭	kòu;xw;;xw;;pk;hh;np;;	0
 𢼃	kǒu;gw;;wg;;pk;nh;qc;;	0
-𣂻	ōu;kj;;jq,qj;;sl;nt;ak;;	0
+𣂻	kōu;kj;;jq,qj;;sl;nt;ak;;	0
 𣻎	kòu;dw;;dw;;ek;kh;ip;;	0
 𣿟	kòu;du;;dy;;ee;kr;ip;;	0
 𤘘	kǒu;nk;;nk;;hr;qd;tr;;	0
@@ -14159,7 +14159,7 @@ sort: by_weight
 絓	kuā;st;;sg;;vg;ig;xf;;	1
 舿	kuā;vk;;vk;;hs;ia;te;;	2
 銙	kuǎ;jk;;jk;;cs;za;qd;;	2
-趶	kù;zy;;zy;;rd;pn;kh;;	1
+趶	kua;zy;;zy;;rd;pn;kh;;	1
 骻	kuà;gk;;gk;;bs;fa;me;;	1
 恗	kuā;xk;;xk;;ps;ha;nd;;	1
 㐄	kuà;uv;;aa,fg;;jv;vk;ah;;	0
@@ -14669,8 +14669,8 @@ sort: by_weight
 㠣	lai;uv;;ul;;um;vs;md;;	0
 㥎	lái;hx;;xl;;hp;xh;tq;;	0
 㸊	lài;hb;;hl;;fc;co;og;;	0
-㾢	ài;bl;;bl;;ko;aj;us;;	0
-䀳	ài;ou;;ou;;bl;qx;hg;;	0
+㾢	lai;bl;;bl;;ko;aj;us;;	0
+䀳	lai;ou;;ou;;bl;qx;hg;;	0
 䂾	lǎi;ul;;ul;;mo;mj;ds;;	0
 䄤	lài;pb;;ul;;ic;fo;py;;	0
 䅘	lái;hl;;hl;;ho;xj;ts;;	0
@@ -14681,7 +14681,7 @@ sort: by_weight
 䧒	lái;el;;el;;no;tj;bs;;	0
 䲚	lài;yb;;yl;;nc;wo;qo;;	0
 婡	lái;nl;;nl;;vo;bj;vs;;	0
-攋	là;fb;;fl;;qc;uo;rg;;	0
+攋	lài;fb;;fl;;qc;uo;rg;;	0
 棶	lái;ml;;ml;;do;ej;ss;;	0
 櫴	lài;mb;;ml;;dc;eo;sg;;	0
 猍	lái;ql;;ql;;ko;mj;qt;;	0
@@ -14876,7 +14876,7 @@ sort: by_weight
 㾿	láng;be;;bl;;kl;at;uy;;	0
 䀶	lǎng;ol;;ol;;bv;qi;hy;;	0
 䁁	lang;ox;;oj;;bf;qy;hy;;	0
-䃹	làn;uj;;ul;;mw;mh;du;;	0
+䃹	lang;uj;;ul;;mw;mh;du;;	0
 䆡	láng;bl;;xl;;jv;ei;pw;;	0
 䍚	làng;sl;;sl;;wv;yi;ly;;	0
 䕞	làng;cl;;cg;;tv;li;au;;	0
@@ -15054,7 +15054,7 @@ sort: by_weight
 㔣	léi;tl;;ll;;ws;qs;ll;;	0
 㗊	léi;kk;;ll;;rr;dd;kk;;	0
 㙼	lěi;tt;;tl;;gw;gq;fl;;	0
-㡞	lǚ;jn;;jl;;lv;rb;mh;;	0
+㡞	lei;jn;;jl;;lv;rb;mh;;	0
 㭩	lei;mc;;ml;;di;ek;se;;	0
 㰐	lei;mo;;ms;;db;eu;sb;;	0
 㲕	lèi;vm;;ml;;bu;yv;ef;;	0
@@ -15827,7 +15827,7 @@ sort: by_weight
 𪚁	lián;er;;il,li;;su;ql;bx;;	0
 𪛒	lián;vu;;yu;;he;rr;tw;;	0
 兩	liǎng;ar;;ar;;mo;ml;gm;;	218
-倆	liǎ;rr;;rl;;ob;jm;wg;;	7
+倆	liǎng;rr;;rl;;ob;jm;wg;;	7
 両	liǎng;au;;au;;mb;ml;gm;;	31
 樑	liáng;mm;;ml;;dd;ee;si;;	26
 哴	liàng;kl;;kl;;rv;di;ky;;	4
@@ -15997,11 +15997,11 @@ sort: by_weight
 猟	liè;qf;;qu,qy;;kn;mp;qt;;	2
 烮	liè;dh;;hl;;mf,xf;gc;gq;;	2
 栵	liè;md;;ml;;dn;ep;sg;;	1
-棙	lì;mq;;ml,mq;;dk,xk;em;sy;;	1
+棙	liè;mq;;ml,mq;;dk,xk;em;sy;;	1
 茢	liè;cd;;cl;;tn;lp;ag;;	1
 煭	liè;vh;;hd,hl,dd,dl,il;;vf,xf;oc;vg;;	1
 燤	liè;hd;;hw;;fb;cv;oa;;	1
-爄	lì;hd;;hl,hw;;fb;cv;od;;	1
+爄	liè;hd;;hl,hw;;fb;cv;od;;	1
 爉	liè;hv;;hl;;fv;cp;ov;;	1
 㤠	liè;dx;;xl;;mp;gh;gq;;	0
 㧜	liè;fj;;fz;;qb;ur;ra;;	0
@@ -16012,7 +16012,7 @@ sort: by_weight
 㲱	liè;mv;;ml;;hv;vp;tf;;	0
 㸊	lie;hb;;hl;;fc;co;og;;	0
 㸹	liè;nc;;nl;;hi;qk;tr;;	0
-㻺	lì;iy;;ly;;mi;xi;dt;;	0
+㻺	lie;iy;;ly;;mi;xi;dt;;	0
 㼲	liè;ew;;wr;;mn;lr;dm;;	0
 㽟	liè;tc;;tl;;wi;qk;le;;	0
 䁽	liè;ov;;ol;;bv;qp;hv;;	0
@@ -16024,20 +16024,20 @@ sort: by_weight
 䟩	liě;zq;;zq;;ri;pk;kh;;	0
 䟹	liè;zc;;zc;;ri;pk;kh;;	0
 䪉	liè;gv;;gl;;tv;tp;af;;	0
-䬅	lì;fl;;fx;;hs;os;mt;;	0
-䮋	lì;md;;ml;;sn;np;cg;;	0
+䬅	liè;fl;;fx;;hs;os;mt;;	0
+䮋	lie;md;;ml;;sn;np;cg;;	0
 䶛	lie;dr;;li;;mu;gl;gq;;	0
 劽	liè;dl;;ll;;ms;gs;gq;;	0
 哷	liè;kc;;kc,kl;;ri;dk;ke;;	0
 埓	liè;tc;;tc,tl;;gi,xi;gk;fe;;	0
 姴	liè;dn;;nl;;mv;gb;gq;;	0
-巁	lì;ud;;ul;;ub;vv;md;;	0
+巁	liè;ud;;ul;;ub;vv;md;;	0
 巤	liè;vv;;iu;;vv;op;vl;;	0
 忚	liě;xy;;xy;;pd,xd;he;nb;;	0
 挘	liě;fl;;fl;;qs;us;ri;;	0
 毟	liě;um;;mu;;fu;yv;it;;	0
 犣	liè;nv;;nl;;hv;qp;tr;;	0
-綟	lì;sq;;sl,sq;;vk,xs;im;xy;;	0
+綟	liè;sq;;sl,sq;;vk,xs;im;xy;;	0
 聗	liè;er;;ej;;so;qj;bd;;	0
 蛚	liè;id;;il;;ln;cp;jg;;	0
 迾	liè;zd;;zl;;yn;gu;gq;;	0
@@ -16074,7 +16074,7 @@ sort: by_weight
 𤱃	liè;tm;;tm;;wd;qe;ls;;	0
 𤱛	liè;th;;th;;wd;qx;lt;;	0
 𥪂	liè;lr;;lj;;yo;ij;ud;;	0
-𥬭	lì;vd;;vl;;hn;rp;tg;;	0
+𥬭	liè;vd;;vl;;hn;rp;tg;;	0
 𥲁	liè;vw;;vw;;hn;rr;td;;	0
 𥶢	liè;vu;;vu;;hn;rp;tv;;	0
 𥷨	liè;ve;;vn;;hj;rq;tb;;	0
@@ -16663,7 +16663,7 @@ sort: by_weight
 謱	lóu;yn;;yl;;yv;sb;yk,yl;;	0
 貗	lou;vn;;vl;;bv;mb;ee;;	0
 遱	lóu;zn;;zl;;yv;ku;kg,lv;;	0
-鷜	lǘ;un;;nl;;lf;kx;kg,lv;;	0
+鷜	lou;un;;nl;;lf;kx;kg,lv;;	0
 𠖛	lòu;be;;bl;;bl;wb;pb;;	0
 𠗩	lòu;du;;dd;;il;wi;uj;;	0
 𠞭	lóu;ud;;ld;;ln;kp;jk;;	0
@@ -17057,7 +17057,7 @@ sort: by_weight
 跞	luò;zl;zl;zl,zy;gi;rd;py;kh;zl;	0
 鵅	luò;wn;;ng;;hf,xh;sx;tk;;	1
 儸	luó;rv;;rl,rw;;og;ju;wl;;	1
-攎	lú;fm;;fl;;qt;ua;rh;;	1
+攎	luó;fm;;fl;;qt;ua;rh;;	1
 洜	luò;wu;;ug;;he;sk;tk;;	1
 鏍	luó;jx;;jl;;cf;zi;ql;;	1
 鑼	luó;jv;;jl,jw;;cg;zu;ql;;	1
@@ -17074,7 +17074,7 @@ sort: by_weight
 㰁	luǒ;mu;;ml;;dr;em;sd;;	0
 㱻	luò;dy;;dl;;mq;gi;gq;;	0
 㴖	luò;dg;;dg;;ej;kt;ia;;	0
-㵣	kě;dq;;dx;;eo;ke;ij;;	0
+㵣	luo;dq;;dx;;eo;ke;ij;;	0
 㼈	luó;wv;;wl;;mg;nu;gl;;	0
 㽋	luó;xw;;wl;;vn;sr;xy;;	0
 㾖	luo;bl;;bl;;kg;ad;uj;;	0
@@ -17255,7 +17255,7 @@ sort: by_weight
 𩳡	lǜ;gc;;gl,gc;;hi;ak;rq;;	0
 𩴐	lǜ;gu;;gl;;hj;an;rq;;	0
 𪈜	lǚ;sn;;nl;;vf;ix;xl;;	0
-寽	lǜ;vc;;vc;;bi,xi;yk;ef;;	3
+寽	lüè;vc;;vc;;bi,xi;yk;ef;;	3
 畧	lüè;tk;;tg;;wr,xr;qs;lt;;	6
 鋢	lüè;jz;;jf;;cd;zh;qe;;	2
 鋝	lüè;jc;;jc,jl;;ci;zk;qe;;	1
@@ -17364,7 +17364,7 @@ sort: by_weight
 䨪	mái;yl;;ym;;mg;td;ff;;	0
 䨫	mài;yw;;ym;;mn;th;fs;;	0
 䮮	mài;mw;;mm;;sn;nh;cs;;	0
-䳸	má;gn;;nm;;if;zx;ys;;	0
+䳸	mai;gn;;nm;;if;zx;ys;;	0
 勱	mài;cl;;lw;;ts,xk;ls;aj;;	0
 嘪	mǎi;kb;;km;;rc;do;kl;;	0
 蕒	mǎi;cb;;cm;;tc;lo;al;;	0
@@ -17716,7 +17716,7 @@ sort: by_weight
 䰨	mèi;go;;gm;;hu;aq;rq;;	0
 䰪	mèi;rg;;gj;;fi;wa;iw;;	0
 䵢	mèi;lw;;hw;;wd;pa;lf;;	0
-嚜	me;kt;;km;;rg;dg;kl;;	0
+嚜	mèi;kt;;km;;rg;dg;kl;;	0
 坆	méi;tw;;tw;;gk,xk;gh;ft;;	0
 嵄	měi;ud;;um;;uk;vm;mu;;	0
 徾	méi;rk;;xw;;hk;wh;tm;;	0
@@ -17862,7 +17862,7 @@ sort: by_weight
 擝	mēng;fm;fm;fm;ja;qt,xt;ua;rj;fm;	0
 橗	méng;mo;;mm;;db;ev;sa;;	0
 氋	méng;cm;;mm;;tu;lv;ap;;	0
-癦	me;bt;;bm;;kg;ag;ul;;	0
+癦	meng;bt;;bm;;kg;ag;ul;;	0
 矒	méng;oo;;om;;bu;qq;ha;;	0
 蕄	méng;cx;;cm;;tp;lh;au;;	0
 鄸	méng;ce;;em;;tl;lt;al;;	0
@@ -18160,9 +18160,9 @@ sort: by_weight
 㝃	miǎn;ze;;zm;;nu;hp;bq;;	0
 㝰	mián;bf;;bm;;js;wl;pt;;	0
 㤁	miǎn;tx;;xt;;mp;fh;gd;;	0
-㥝	mǐ;xe;;xm;;pj;hq;nx;;	0
+㥝	mian;xe;;xm;;pj;hq;nx;;	0
 㨺	miǎn;fr;;fm;;qb;um;ra;;	0
-㫘	mì;bo;;ob;;ma;co;gi;;	0
+㫘	mian;bo;;ob;;ma;co;gi;;	0
 㬆	mian;oo;;oh;;aa;oo;jn;;	0
 㮌	mián;mm;;mm;;dl;eb;sd;;	0
 㰃	mián;mx;;mx;;df;ei;sr;;	0
@@ -18170,7 +18170,7 @@ sort: by_weight
 㻰	miǎn;we;;wh;;ms;nb;gd;;	0
 䀎	miǎn;ok;;ok;;bs;qa;hg;;	0
 䃇	mián;uj;;ub;;mb;mr;dr;;	0
-䌏	mì;su;;sm;;vu;iv;xp;;	0
+䌏	mian;su;;sm;;vu;iv;xp;;	0
 䏃	mián;el;;em;;sc;qa;bp;;	0
 䛉	miàn;ym;;ym;;yp;sd;yn;;	0
 䤄	miǎn;ym;;ym;;ml;yb;sg;;	0
@@ -18275,7 +18275,7 @@ sort: by_weight
 幭	miè;jd;;jm;;li;ri;mh;;	0
 懱	miè;xd;;xm;;pi;hi;na;;	0
 礣	mie;ud;;um;;mi;mi;da;;	0
-簚	mì;vj;;vg;;hb;rr;tl;;	0
+簚	mie;vj;;vg;;hb;rr;tl;;	0
 薎	miè;cg;;cf;;ti,xi;lp;al;;	0
 覕	miè;bj;;jb;;pu;he;nt;;	0
 鱴	miè;yd;;ym;;ni,xw;wi;qo;;	0
@@ -18414,7 +18414,7 @@ sort: by_weight
 䆩	míng;bd;;xd;;jk;em;pw;;	0
 䊅	míng;mk;;mm;;fr;pd;oq;;	0
 䒌	mìng;bb;;sm;;bu;wm;pj;;	0
-䤉	mì;ym;;ym;;mt;ya;sg;;	0
+䤉	ming;ym;;ym;;mt;ya;sg;;	0
 䫤	míng;by;;ym;;bc;ww;pj;;	0
 䳟	míng;on;;nm;;af;ox;je;;	0
 姳	mǐng;nk;;nm;;vr;bd;vq;;	0
@@ -18426,7 +18426,7 @@ sort: by_weight
 鄍	míng;be;;el,em;;bl;wt;pj;;	0
 𠋶	mǐng;rl;;rm;;oc;ja;wp;;	0
 𡥸	mìng;uz;;wy;;sd;ch;nt;;	0
-𣷠	mín;do;;dm;;eb;kv;ij;;	0
+𣷠	ming;do;;dm;;eb;kv;ij;;	0
 𥌏	míng;ul;;mm;;ac;ca;nh;;	0
 𥥊	mǐng;bm;;xm;;jt;ea;pw;;	0
 𥹆	míng;mb;;mn;;fp;pv;on;;	0
@@ -18612,7 +18612,7 @@ sort: by_weight
 𪏟	mò;cd;;hm;;tk;nm;am;;	0
 𪒂	mò;lo;;hu,ho;;wu;pq;lf;;	0
 𪒇	mò;ld;;hd;;wm;pf;lf;;	0
-厶	sī;vd;;ad,si,vd;;vi,xi;ks;cn;;	6
+厶	mǒu;vd;;ad,si,vd;;vi,xi;ks;cn;;	6
 繆	móu;sp;;sl,sp;;vh;ie;xn;;	3
 謀	móu;ym;;ym;;yd;se;ya;;	19
 桙	móu;mn;;mm,mn;;dq;eq;sc;;	3
@@ -18887,7 +18887,7 @@ sort: by_weight
 湳	nǎn;dg;;dn;;ej;kg;if;;	3
 莮	nán;cl;;cn;;ts;ls;al;;	3
 娚	nán;nl;;nn;;vs;bs;vl;;	2
-妠	nà;nn;;nn;;vb;bj;vm;;	1
+妠	nàn;nn;;nn;;vb;bj;vm;;	1
 抩	nán;fr;;fr;;qb;ug;rm;;	1
 㓓	nán;dg;;dn;;ij;wg;uf;;	0
 㫱	nǎn;oi;;oi;;ac;oc;jf;;	0
@@ -19061,7 +19061,7 @@ sort: by_weight
 𢗉	nè;xn;;xn;;pb;hj;nm;;	0
 𣧍	nè;dn;;dn;;mb;gj;gq;;	0
 𧤜	nè;dg;;jg;;nb;xn;qe;;	0
-哪	né;ke;ke;kn;ob;rl;dt;kv;ke;	0
+哪	něi;ke;ke;kn;ob;rl;dt;kv;ke;	0
 內	nèi;kr;;kr;;ob;mj;mt;;	528
 浽	něi;dn;;dt;;ev;kb;ie;;	1
 錗	nèi;jn;;jw;;cv;zb;qt;;	1
@@ -19315,7 +19315,7 @@ sort: by_weight
 𦭁	niǎn;cy;;cn,cy;;te;lr;al;;	0
 𦷙	nián;cv;;cn,cv;;tr;ld;at;;	0
 𧹞	niǎn;ip;;ip;;ge;gr;fo;;	0
-𨀀	nǐ;zx;;zx;;rf;py;kh;;	0
+𨀀	niǎn;zx;;zx;;rf;py;kh;;	0
 𨇍	niǎn;zi;;zn;;rj;py;kh;;	0
 𨋚	niǎn;iy;;ij,iy;;je;yr;ln;;	0
 𨏛	niǎn;if;;iy;;jv;yq;ly;;	0
@@ -19334,7 +19334,7 @@ sort: by_weight
 䖆	niàng;cf;;cn;;tv;lf;as;;	0
 𥽬	niàng;mf;;mx;;fv;pf;oy;;	0
 𪓃	niǎng;lf;;hx;;wv;pf;lf;;	0
-溺	nì;dg;dd;dr;kf;em;kw;ix;dd;	0
+溺	niào;dg;dd;dr;kf;em;kw;ix;dd;	0
 鳥	niǎo;nh;;ph;;hf;xn;wv;;	10
 嬲	niǎo;tl;tl;nn;wu;ws;qs;ll;tl;	18
 蔦	niǎo;cn;;cn;;tf;lx;aw;;	11
@@ -19408,7 +19408,7 @@ sort: by_weight
 㚔	niè;dg;;dr;;kj;mg;du;;	0
 㜦	nie;nc;;nx;;vi;bk;vv;;	0
 㜸	niè;cn;;nx;;tv;lb;aw;;	0
-㟧	è;uk;;ue;;us;va;mk;;	0
+㟧	nie;uk;;ue;;us;va;mk;;	0
 㡪	nié;jw;;jw;;le;rh;mh;;	0
 㩶	niè;fb;;fm;;qb;uf;rt;;	0
 㮆	niè;my;;my;;dq;eg;sw;;	0
@@ -19429,7 +19429,7 @@ sort: by_weight
 峊	niè;pu;;uv;;hu,xu;tv;wn;;	0
 巕	niè;un;;un;;uv;vb;mu;;	0
 帇	niè;yj;;aa,vu;;lb,xb;br;vm;;	0
-掜	nǐ;fe;;fe;;qu;up;rv;;	0
+掜	niè;fe;;fe;;qu;up;rv;;	0
 敜	niè;rw;;wn;;ok;jh;wy;;	0
 槷	niè;tm;;mv;;gd;ge;fw;;	0
 篞	niè;vt;;vn;;hg,hm;rg;ti;;	0
@@ -19696,7 +19696,7 @@ sort: by_weight
 耎	nuò;ed;;de;;mk;lm;dm;;	1
 糥	nuò;me;;me;;fb,xb;pl;od;;	2
 鍩	nuò;jk;;jr;;cr;zd;qa;;	2
-搙	nù;fc;;fr;;qi;uk;rd;;	1
+搙	nuò;fc;;fr;;qi;uk;rd;;	1
 梛	nuó;me;;mn;;dl;et;sv;;	1
 蹃	nuò;zk;;zr;;rr;pd;kh;;	1
 逽	nuò;zk;;zr;;yr;lu;ad;;	1
@@ -19998,7 +19998,7 @@ sort: by_weight
 䮾	pang;ml;;ml;;sp;nt;cu;;	0
 嫎	páng;nf;;np;;vs;bl;vu;;	0
 庬	pang;gp;;gl,gm;;ih;xe;yd;;	0
-眫	pàn;ob;;ob;;bq;qu;hu;;	0
+眫	pang;ob;;ob;;bq;qu;hu;;	0
 胮	pāng;of;;oj;;bq;vv;et;;	0
 膖	pāng;of;oz;of;lq;bj;vu;et;of;	0
 覫	pǎng;wj;;jp;;yu;ie;up;;	0
@@ -20054,7 +20054,7 @@ sort: by_weight
 穮	pāo;hh;;hb,hh;;hf;xc;ty;;	0
 袌	páo;yb;;dy,wy,yb;;yv;tv;yq;;	0
 褜	páo;oy;;yb;;bv;vt;eq;;	0
-跁	pá;zb;;zb;;ru;pm;kh;;	0
+跁	pao;zb;;zb;;ru;pm;kh;;	0
 靤	pao;mb;;mb;;mu;bv;dm;;	0
 麃	páo;lh;;lh;;if,xf;xc;yn;;	0
 麅	páo;lb;;lb;;iu;xv;yn;;	0
@@ -20538,7 +20538,7 @@ sort: by_weight
 彯	piāo;xp;;pp;;mh;ve;sf;;	1
 驃	piào;mu;;mp;;sf;nf;cs;;	1
 顠	piǎo;xy;;yp;;mc,xb;vw;sf;;	1
-㩠	āo;fh;;fb;;qf;uc;ry;;	0
+㩠	piǎo;fh;;fb;;qf;uc;ry;;	0
 㬓	piào;ou;;op;;af;of;js;;	0
 㯱	piao;gf;;um,mf;;jd;ne;gk;;	0
 㲏	piao;pm;;mp;;lu;av;th;;	0
@@ -20583,7 +20583,7 @@ sort: by_weight
 𪏫	piào;cu;;hp;;tf;nf;am;;	0
 丿	piě;pp;;px;;hh,xh;tp;tt,zz;;	173
 暼	piē;xo;;ob,ow;;fa;fo;um;;	13
-潎	pì;dw;;db,dw;;ek;kh;iu;;	2
+潎	piē;dw;;db,dw;;ek;kh;iu;;	2
 嫳	piè;xn;;nb,nw;;fv;fb;um;;	2
 撆	piē;xu;;ub,uw;;fq;fu;um;;	1
 鐅	piě;xj;;jb,jw;;fc;fz;um;;	1
@@ -21461,7 +21461,7 @@ sort: by_weight
 㜞	qiàn;in;;nv;;jv;yb;lr;;	0
 㝿	qian;yp;;wp;;ke;or;dn;;	0
 㟻	qiàn;iu;;uv;;ju;yv;lr;;	0
-㡊	qià;jj;;jd;;lx;rp;mh;;	0
+㡊	qian;jj;;jd;;lx;rp;mh;;	0
 㡨	qiān;jj;;jq;;lm;rf;mh;;	0
 㥞	qian;xu;;xs;;po;hj;nu;;	0
 㦮	qián;ga;;ja;;iq;mp;dn;;	0
@@ -21796,7 +21796,7 @@ sort: by_weight
 嶠	qiáo;uk;;uq;;ub;vd;mt;;	0
 幓	qiāo;jp;;jc;;lh;re;mh;;	0
 幧	qiāo;jm;;jz;;ld;re;mh;;	0
-摮	áo;fu;;ua,uw;;gq,qq,xq;au;gq;;	0
+摮	qiāo;fu;;ua,uw;;gq,qq,xq;au;gq;;	0
 撽	qiào;fw;;fj,fw;;qk;uh;rr;;	0
 槗	qiáo;mk;;mj,mk;;db;ed;sd;;	0
 橾	qiāo;mm;;mz;;dd;ee;sk;;	0
@@ -21804,7 +21804,7 @@ sort: by_weight
 癄	qiáo;bh;;bj;;kf;ac;uw;;	0
 睄	qiáo;oo;oo;ox;sl;bb;qv;hi;mo;	0
 碻	qiāo;uk;;ug;;mb;mg;dy;;	0
-磝	áo;uw;;ua,uw;;mk;mh;dg;;	0
+磝	qiāo;uw;;ua,uw;;mk;mh;dg;;	0
 磽	qiāo;uw;;uy;;mu;mp;df;;	0
 礄	qiáo;uk;;uq;;mb;md;dt;;	0
 繑	qiāo;sk;;sq;;vb;id;xt;;	0
@@ -21871,15 +21871,15 @@ sort: by_weight
 𩖇	qiāo;oy;;yq;;bc;qw;hn;;	0
 𩨟	qiāo;gx;;gx;;bk;fb;me;;	0
 𪑊	qiào;lo;;hx;;wb;pv;lf;;	0
-砌	qì;ud;ud;uq;ti;mh;mp;da;ud;	0
-契	qì;fd;fd;dd;ax;qk;am;dh;fd;	0
+砌	qiè;ud;ud;uq;ti;mh;mp;da;ud;	0
+契	qiè;fd;fd;dd;ax;qk;am;dh;fd;	0
 朅	qiè;qr;;qh;;gv;gf;fc;;	3
 竊	qiè;bn;;xs,bs;;jb;ev;pw;;	16
 猰	qiè;qd;qd;qq;bx;kk;mm;qt;qd;	0
 癿	qié;bv;bv;bg;sr;hu,xu;ua;rn;bv;	0
 疌	qiè;uz;;ad,av;;jo;fs;gv;;	1
 篋	qiè;vr;;vj,vq;;ho;rj;ta;;	2
-栔	qì;fm;;md;;qd;ae;dh;;	1
+栔	qie;fm;;md;;qd;ae;dh;;	1
 笡	qiè;vq;;vq;;hm;rf;te;;	1
 苆	qiē;cd;;cq;;th;lp;aa;;	1
 洯	qiè;fu;;ud;;qe,xe;ak;dh;;	1
@@ -21902,12 +21902,12 @@ sort: by_weight
 㼤	qiè;fw;;wq;;qn;ar;dh;;	0
 㾀	qiè;bq;;bq;;ki;ak;uf;;	0
 㾜	qiè;br;;bj;;ko;aj;ud;;	0
-䌌	qì;sb;;sx;;va;iu;xn;;	0
+䌌	qie;sb;;sx;;va;iu;xn;;	0
 䞣	qiè;ti;;zi;;gy;pi;fh;;	0
 䟙	qiè;zd;;zq;;rh;pp;kh;;	0
 䤿	qiè;ju;;jq;;cq;zu;qd;;	0
 䦧	qié;me;;me;;au;ap;uv;;	0
-䫔	qì;fy;;yq;;qc;aw;dh;;	0
+䫔	qiè;fy;;yq;;qc;aw;dh;;	0
 䬊	qie;fr;;fj;;ho;oj;mt;;	0
 匧	qiè;kr;;kj;;so;nj;ad;;	0
 厒	qiè;if;;if;;mu;xa;dr;;	0
@@ -21936,7 +21936,7 @@ sort: by_weight
 𡛠	qiē;nq;;nq;;vi;bk;vf;;	0
 𡝍	qiè;nu;;nu;;vo;bj;ve;;	0
 𡶐	qié;uk;;uj;;ur;vd;ml;;	0
-𢍆	qì;fc;;cq;;qt;al;dh;;	0
+𢍆	qiè;fc;;cq;;qt;al;dh;;	0
 𢲶	qiè;fq;;fq;;qm;uf;rt;;	0
 𢺅	qiè;fr;;fq;;qo;uj;rt;;	0
 𣠺	qiè;mr;;mq;;do;ej;st;;	0
@@ -21949,7 +21949,7 @@ sort: by_weight
 𦼰	qiè;cr;;cj,ch;;tv;lf;as;;	0
 𦿋	qiè;cr;;cj;;tv;lf;af;;	0
 𧑨	qiè;fi;;qk;;qi;ac;dh;;	0
-𧚨	qì;pz;;yj,yy;;lo;ts;pu;;	0
+𧚨	qiè;pz;;yj,yy;;lo;ts;pu;;	0
 𧚪	qiè;pn;;yq;;lv;tb;pu;;	0
 𧫕	qiè;yu;;yj;;yf;sf;yw;;	0
 𧻘	qiè;td;;zq,zd;;gh;pp;fh;;	0
@@ -22077,7 +22077,7 @@ sort: by_weight
 𥵧	qǐn;vm;;vj;;ht;ra;tv;;	0
 𦧋	qìn;un;;un;;hq,mq;aq;td;;	0
 𦯈	qǐn;cy;;cj,cy;;te;lr;av;;	0
-𧡘	qì;tj;;ju,uj;;gu;ge;ff;;	0
+𧡘	qīn;tj;;ju,uj;;gu;ge;ff;;	0
 𧯃	qīn;gk;;gx;;cr;hd;ww;;	0
 𧼒	qǐn;ty;;zq,zy;;ge;pr;fh;;	0
 𧾏	qǐn;tr;;zj,zq;;go;pj;fh;;	0
@@ -22096,7 +22096,7 @@ sort: by_weight
 請	qǐng;yo;;yq;;yb;sv;yg;;	481
 輕	qīng;ig;;ig,ij;;jm;yu;lg;;	130
 淸	qīng;dm;;dq;;eb,xb;kv;ig;;	73
-親	qīn;lj;;jq;;yu;ie;us;;	5
+親	qìng;lj;;jq;;yu;ie;us;;	5
 軽	qīng;it;;iu;;jg;yg;lc;;	40
 慶	qìng;gw;;gw,lw;;ie;xh;yn;;	39
 靑	qīng;fm;;fa;;qm;av;gm;;	38
@@ -22123,7 +22123,7 @@ sort: by_weight
 㵾	qìng;dj;;dl;;eu;ke;ig;;	0
 㷫	qǐng;th;;hk;;gf;gc;fn;;	0
 䋜	qìng;hx;;sh;;hf;mi;yn;;	0
-䋯	qǐ;hx;;sg,hs;;if;mi;yn;;	0
+䋯	qing;hx;;sg,hs;;if;mi;yn;;	0
 䌠	qing;wx;;sh;;if;ni;dg;;	0
 䔛	qǐng;cy;;cq;;tc;lw;ax;;	0
 䝼	qíng;bo;;bq;;bb;ov;mg;;	0
@@ -22796,7 +22796,7 @@ sort: by_weight
 宭	qún;bk;;bj;;jr;wd;pv;;	1
 㪊	qún;yy;;wj;;se;bh;vt;;	0
 㿏	qún;by;;bq;;kq;ag;uv;;	0
-䆽	qú;bu;;xj;;jo;ej;pw;;	0
+䆽	qun;bu;;xj;;jo;ej;pw;;	0
 䞭	qun;tw;;zj;;ge;ph;fh;;	0
 䭽	qún;mn;;mn;;sq;nq;cr;;	0
 歏	qūn;cq;;qj;;to;le;ak;;	0
@@ -23269,15 +23269,15 @@ sort: by_weight
 壖	ruán;te;;tx;;gb,xb;gl;ff;;	7
 碝	ruǎn;ud;;ud;;mk;mm;dd;;	2
 耎	ruǎn;ed;;de;;mk;lm;dm;;	1
-蝡	rú;id;;id;;lk;cm;jd;;	1
+蝡	ruǎn;id;;id;;lk;cm;jd;;	1
 檽	ruǎn;me;;mx;;db;el;sf;;	1
 㓴	ruǎn;ed;;dr;;mn;lp;dm;;	0
 㜛	ruan;nq;;nr;;vo;be;vl;;	0
-㨎	rú;fd;;fr;;qk;um;rd;;	0
+㨎	ruan;fd;;fr;;qk;um;rd;;	0
 㮕	ruǎn;md;;mr;;dk;em;sd;;	0
 㼱	ruǎn;bw;;wb;;ln;ar;ux;;	0
 㽭	ruǎn;te;;tx;;wb;ql;lf;;	0
-䆓	è;by;;xy;;ju;ep;pw;;	0
+䆓	ruǎn;by;;xy;;ju;ep;pw;;	0
 䎡	ruǎn;eh;;eh;;mf;lc;dm;;	0
 䓴	ruǎn;cd;;cr;;tk;lm;ad;;	0
 䙃	ruan;po;;yo;;lb;tv;pu;;	0
@@ -23292,14 +23292,14 @@ sort: by_weight
 緛	ruǎn;sd;;sd;;vk;im;xd;;	0
 腝	ruǎn;od;;od;;bk;vm;ed;;	0
 輭	ruǎn;id;;id;;jk;ym;ld;;	0
-𠟺	rú;yd;;xd;;mn;tp;fd;;	0
+𠟺	ruǎn;yd;;xd;;mn;tp;fd;;	0
 𠤦	ruǎn;by;;be,by;;lu;ap;ux;;	0
 𢘧	ruǎn;xr;;xr;;po;hj;nn;;	0
 𢡵	ruǎn;ex;;ee,xe,en;;mp;lh;dm;;	0
 𢱾	ruán;fh;;fb,fh;;qf;uc;rs;;	0
 𣃅	ruǎn;jt;;jt;;hi;tw;rp;;	0
 𣡗	ruǎn;gg;;gi,gg;;wd;qe;js;;	0
-𣽈	rú;de;;de;;eb;kl;id;;	0
+𣽈	ruán;de;;de;;eb;kl;id;;	0
 𣽳	ruán;dj;;lj,dj;;en;ko;iu;;	0
 𤧠	ruǎn;yi;;yi;;mi;nc;gy;;	0
 𤲬	ruán;td;;tr,td;;wk;qm;ld;;	0
@@ -23337,7 +23337,7 @@ sort: by_weight
 㪫	ruì;by;;wr;;ye;gh;hp;;	0
 㮃	ruí;mn;;mw;;dv;eb;st;;	0
 㲊	ruì;bu;;ru,ur;;ye;gr;hp;;	0
-㹘	rù;ne;;nx;;hb;ql;tr;;	0
+㹘	rui;ne;;nx;;hb;ql;tr;;	0
 㻔	rui;wt;;wi;;mm;ng;gt;;	0
 䂱	ruì;ux;;ud;;mu;mp;du;;	0
 䅑	ruí;hn;;ht;;hv;xb;te;;	0
@@ -23417,7 +23417,7 @@ sort: by_weight
 㳐	sa;dv;;dv;;eu;ka;is;;	0
 㽂	sà;rw;;wh;;on;jr;wg;;	0
 䊛	sà;mu;;mu;;fe;pr;oq;;	0
-䑥	è;vj;;vj;;he;ic;te;;	0
+䑥	sà;vj;;vj;;he;ic;te;;	0
 䓲	sa;cx;;ct;;tu;lp;aw;;	0
 䘮	sa;gy;;td;;gv;gt;fw;;	0
 䙣	sà;pf;;yz;;ly;tr;pu;;	0
@@ -23488,7 +23488,7 @@ sort: by_weight
 參	sān;sp;;sp;;ih;ke;cc;;	6
 弎	sān;ys;;ys;;im;pt;ad;;	14
 叄	san;ss;;ss;;im;kt;cc;;	2
-潵	sǎ;dw;dw;ds;kj;ek;kh;ia;dw;	0
+潵	sàn;dw;dw;ds;kj;ek;kh;ia;dw;	0
 傘	sǎn;ru;;ru;;oj;jn;ww;;	7
 仐	sǎn;ru;;ru;;oj,xj;jn;wf;;	2
 鬖	sān;ep;;ic;;sh;pe;de;;	2
@@ -23517,7 +23517,7 @@ sort: by_weight
 糤	sǎn;mw;;ms;;fk;ph;oa;;	0
 繖	sǎn;sw;;ss;;vk;ih;xa;;	0
 閐	sàn;mm;;mm;;au;av;ut;;	0
-𠮿	sa;ku;;ku;;ru;dv;km;;	0
+𠮿	san;ku;;ku;;ru;dv;km;;	0
 𡙘	sǎn;dc;;dc;;kt;ml;dx;;	0
 𢁘	sān;jp;;jp;;lh;re;mh;;	0
 𢕕	sǎn;rp;;xc;;hh;we;tc;;	0
@@ -23822,7 +23822,7 @@ sort: by_weight
 簛	shāi;vj;;vs;;hl;rt;ta;;	0
 𠱡	shài;kj;;ke;;rt;di;km;;	0
 𢄌	shǎi;ju;;ju;;le;rr;mh;;	0
-𣻑	shā;du;;du;;ee;kr;iq;;	0
+𣻑	shài;du;;du;;ee;kr;iq;;	0
 𧜁	shài;pu;;yu;;le;tr;pu;;	0
 𨢦	shài;yb;;yz;;mc;yo;sg;;	0
 𩂃	shài;yg;;yg;;mk;tj;fn;;	0
@@ -24116,7 +24116,7 @@ sort: by_weight
 䄕	shè;pt;;ud;;iw;fq;py;;	0
 䌰	she;se;;sn;;vj;iq;xb;;	0
 䏴	she;oo;;ox;;bb;vv;ei;;	0
-䕣	hé;cr;;ch;;tv;lf;ap;;	0
+䕣	she;cr;;ch;;tv;lf;ap;;	0
 䜆	she;gk;;ym;;ir;zs;ys;;	0
 䜓	shè;ym;;yy;;yd;se;ya;;	0
 䞌	shé;bu;;bu;;br;oa;mt;;	0
@@ -24232,7 +24232,7 @@ sort: by_weight
 㵕	shèn;dx;;dc;;ep;kh;ic;;	0
 㶒	shěn;dm;;di;;ef;kn;iu;;	0
 㾕	shěn;bx;;bx;;kj;an;uu;;	0
-䄕	shè;pt;;ud;;iw;fq;py;;	0
+䄕	shen;pt;;ud;;iw;fq;py;;	0
 䆦	shèn;bh;;xy;;jf;ec;pw;;	0
 䚓	shen;xj;;jq,jy;;mu;ve;sj;;	0
 䧵	shen;bv;;vy;;lg;wu;pq;;	0
@@ -24764,7 +24764,7 @@ sort: by_weight
 術	shù;ru;;xi,xu;;hn;pi;ts;;	76
 豎	shù;ib;;dy;;st;qz;ah;;	61
 輸	shū;id;;iy;;jn;yp;lw;;	61
-疋	pǐ;az;;av,pi,vv;;no;ts;nh;vr;	5
+疋	shū;az;;av,pi,vv;;no;ts;nh;vr;	5
 朮	shù;md;;md;;ic;ei;fq;;	7
 裋	shù;pb;;yd;;lt;tz;pu;;	19
 贖	shú;bb;;bm;;bc;oo;mf;;	25
@@ -25077,7 +25077,7 @@ sort: by_weight
 𨺠	shǔn;eo;;ed;;nu;tq;br;;	0
 說	shuō;yx;;yd;;yu;sp;yw;;	66
 説	shuō;yx;;yd;;yu,xr;sp;yu;;	21
-數	shù;uw;;wl;;lk;kh;kg,lv;;	9
+數	shuò;uw;;wl;;lk;kh;kg,lv;;	9
 愬	shuo;nx;;xo,xu;;tp;hh;ub;;	8
 鑠	shuò;jm;;jl,jy;;cd;ze;qx;;	9
 矟	shuò;mo;;mx;;nb;iv;cb;;	8
@@ -25950,7 +25950,7 @@ sort: by_weight
 檯	tái;mt;;mt,mv;;dg;ey;sf;;	18
 汏	tài;dd;;dd;;ek;km;id;;	3
 冭	tài;dd;;dd;;ky;mw;du;;	9
-斄	lí;wl;;li,lw,ml;;jo;aj;fi;;	2
+斄	tái;wl;;li,lw,ml;;jo;aj;fi;;	2
 炲	tái;hk;;ht;;fr;cd;oc;;	3
 奤	tǎi;dm;;dm;;kl;mb;dd;;	1
 菭	tái;ck;;cv;;tr;ld;ai;;	1
@@ -27095,7 +27095,7 @@ sort: by_weight
 槫	tuán;mc;;mv;;di;ek;sg;;	2
 糰	tuán;mc;;mt;;fi;pk;ol;;	7
 摶	tuán;fc;;fv;;qi;uk;rg;;	2
-圕	tú;ko;;ku,ugr;ku;;wa;ro;lv;;	2
+圕	tuan;ko;;ku,ugr;ku;;wa;ro;lv;;	2
 鏄	tuán;jc;;jv;;ci;zk;qg;;	2
 剸	tuán;id;;dv;;jn;np;gj;;	1
 畽	tuǎn;tv;;tv;;wg;qd;lt;;	1
@@ -27161,7 +27161,7 @@ sort: by_weight
 䀃	tuí;um;;mu;;mt;ja;el;;	0
 䅪	tuí;hb;;hg;;ho;xo;tk;;	0
 䍾	tui;kx;;yj;;mm;fz;ga;;	0
-䩣	tú;gm;;gy;;td;tx;af;;	0
+䩣	tui;gm;;gy;;td;tx;af;;	0
 䫋	tuí;hy;;yw;;hc;xw;tv;;	0
 僓	tuǐ;rb;;rg;;oc;jo;wk;;	0
 墤	tuí;tb;;tg;;gc;go;fk;;	0
@@ -27610,7 +27610,7 @@ sort: by_weight
 𢯫	wǎn;fu;;fd;;qe;ur;rw;;	0
 𢯲	wàn;ou;;un;;bq;qu;hc;;	0
 𢺯	wān;fg;;fw;;qn;ub;rx;;	0
-𣆛	àn;xo;;ox,xo;;ma;vo;sj;;	0
+𣆛	wǎn;xo;;ox,xo;;ma;vo;sj;;	0
 𣡩	wān;mg;;mw;;dn;eb;sx;;	0
 𣥃	wàn;vv;;vg;;yu;sa;hn;;	0
 𤗍	wǎn;pv;;pw;;lu;az;th;;	0
@@ -27678,7 +27678,7 @@ sort: by_weight
 䋄	wǎng;sx;;sg;;vk;ib;xm;;	0
 䋞	wǎng;sx;;sw;;vk;ib;xm;;	0
 䒽	wǎng;cx;;cw;;tk;lb;am;;	0
-䛃	wàn;yy;;yy;;yu;sp;yf;;	0
+䛃	wang;yy;;yy;;yu;sp;yf;;	0
 䤑	wàng;yb;;yh;;mc;yn;sg;;	0
 䰣	wǎng;gx;;gw;;hk;ab;rq;;	0
 尩	wāng;bw;;ph,we,ww;;cg;hn;wq;;	0
@@ -28099,14 +28099,14 @@ sort: by_weight
 㡈	wèn;je;;jm;;lu;rp;mh;;	0
 㳷	wěn;do;;dh;;ea;ko;iq;;	0
 㵮	wen;dg;;de;;ej,eq;kt;id;;	0
-㼂	é;jy;;yy;;hi;pi;wf;;	0
+㼂	wen;jy;;yy;;hi;pi;wf;;	0
 䎹	wén;ce;;eb;;hj;tq;to;;	0
 䎽	wén;eo;;eh;;sa;qo;bq;;	0
 䘇	wén;wi;;wi;;yi;vc;yj;;	0
 䦤	wen;my;;mv;;ae;ar;uc;;	0
 䦷	wen;mr;;mz;;lg;ag;uw;;	0
-䭓	èn;ub;;uq;;ot;qz;wy;;	0
-䭡	èn;ux;;uy;;op;qh;wy;;	0
+䭓	wen;ub;;uq;;ot;qz;wy;;	0
+䭡	wen;ux;;uy;;op;qh;wy;;	0
 䰚	wén;gw;;gw;;mk;nv;gk;;	0
 伆	wen;rw;;rw;;oh;je;wq;;	0
 忟	wěn;xw;;xw;;pk;hv;ny;;	0
@@ -28384,7 +28384,7 @@ sort: by_weight
 䳇	wǔ;mn;;nm;;wf;kx;xg;;	0
 䳱	wù;mn;;nw;;nf;ix;cb;;	0
 倵	wǔ;rv;;rw;;om;js;wg;;	0
-僫	è;rx;;re;;op,xp;jh;wg;;	0
+僫	wu;rx;;re;;op,xp;jh;wg;;	0
 啎	wǔ;wk;;ww;;or;ed;tf;;	0
 墲	wú;th;;tw;;gf;gc;fr;;	0
 奦	wù;md;;dw;;nk;im;cb;;	0
@@ -29107,7 +29107,7 @@ sort: by_weight
 掺	xian;fp;fp;fc;ju;qh;ue;rc;fp;	0
 現	xiàn;wj;;wj;;mu;ne;gh;;	251
 線	xiàn;su;;sq;;ve;ik;xr;;	194
-铣	xǐ;je;je;jx;dk;ou;zp;qt;je;	0
+铣	xiǎn;je;je;jx;dk;ou;zp;qt;je;	0
 咁	xián;kg;kg;kg;ov;rm;dz;ka;kg;	8
 県	xiàn;ox;;ox;;bf;qy;hn;;	91
 彡	xiǎn;pp;;pp,px;;hh;es;et,zz;;	6
@@ -29509,7 +29509,7 @@ sort: by_weight
 䒂	xiang;vc;;vj;;hi;ik;te;;	0
 䔗	xiáng;cy;;cx;;tq;lg;ap;;	0
 䖮	xiǎng;ik;;ix;;lr;cd;jt;;	0
-䙹	xiàn;kj;;jj;;mu;fe;ga;;	0
+䙹	xiang;kj;;jj;;mu;fe;ga;;	0
 䛠	xiang;yb;;yd;;yt;sz;yg;;	0
 䜶	xiáng;df;;dj;;mq;zv;gk;;	0
 䢽	xiàng;gb;;yg;;tu;lm;aw;;	0
@@ -29563,7 +29563,7 @@ sort: by_weight
 𥊾	xiǎng;gy;;gy,oy;;mc;uw;ah;;	0
 𥗵	xiàng;uu;;ul,uu;;mr;mm;dw;;	0
 𥣟	xiàng;hh;;hx;;hf;xc;tq;;	0
-𥥩	ā;bk;;xx;;jr;ed;pw;;	0
+𥥩	xiàng;bk;;xx;;jr;ed;pw;;	0
 𥫖	xiāng;lx;;ly,vy;;yk;xb;uj;;	0
 𥿧	xiǎng;sk;;sx;;vr;id;xt;;	0
 𦍲	xiáng;dy;;dy;;yq;gg;hq;;	0
@@ -29644,7 +29644,7 @@ sort: by_weight
 㺒	xiāo;qp;;ql;;kh;me;qt;;	0
 䇃	xiao;ls;;ls;;yu;iv;un;;	0
 䊥	xiào;mp;;ms;;fx;pa;ov;;	0
-䒁	xí;vb;;vx;;ha;iu;te;;	0
+䒁	xiao;vb;;vx;;ha;iu;te;;	0
 䒕	xiǎo;cx;;cx;;tf;ly;ai;;	0
 䒝	xiáo;cx;;cx;;tk;lb;aq;;	0
 䕧	xiào;cf;;ch;;tk;lb;am;;	0
@@ -29675,7 +29675,7 @@ sort: by_weight
 簘	xiāo;vm;;vs;;hl,xl;rp;tv;;	0
 簫	xiāo;vp;;vs;;hx;ra;tv;;	0
 莦	xiāo;co;;cx;;tb;lv;ai;;	0
-薂	xí;cw;;cj,cw;;tk;lh;ar;;	0
+薂	xiào;cw;;cj,cw;;tk;lh;ar;;	0
 藃	xiāo;cq;;cq,cx;;to;le;ay;;	0
 虈	xiāo;cy;;cl;;tr;ld;ak;;	0
 蟂	xiāo;im;;im,ix;;ld;ce;jw;;	0
@@ -29828,7 +29828,7 @@ sort: by_weight
 擷	xié;fy;;fj;;qc;uw;rf;;	1
 旪	xié;ou;;ou;;aj,xj;on;jf;;	1
 梋	xié;mo;;mo,my;;db;ev;sk;;	1
-滊	xì;dm;;dq;;ed;kp;ir;;	1
+滊	xiē;dm;;dq;;ed;kp;ir;;	1
 焎	xiè;fh;;hv,dv;;qf;uc;rr;;	1
 熁	xié;ho;;ho,hx,hy;;fb;cv;ol;;	1
 燲	xié;hb;;hb;;fc;co;ol;;	1
@@ -29855,8 +29855,8 @@ sort: by_weight
 㨒	xie;ft;;fk;;qg;ug;rd;;	0
 㨙	xié;fd;;fx;;qk;um;re;;	0
 㨝	xiē;fo;;fx;;qb;uv;rn;;	0
-㩉	xī;fx;;fh;;qm;uz;rw;;	0
-㩗	xí;fn;;fx;;qs;uv;rm;;	0
+㩉	xié;fx;;fh;;qm;uz;rw;;	0
+㩗	xie;fn;;fx;;qs;uv;rm;;	0
 㩦	xié;fk;;fj;;qb;ud;rw;;	0
 㩪	xié;fy;;fx,fy;;qc;uw;rx;;	0
 㰔	xiè;my;;mx;;de;er;so;;	0
@@ -29872,13 +29872,13 @@ sort: by_weight
 㽊	xiè;hw;;wx;;fn;sr;oy;;	0
 㽳	xie;by;;by;;kd;an;ug;;	0
 䀘	xié;ok;;oj;;bt;ql;hg;;	0
-䁯	xī;ox;;oh;;bm;qz;hw;;	0
+䁯	xié;ox;;oh;;bm;qz;hw;;	0
 䇋	xie;lx;;ld;;yn;il;uq;;	0
 䉏	xiè;vn;;vj;;hq;rq;tq;;	0
 䉣	xiè;vh;;vx;;hf;rc;tv;;	0
 䊝	xiè;mx;;mx;;fp;ph;ot;;	0
 䍖	xie;sb;;sb;;wu;yv;lq;;	0
-䏮	xí;od;;od;;bo;vw;el;;	0
+䏮	xie;od;;od;;bo;vw;el;;	0
 䔑	xié;cd;;cx;;tj;lj;aw;;	0
 䕈	xiè;cm;;cd;;td;le;an;;	0
 䕵	xié;cn;;cj;;tf;lx;af;;	0
@@ -29912,7 +29912,7 @@ sort: by_weight
 嶰	xiè;un;;uj;;uq;vq;mq;;	0
 徢	xiè;rz;;xj;;ho;ws;tg;;	0
 愶	xié;xo;;xo,xx,xy;;pb;hv;nl;;	0
-慀	xì;xd;;xx;;pk;hm;ne;;	0
+慀	xié;xd;;xx;;pk;hm;ne;;	0
 挾	xié;fr;;fj;;qo;uj;rd;;	0
 搚	xié;fo;;fo,fx;;qb;uv;rl;;	0
 擕	xié;fk;;fg,fj;;qs,xs;um;rw;;	0
@@ -30041,7 +30041,7 @@ sort: by_weight
 𧜔	xiè;po;;yx;;lb;tv;pu;;	0
 𧝫	xiè;pj;;yj;;lb;tr;pu;;	0
 𧟃	xié;pk;;ys,yj;;lb;td;pu;;	0
-𧥤	xī;yu;;yu;;ys;sc;yn;;	0
+𧥤	xiē;yu;;yu;;ys;sc;yn;;	0
 𧭠	xiě;yh;;yx;;yf;sc;yp;;	0
 𧭸	xiè;yj;;yj;;ym;sf;yh;;	0
 𧳧	xiē;vb;;vj;;ba;mu;ee;;	0
@@ -30078,7 +30078,7 @@ sort: by_weight
 𩽍	xiè;yj;;yj;;nm;wf;qo;;	0
 𪆋	xié;sn;;nj,sn;;vf;ix;xf;;	0
 𪍛	xiè;lo;;mx;;db,jb;ev;sw;;	0
-𪕯	xí;jy;;uy;;hc;pw;vn;;	0
+𪕯	xié;jy;;uy;;hc;pw;vn;;	0
 𪙥	xiè;vn;;ix,ik;;yb;lv;hb;;	0
 訢	xīn;yj;;yj;;yl;st;yr;;	12
 盺	xīn;oj;;oj;;bl;qt;hr;;	8
@@ -30105,7 +30105,7 @@ sort: by_weight
 㜦	xín;nc;;nx;;vi;bk;vv;;	0
 㩪	xin;fy;;fx,fy;;qc;uw;rx;;	0
 㭄	xìn;mu;;mx;;dj;en;sn;;	0
-㭡	xì;mx;;mx;;dk;eb;st;;	0
+㭡	xìn;mx;;mx;;dk;eb;st;;	0
 㹷	xin;xq;;qx;;kk;bm;qd;;	0
 㻸	xin;wo;;wc;;ma;no;ga;;	0
 䎣	xin;lr;;ly;;qo;aj;di;;	0
@@ -30197,7 +30197,7 @@ sort: by_weight
 㣜	xíng;rd;;xx;;hn;wp;tg;;	0
 㨘	xǐng;fo;;fu;;qu;uq;ri;;	0
 㬐	xing;oo;;oj;;aa;oo;jg;;	0
-㮐	sì;mo;;mu;;du;eq;si;;	0
+㮐	xing;mo;;mu;;du;eq;si;;	0
 㴆	xing;dj;;dv;;eb;kr;iv;;	0
 㼛	xíng;kw;;wj;;mn;fr;ga;;	0
 㼬	xìng;tw;;wx;;gn;gr;fu;;	0
@@ -30247,7 +30247,7 @@ sort: by_weight
 𦈨	xíng;fk;;fj,fk;;ot;al;rm;;	0
 𦈵	xíng;fg;;fj,fg;;om;au;rm;;	0
 𦖤	xīng;eu;;ex;;sm;ql;bj;;	0
-𦢯	xìn;ob;;ox;;bc;vh;ew;;	0
+𦢯	xìng;ob;;ox;;bc;vh;ew;;	0
 𦩠	xīng;vu;;vx;;hm;il;te;;	0
 𧊞	xíng;id;;ix;;ln;cp;jg;;	0
 𧊽	xíng;id;;ix;;ln;cp;jt;;	0
@@ -30328,7 +30328,7 @@ sort: by_weight
 㾋	xiū;bm;;bx;;kd;ae;uw;;	0
 䜬	xiu;gy;;gy;;cw;hd;ww;;	0
 䰍	xiu;eu;;iu;;se;pk;de;;	0
-嚊	xì;kw;;kb;;rl;dl;kt;;	0
+嚊	xiù;kw;;kb;;rl;dl;kt;;	0
 峀	xiù;uy;;uy;;uw,xw;vd;mm;;	0
 樇	xiū;mo;;mo,my;;db;ev;sw;;	0
 璓	xiù;wn;;wx;;ms;nv;ga;;	0
@@ -30368,7 +30368,7 @@ sort: by_weight
 𪕦	xiǔ;jy;;uy;;hu;po;vn;;	0
 𪘆	xiū;vm;;ix;;yd;le;hb;;	0
 休	xù;rm;rm;rm;xw;od;je;ws;rl;	0
-邪	yé;ye;ye;ey,ye;db;ml;lt;ah;ye;	0
+邪	xú;ye;ye;ey,ye;db;ml;lt;ah;ye;	0
 許	xǔ;yw;;yw;;yj;sn;yt;;	86
 続	xù;se;;se,sk;;vu;ip;xf;;	52
 續	xù;sb;;sm;;vc;io;xf;;	42
@@ -30789,11 +30789,11 @@ sort: by_weight
 泶	xué;xu;;du,ub;;fe;kk;ip;eu;	3
 吷	xuè;kg;;kd,kg;;rk;dj;kn;;	1
 嶨	xué;ju;;ju,ub;;hu,xu;pv;vq,wf;;	1
-瞲	xù;ok;;ok,oy;;bb;qd;hc;;	1
+瞲	xuè;ok;;ok,oy;;bb;qd;hc;;	1
 轌	xuě;ie;;ix;;jm,js;yb;lf;;	1
 鞾	xuē;gf;;gh;;tj;tu;af;;	1
 岤	xué;ub;;ux;;uc;ve;mp;;	1
-怴	xù;xl;;xy;;pv;hn;na;;	1
+怴	xuè;xl;;xy;;pv;hn;na;;	1
 澩	xué;ju;;ub,ju;;he;pk;vq,wf;;	1
 瀥	xuè;dk;;dg,dh;;eb,xb;kg;in;;	1
 燢	xué;jh;;hb,jh;;hf;pc;vq,wf;;	1
@@ -30855,7 +30855,7 @@ sort: by_weight
 𣪨	xuè;tt;;ud,td;;ge;gr;fp;;	0
 𣺭	xuè;dn;;db;;eb;kj;id;;	0
 𤀰	xuè;dk;;dg;;eb;kg;ij;;	0
-𤇳	xù;ha;;hx;;fm;cf;od;;	0
+𤇳	xuè;ha;;hx;;fm;cf;od;;	0
 𥀣	xué;jp;;px,pb;;he;pr;wf;;	0
 𥄎	xuè;oy;;ow,op;;be;qh;hh;;	0
 𥄒	xuē;ob;;oh;;bp;qv;hw;;	0
@@ -30932,7 +30932,7 @@ sort: by_weight
 㚯	xun;nf;;nf;;vk;bb;vm;;	0
 㜄	xún;nf;;nf;;vi;bc;vm;;	0
 㝁	xun;bz;;zx;;pd;nh;qj;;	0
-㟧	è;uk;;ue;;us;va;mk;;	0
+㟧	xun;uk;;ue;;us;va;mk;;	0
 㡄	xún;jo;;jx;;la;ro;mh;;	0
 㢲	xùn;gb;;gb;;nc;bh;xx;;	0
 㨚	xún;fo;;fx;;qa;uo;ra;;	0
@@ -31016,7 +31016,7 @@ sort: by_weight
 邪	yá;ye;ye;ey,ye;db;ml;lt;ah;ye;	0
 犽	yà;qy;;qy;bu;kh;ml;qt;;	27
 亞	yà;aa;;aa;;mm;fc;gf,gh;;	63
-疋	pǐ;az;;av,pi,vv;;no;ts;nh;vr;	5
+疋	yǎ;az;;av,pi,vv;;no;ts;nh;vr;	5
 圧	yā;it;;it;;mg,xg;xg;df;;	36
 亜	yà;aa;;aa;dd;mm,xm;fc;gk;;	36
 碣	yà;ur;uv;uh;tr;mv;mf;dj;uv;	0
@@ -31042,7 +31042,7 @@ sort: by_weight
 瘂	yǎ;by;;by;;km;ac;ug;;	1
 磍	yà;uk;;uh;;mr;md;dp;;	1
 笌	yá;vy;;vy;;hh;rl;ta;;	1
-覀	xī;ak;;aa,xi;;mw;vx;sg;;	1
+覀	ya;ak;;aa,xi;;mw;vx;sg;;	1
 訝	yà;yy;;yy;;yh;sl;ya;;	2
 軋	yà;iv;;ig;;ju;ya;ln;;	1
 孲	yā;zy;;zy;;nm;hc;bg;;	1
@@ -31192,7 +31192,7 @@ sort: by_weight
 龑	yǎn;lt;;lt;;yk;tm;ue;;	6
 鷃	yàn;on;;ny,na;;af,xa;ox;jp;;	6
 嵒	yán;ku;;up;;ru,xu;dv;kk;;	6
-晻	àn;od;;od,oy;;au;oa;jd;;	2
+晻	yǎn;od;;od,oy;;au;oa;jd;;	2
 鳱	yàn;gn;;ng;;mf;ex;fw;;	2
 贗	yàn;ib;;bn,by,ib;;mc;xo;dw;;	5
 閹	yān;md;;md,my;;au;aa;ud;;	5
@@ -31245,7 +31245,7 @@ sort: by_weight
 姲	yàn;nn;;na;;vv;bb;vp;;	1
 懕	yān;ix;;xq,xy;;mp,xp;xh;dj;;	1
 懨	yān;xq;;xq,xy;;pk;hm;nd;;	1
-洝	àn;dn;;da;;ev;kb;ip;;	1
+洝	yàn;dn;;da;;ev;kb;ip;;	1
 淊	yān;dj;;dj,dx;;ex;kp;iq;;	1
 渷	yǎn;dx;;dx,dy;;eu;kp;iu;;	1
 溎	yàn;dt;;dg;;eg;kg;is;;	1
@@ -31281,7 +31281,7 @@ sort: by_weight
 㭺	yǎn;md;;my;;du;ea;sd;;	0
 㰽	yàn;kq;;qy;;so;ne;aj;;	0
 㱌	yan;eq;;qn;;so;qe;bb;;	0
-㱘	àn;iv;;vy;;mm;xs;dj;;	0
+㱘	yan;iv;;vy;;mm;xs;dj;;	0
 㳂	yán;dg;;dg;;ei;kk;iw;;	0
 㶄	yán;dj;;dy;;ex;kp;iu;;	0
 㷔	yàn;ho;;hj;;fa;co;oe;;	0
@@ -31326,7 +31326,7 @@ sort: by_weight
 䨄	yàn;rv;;vy;;og;ju;wy;;	0
 䫡	yán;jy;;yj;;tc;hw;uv;;	0
 䭘	yan;ux;;uj;;of;qy;wy;;	0
-䮗	àn;mg;;ma;;sj;ne;cm;;	0
+䮗	yàn;mg;;ma;;sj;ne;cm;;	0
 䱲	yan;yu;;yh;;no;wj;qo;;	0
 䲓	yǎn;yr;;yj;;no;wj;qo;;	0
 䳛	yàn;on;;ny;;af;ox;jv;;	0
@@ -31400,7 +31400,7 @@ sort: by_weight
 鼴	yǎn;jn;;un,uy;;hv;pb;vn;;	0
 齴	yǎn;vp;;iy;;yh;le;hb,hw;;	0
 𠆲	yǎn;rg;;gr,rg;;oi;jx;wy;;	0
-𠉬	ǎn;ri;;ri;;om;jx;wk;;	0
+𠉬	yǎn;ri;;ri;;om;jx;wk;;	0
 𠍛	yǎn;rn;;rn;;ob;jb;wd;;	0
 𠘥	yán;dw;;dy;;ik;wh;uk;;	0
 𠛭	yān;yd;;yd;;wn;rp;ld;;	0
@@ -31411,7 +31411,7 @@ sort: by_weight
 𡚇	yàn;sd;;dj,ad,ds;;wk;ym;lh;;	0
 𡣽	yán;nj;;ny;;vx;bp;vu;;	0
 𡹶	yǎn;un;;uy,un;;uv;vb;ma;;	0
-𡹼	àn;uk;;ey,uy;;ur;vs;md;;	0
+𡹼	yǎn;uk;;ey,uy;;ur;vs;md;;	0
 𡻡	yán;uy;;uy;;uw;vy;mw;;	0
 𢅠	yǎn;ij;;jy,yj;;mb;xr;dj;;	0
 𢇈	yàn;dy;;rb,yb;;vc;ih;xx;;	0
@@ -31471,7 +31471,7 @@ sort: by_weight
 𥣘	yǎn;hq;;hy;;hk;xm;td;;	0
 𥤟	yán;hm;;hy;;ht;xa;ta;;	0
 𥤴	yǎn;bk;;xj,xk;;jt;el;pw;;	0
-𥦍	ǎn;bc;;xg,xc;;jt;el;pw;;	0
+𥦍	yǎn;bc;;xg,xc;;jt;el;pw;;	0
 𥧑	yǎn;bb;;xv;;jc;eh;pw;;	0
 𥯃	yǎn;vd;;vy;;gu;ra;td;;	0
 𥴿	yán;vk;;vk;;hr;rd;ty;;	0
@@ -31532,7 +31532,7 @@ sort: by_weight
 𨻳	yàn;eh;;ey;;nf;tc;bg;;	0
 𨽑	yān;ep;;ep;;nh;te;be;;	0
 𩃀	yàn;yv;;yy;;mm,mv;tu;ft;;	0
-𩇠	è;fm;;qg,qh;;qt;aa;ge;;	0
+𩇠	yǎn;fm;;qg,qh;;qt;aa;ge;;	0
 𩈯	yān;md;;my;;mu,mv;ba;dm;;	0
 𩒖	yàn;gy;;yj,ky,yk;;mc;ew;gd;;	0
 𩗷	yǎn;fd;;fy;;hu,hv;oa;mt;;	0
@@ -31560,7 +31560,7 @@ sort: by_weight
 樣	yàng;my;;my;;de;ek;su;;	224
 様	yàng;mu;;mu;;de,xe;ek;su;;	159
 详	yang;yy;yy;yy;cp;iq;sg;yu;yy;	0
-卬	áng;pe;pe;ea,ev;ub;hl;bz;qb;pe;	0
+卬	yǎng;pe;pe;ea,ev;ub;hl;bz;qb;pe;	0
 昜	yáng;ow;;ow;;ah;oe;jg;;	66
 陽	yáng;ew;;ey;;nh;te;bj;;	46
 楊	yáng;mw;;my;;dh;ee;sj;;	44
@@ -31604,12 +31604,12 @@ sort: by_weight
 㺊	yàng;qx;;qy;;kp;mh;qt;;	0
 㿮	yàng;yp;;py;;le;mr;md;;	0
 䁑	yáng;ow;;oy;;bh;qe;hj;;	0
-䇦	ǎng;vy;;vy;;hk;rm;tm;;	0
+䇦	yang;vy;;vy;;hk;rm;tm;;	0
 䍩	yǎng;yw;;yw;;tk;gh;ud;;	0
 䑆	yǎng;og;;oy;;bv;vi;eu;;	0
 䒋	yǎng;yb;;sy;;lu;mm;md;;	0
 䖹	yáng;ig;;ig,iy;;lq;cg;jg;;	0
-䞁	yàn;bn;;by;;bv;ob;ma;;	0
+䞁	yang;bn;;by;;bv;ob;ma;;	0
 䬗	yáng;of;;fy;;ai;oc;jg;;	0
 䬬	yang;uy;;uy;;ok;qm;wy;;	0
 䬺	yàng;uy;;uy;;oq;qg;wy;;	0
@@ -32079,7 +32079,7 @@ sort: by_weight
 𦠜	yè;of;;oh;;bj;vu;ea;;	0
 𦤪	yè;oq;;hi;;ak;om;jq;;	0
 𦰳	yé;cy;;cy;;th;ll;as;;	0
-𧌄	è;id;;iy;;lu,lv;ca;jd;;	0
+𧌄	yè;id;;iy;;lu,lv;ca;jd;;	0
 𧎭	yè;ui;;iu,ui;;hi;zc;tm;;	0
 𧏽	yē;ix;;iy;;lp;ch;ja;;	0
 𧐓	yě;li;;iy,yi;;wi;dc;jf;;	0
@@ -32856,7 +32856,7 @@ sort: by_weight
 㖗	yín;kv;;kc;;rn;da;km;;	0
 㗃	yin;ko;;kh;;ra;do;kn;;	0
 㙬	yín;lt;;ty;;dg;eg;sw;;	0
-㝖	yí;bx;;bd;;jn;wl;pq;;	0
+㝖	yin;bx;;bd;;jn;wl;pq;;	0
 㝙	yín;bb;;bb;;jc;wh;pg;;	0
 㞤	yín;ur;;ur;;uo;vj;mw;;	0
 㡥	yìn;jx;;jy;;lp;rh;mh;;	0
@@ -32918,7 +32918,7 @@ sort: by_weight
 檭	yín;mg;;my;;dv;ei;sq;;	0
 檼	yìn;mx;;mj,mx;;dp;eh;se;;	0
 櫽	yǐn;em;;mx,my;;nd,xd;te;be;;	0
-欭	yì;yq;;qy;;wo;re;ld;;	0
+欭	yīn;yq;;qy;;wo;re;ld;;	0
 猌	yìn;lq;;ql;;dk,xk;em;sw;;	0
 璌	yín;wb;;wy;;mc,xm;nh;gp;;	0
 癊	yìn;by;;by;;ki;ab;ub;;	0
@@ -33559,7 +33559,7 @@ sort: by_weight
 粥	yù;gm;gg;gg,mg;rr;nn;bb;xo;gg;	0
 谷	yù;bk;bk;bk,kr;fo;cr;hg;ww;bk;	0
 與	yǔ;jb;;ba,jb;;hc;ph;vg,wf;;	2658
-邪	yé;ye;ye;ey,ye;db;ml;lt;ah;ye;	0
+邪	yu;ye;ye;ey,ye;db;ml;lt;ah;ye;	0
 馀	yú;um;;uy;gw;nd;qx;qn;ux;	810
 語	yǔ;yk;;yw;;yr;sd;yg;;	391
 菀	yù;cv;cv;cw;zt;tu;lz;ap;cv;	0
@@ -34260,7 +34260,7 @@ sort: by_weight
 说	yuè;yx;ye;yd;ck;iu;sp;yu;ye;	0
 㜧	yuè;nq;;nj;;vo;be;vd;;	0
 㜰	yuè;nm;;nl;;vd;be;vx;;	0
-㧒	yù;fb;;fx;;qc;ue;rp;;	0
+㧒	yue;fb;;fx;;qc;ue;rp;;	0
 㬦	yuè;oy;;oh,ov;;ae;or;ja;;	0
 㭾	yue;mi;;mq;;du;em;sn;;	0
 㯞	yue;mo;;mj;;db;ev;sx;;	0
@@ -34367,7 +34367,7 @@ sort: by_weight
 伝	yún;ry;;ry;;oi,xi;jb;wf;;	186
 員	yún;kb;;kb;;rc;do;km;;	8
 運	yùn;zi;;zj;;yj;wu;pl;;	69
-菀	yù;cv;cv;cw;zt;tu;lz;ap;cv;	0
+菀	yùn;cv;cv;cw;zt;tu;lz;ap;cv;	0
 玧	yǔn;wy;;wy;;mu;np;gc;;	2
 涒	yūn;dk;;dj;;er;kd;iv;;	5
 韻	yùn;lb;;yy;;yc;xo;uj;;	30
@@ -34408,7 +34408,7 @@ sort: by_weight
 荺	yǔn;cy;;cj;;tm;lw;af;;	1
 蕓	yún;cy;;cy;;ti;lb;af;;	1
 韞	yùn;wm;;ww;;dt;ga;nh;;	1
-㒁	yǔ;rg;;ry;;oj;jg;wl;;	0
+㒁	yun;rg;;ry;;oj;jg;wl;;	0
 㚃	yūn;tx;;uq;;gt;gh;fp;;	0
 㚞	yun;dm;;dl;;kd;me;ds;;	0
 㚺	yùn;nz;;ny;;vd;bh;ve;;	0
@@ -34614,7 +34614,7 @@ sort: by_weight
 兂	zān;ae;;ag;;ku,qu;du;aq;;	4
 攅	zǎn;fb;;fz;;qc;uo;rf;;	3
 酇	zàn;ne;;ez;;hl;qt;tf;;	2
-囋	zá;kb;;kz;;rc;do;kt;;	1
+囋	zàn;kb;;kz;;rc;do;kt;;	1
 揝	zǎn;fo;;fo,fz;;qa;uo;rt;;	1
 儹	zǎn;rb;;rz;;oc;jo;wt;;	2
 鏨	zàn;ij;;jv;;jc;yz;lr;;	2
@@ -34624,7 +34624,7 @@ sort: by_weight
 塹	zan;it;;tv;;jg;yg;lr;;	1
 撍	zǎn;fo;;fo,fq;;qa;uo;ra;;	1
 饡	zàn;ub;;uz;;oc;qo;wp,wy;;	1
-偺	zá;ro;;ro,rz;;oa;jo;wt;;	1
+偺	zán;ro;;ro,rz;;oa;jo;wt;;	1
 灒	zàn;db;;dz;;ec;ko;it;;	1
 禶	zàn;pb;;uz;;ic;fo;py;;	1
 鄼	zàn;fe;;ez;;ql;ht;fw;;	1
@@ -34647,7 +34647,7 @@ sort: by_weight
 䬤	zàn;ug;;uu;;sv;cq;nw;;	0
 䭕	zǎn;ig;;uv;;jv;yq;lr;;	0
 儧	zǎn;rb;;rz;;oc;jo;wf;;	0
-喒	zá;ko;;ko,kr,kz;;ra;do;kt;;	0
+喒	zǎn;ko;;ko,kr,kz;;ra;do;kt;;	0
 桚	zǎn;mx;;mx;;dn;el;sv;;	0
 橵	zan;mw;;ms;;dk;eh;sa;;	0
 瓉	zàn;wb;;wz;;mc;no;gf;;	0
@@ -34660,7 +34660,7 @@ sort: by_weight
 𠼗	zàn;kj;;kv;;rl;dt;kl;;	0
 𡡖	zān;no;;nc;;va;bo;va;;	0
 𢄤	zǎn;ij;;jv,vj;;jb;yr;lr;;	0
-𣤶	zā;tq;;qc,qm,tq;;go;ge;fw;;	0
+𣤶	zǎn;tq;;qc,qm,tq;;go;ge;fw;;	0
 𣸄	zǎn;do;;dz;;ea;ko;it;;	0
 𥎑	zàn;mo;;mc,mo;;na;io;cb;;	0
 𥜙	zàn;du;;uj,ju;;ef;kf;il;;	0
@@ -34788,7 +34788,7 @@ sort: by_weight
 䂝	ze;ug;;ug;;mi;mp;da;;	0
 䅚	ze;hv;;hj;;hu;xz;tu;;	0
 䇥	zé;vv;;vv;;hm;rs;tg;;	0
-䔾	è;cr;;cj;;tv;lf;ar;;	0
+䔾	ze;cr;;cj;;tv;lf;ar;;	0
 䕉	zé;cg;;cg;;tj;lg;al;;	0
 䕪	zé;cg;;cz;;tj;lg;ai;;	0
 䯔	zé;gq;;gv;;bp;fr;me;;	0
@@ -34852,7 +34852,7 @@ sort: by_weight
 賊	zéi;bu;;br;;bj;on;ma;;	124
 鰂	zéi;yd;;yz;;nn;wp;qo;;	2
 鱡	zéi;yu;;yz;;nj;wn;qo;;	1
-㖽	zé;ky;;ky;;rc;dw;kd;;	0
+㖽	zei;ky;;ky;;rc;dw;kd;;	0
 戝	zéi;bg;;bg;;bi;op;ma;;	0
 蠈	zéi;bi;;iz;;bi;oc;ma;;	0
 𢨗	zéi;dg;;gm,dg;;ki;mp;dc;;	0
@@ -34880,7 +34880,7 @@ sort: by_weight
 䙢	zèng;po;;yc;;la;to;pu;;	0
 䰝	zèng;go;;gc;;ma;no;gk;;	0
 䵴	zèng;ld;;hm;;wu;pd;lf;;	0
-囎	zen;ko;;kz;;ra;do;km;;	0
+囎	zeng;ko;;kz;;ra;do;km;;	0
 璔	zēng;wo;;wc;;ma;no;gu;;	0
 鬵	zeng;wg;;gw,wg;;mb;dn;aq;;	0
 鱛	zēng;yo;;yc;;na;wo;qo;;	0
@@ -34893,7 +34893,7 @@ sort: by_weight
 𨲯	zēng;eo;;ic;;sa;po;du;;	0
 𪒟	zèng;lo;;hc;;wa;po;lf;;	0
 𪙭	zèng;vo;;ic;;ya;lo;hb;;	0
-蜡	là;io;io;ix;fv;la;co;ja;io;	0
+蜡	zhà;io;io;ix;fv;la;co;ja;io;	0
 査	zhā;mq;;mq;;dm;ef;se;;	0
 紮	zhā;mx;;sv;;df;ei;sn;;	4
 怍	zhà;xv;xv;xv;nu;ps;hw;nt;xv;	0
@@ -34905,7 +34905,7 @@ sort: by_weight
 搾	zhà;fv;;fv;;qs;uw;rp;;	3
 灹	zhà;hq;;hq,ht;;fp;cr;ot;;	1
 箚	zhá;vd;;vd;;hn;rp;tw;;	2
-軋	yà;iv;;ig;;ju;ya;ln;;	1
+軋	zhá;iv;;ig;;ju;ya;ln;;	1
 抯	zhā;fq;;fq;;qm;uf;re;;	1
 摣	zhā;fq;;fc,fq;;qm;uf;rh;;	1
 潳	zhā;do;;dt;;ea;ko;in;;	1
@@ -35059,7 +35059,7 @@ sort: by_weight
 䓱	zhai;cm;;ci;;td;le;ah;;	0
 䔝	zhāi;cx;;cz;;tf;li;ah;;	0
 亝	zhāi;se;;el,se;;im,xm;km;cc;;	0
-厏	zhǎ;iv;;iv;;ms;xw;dt;;	0
+厏	zhǎi;iv;;iv;;ms;xw;dt;;	0
 嚌	zhāi;ko;;kq;;rx;dq;ky;;	0
 夈	zhāi;wm;;wm;;hd;hp;to;;	0
 捚	zhāi;fl;;fl;;qg;ud;rj;;	0
@@ -35167,7 +35167,7 @@ sort: by_weight
 䵣	zhan;ld;;hd;;wm;pf;lf;;	0
 噡	zhān;kk;;kv,ky;;rr;ds;kq;;	0
 嫸	zhǎn;nk;;nu;;vr;bd;vu;;	0
-岾	hàn;uv;;uv;;ur;vd;mh;;	0
+岾	zhan;uv;;uv;;ur;vd;mh;;	0
 嶃	zhǎn;uj;;uv;;ul,xl;vt;ml;;	0
 嶘	zhàn;ug;;uv;;ui;vp;ms;;	0
 怗	zhān;xv;;xv;;pr;hd;nh;;	0
@@ -35537,7 +35537,7 @@ sort: by_weight
 𪁊	zhé;fn;;nv,vn;;qf;ux;rr;;	0
 𪐏	zhé;hg;;ud;;hb;xc;tw;;	0
 𪚥	zhé;ll;;ll;;yp;tt;ue;;	0
-这	zhè;zw;zw;zw;jq;yk;vu;p,yp;zx;	0
+这	zhèi;zw;zw;zw;jq;yk;vu;p,yp;zx;	0
 填	zhèn;tb;tb;tv;gf;gc;gh;ff;tb;	0
 槙	zhen;mb;;mv;wf;dc;eh;sf;;	13
 眞	zhēn;bb;;bb;;pc;vh;xh;;	75
@@ -35658,7 +35658,7 @@ sort: by_weight
 𣒅	zhèn;mk;;my;;dr;ed;sq;;	0
 𣓀	zhēn;xm;;xm,mx;;yd;ne;us;;	0
 𣘘	zhēn;mx;;mx,mu;;dj;en;sa;;	0
-𣦵	è;ba;;ba;;ym;gd;hm;;	0
+𣦵	zhēn;ba;;ba;;ym;gd;hm;;	0
 𣬻	zhěn;lm;;mi,lm,md;;nu;av;bi;;	0
 𣱽	zhěn;dn;;dn;;es;kv;ie;;	0
 𣿎	zhēn;dk;;dj;;er;kd;ia;;	0
@@ -35758,7 +35758,7 @@ sort: by_weight
 糽	zhěng;sd;;sd;;vn;ia;xs;;	0
 綪	zhēng;so;;sq;;vb;iv;xg;;	0
 聇	zhēng;ev;;ev;;sm;qs;bg;;	0
-靕	zhēn;vo;;qv,vq;;mb;fv;gh;;	0
+靕	zheng;vo;;qv,vq;;mb;fv;gh;;	0
 𠏫	zhěng;rm;;rm;;ot;ja;wa;;	0
 𠑅	zhēng;rb;;rv,rd;;ot;jz;wp;;	0
 𠔻	zhèng;jb;;xx,bx;;hc;ph;wf;;	0
@@ -36921,7 +36921,7 @@ sort: by_weight
 訰	zhùn;yt;;yt;;yu;ss;yg;;	0
 𥇜	zhūn;oz;;ox;;bd;qh;hy;;	0
 𥚠	zhùn;uz;;ux;;id;fh;py;;	0
-著	zhù;co;co;cv;zv;ta;lo;af;co;	0
+著	zhuó;co;co;cv;zv;ta;lo;af;co;	0
 缴	zhuó;sw;sw;sj,sw;ej;vk;ih;xr;sw;	0
 棹	zhuō;mu;mu;mv;ws;dj;en;sh;lu;	0
 淖	zhuō;du;du;dv;ks;ej;kn;ih;du;	0
@@ -37576,7 +37576,7 @@ sort: by_weight
 䦈	zuǒ;eg;;iz;;sm;pu;dd;;	0
 䩦	zuo;rg;;gy;;oj;jt;wh;;	0
 䬤	zuo;ug;;uu;;sv;cq;nw;;	0
-䯿	zú;eu;;iz;;sj;pn;de;;	0
+䯿	zuo;eu;;iz;;sj;pn;de;;	0
 侳	zuò;rr;;rz;;og;jg;ww;;	0
 岝	zuò;uv;;uv;;us;vw;mt;;	0
 柮	zuó;mi;;mi;;du;em;sb;;	0
