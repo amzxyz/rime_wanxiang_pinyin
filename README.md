@@ -1,5 +1,5 @@
 **万象系列方案：** 
-本方案为万象增强版 [万象基础版本](https://github.com/amzxyz/rime_wanxiang)  [万象同文定制版本](https://github.com/amzxyz/rime_wanxiang_tongwen)
+本方案为万象增强版 [万象基础版本支持同文9、14、18键](https://github.com/amzxyz/rime_wanxiang)  
 
 
 ### 万象拼音  源于[万象词库与万象语言模型](https://github.com/amzxyz/RIME-LMDG) 这是一种带声调的词库，经过AI和大基数语料筛选、加频，结合语言模型获得更准确的整句输出。还结合了中英文混输，一个套词库，多种用法，具体可以跳转了解优势。
