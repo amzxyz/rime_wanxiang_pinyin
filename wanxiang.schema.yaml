@@ -2,8 +2,6 @@
 # encoding: utf-8
 #本方案匹配词库解码顺序为：全拼拼音；墨奇;鹤形;自然码;简单鹤;仓颉首末;虎码首末;五笔前2
 #############DIY你想要的方案组合,试试搭配一个自然码+墨奇辅助的方案吧！###########################
-schema_name: 
-  name: 万象拼音   #可以改成与你所选方案一致的描述，不改也行
 set_shuru_schema:         #配置此项就是选择什么输入法,同时拆分反查和中英文混输也将匹配该输入方案
   __include: algebra_zrm  #可选解码规则有   algebra_pinyin, algebra_zrm, algebra_flypy,  algebra_ziguang, algebra_sogou, algebra_mspy, algebra_abc  选择一个填入
 set_algebra_fuzhu:        #配置此项就是选择什么辅助码
@@ -17,10 +15,10 @@ pro_comment_format:           # 超级注释模块，子项配置 true 开启，
 # 方案说明
 schema:
   schema_id: wanxiang
-  __include: schema_name
+  name: 万象拼音PRO
   version: "2024-09-30"
   author:
-    - gaboolic,amzxyz
+    - amzxyz
   description: |
     万象拼音 支持常见双拼方案和全拼输入，辅助码同时支持墨奇;鹤形;自然码;简单鹤;仓颉首末;虎码首末;五笔前2;汉心码；采用万象归一的词库，换方案不换词库，不丢失用户词！
   dependencies:
@@ -788,20 +786,14 @@ mohuyin:
     - derive/^i([a-z])/c$1/
     - derive/^u([a-z])/s$1/
 
-__include: octagram/enable_for_sentence   #启用语言模型
-#__include: octagram/disable   #禁用语言模型
+__include: octagram   #启用语言模型
 #语言模型
 octagram:
-  disable:
-    __patch:
-      grammar: {}
-  enable_for_sentence:
-    __patch:
-      grammar:
-        language: zh-hans-t-essay-bgw   
-        collocation_max_length: 4
-        collocation_min_length: 3
-        non_collocation_penalty: -24
-        collocation_penalty: -6
-        weak_collocation_penalty: -12
-        rear_penalty: -18
+  __patch:
+    grammar:
+      language: amz-v2n3m1-zh-hans  
+      collocation_max_length: 5
+      collocation_min_length: 2
+    translator/contextual_suggestions: true
+    translator/max_homophones: 7
+    translator/max_homographs: 7
