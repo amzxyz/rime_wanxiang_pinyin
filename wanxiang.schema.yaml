@@ -51,9 +51,9 @@ switches:
 #    states: [ 然, 自 ]
 #  - name: moqi_chaifen
 #    states: [ 奇, 墨 ]
-#  - name: search_single_char  # search.lua 的功能开关，辅码查词时是否单字优先
-#    abbrev: [词, 单]
-#    states: [正常, 单字]
+  - name: search_single_char  # search.lua 的功能开关，辅码查词时是否单字优先
+    abbrev: [词, 单]
+    states: [正常, 单字]
 
 
 # 输入引擎
