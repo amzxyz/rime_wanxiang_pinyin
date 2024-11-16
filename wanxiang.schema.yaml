@@ -51,9 +51,9 @@ switches:
 #    states: [ 然, 自 ]
 #  - name: moqi_chaifen
 #    states: [ 奇, 墨 ]
-#  - name: search_single_char  # search.lua 的功能开关，辅码查词时是否单字优先
-#    abbrev: [词, 单]
-#    states: [正常, 单字]
+  - name: search_single_char  # search.lua 的功能开关，辅码查词时是否单字优先
+    abbrev: [词, 单]
+    states: [正常, 单字]
 
 
 # 输入引擎
@@ -186,12 +186,7 @@ translator:
   dictionary: wanxiang          # 挂载词库 wanxiang.dict.yaml
 #  prism: double_pinyin          # 多方案共用一个词库时，为避免冲突，需要用 prism 指定一个名字。
   contextual_suggestions: true   #上下文建议开启〔需配合 grammar 使用〕
-  max_homophones: 4 # 最大同音簇长度〔需配合 grammar 使用〕
-  max_homographs: 2 # 最大同形簇长度〔需配合 grammar 使用〕
-  dynamic_model: true  # 启用动态语言模型
-  segment_length: 4  # 设置分词长度
   prioritize_quality: true  # 启用优先质量选项
-  max_phrase_length: 7  # 设置短语的最大长度，如果主要输入单词或短短的短语，可以设置为4。句子更长一些
   enable_completion: true  # 启用候选词补全
   max_candidates: 10  # 设置最大候选词数量
 #  punctuation_model: default  # 设置标点符号模型
@@ -204,7 +199,7 @@ translator:
   encode_commit_history: true   # 预留历史上屏自动编码成词
   initial_quality: 3       # 初始质量拼音的权重应该比英文大
 #  secondary_quality: 0.8  # 设置次要质量
-  spelling_hints: 10             # 将注释以词典字符串形式完全暴露，通过pro_comment_format.lua完全接管，灵活配置。
+  spelling_hints: 20             # 将注释以词典字符串形式完全暴露，通过pro_comment_format.lua完全接管，灵活配置。
   always_show_comments: true    # Rime 默认在 preedit 等于 comment 时取消显示 comment，这里强制一直显示，供pro_comment_format.lua做判断用。
   comment_format: {comment}  #将注释以词典字符串形式完全暴露，通过pro_comment_format.lua完全接管，灵活配置。
   preedit_format:               # preedit_format 影响到输入框的显示和“Shift+回车”上屏的字符
