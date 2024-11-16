@@ -1,21 +1,19 @@
 **万象系列方案：** 
-本方案为万象增强版 [万象基础版本](https://github.com/amzxyz/rime_feisheng_dict)  [万象同文定制版本](https://github.com/amzxyz/wanxiang_wanxiang)
+本方案为万象增强版 [万象基础版本](https://github.com/amzxyz/rime_wanxiang)  [万象同文定制版本](https://github.com/amzxyz/tongwen_wanxiang)
 
 
-### 万象拼音  源于[飞声词库](https://github.com/amzxyz/rime_feisheng) 这是一种带音调的词库，具体可以跳转了解优势，结合中英文混输，一个套词库，多种用法.
+### 万象拼音  源于[万象词库与万象语言模型](https://github.com/amzxyz/RIME-LMDG) 这是一种带声调的词库，经过AI和大基数语料筛选、加频，结合语言模型获得更准确的整句输出。还结合了中英文混输，一个套词库，多种用法，具体可以跳转了解优势。
 #### 词库词语全部加音调，设计8种辅助码，头部使用全拼编码，可以转化为任何双拼编码，词库解码顺序为：全拼拼音；墨奇;鹤形;自然码;简单鹤;仓颉首末;虎码首末;五笔前2;汉心码，因此万象拼音支持拼音和辅助码任意两两组合。
 
 #### 使用方法：
 
 ###### 由于万象支持各种演变双拼编码方式，所以不能一一列举，且方案文件多了容易混乱。然而使用rime不可避免的要自定义，故而干脆将选项前置，初始化选择一番就是自己想要的方案，更深的定制再去修改其它地方。
 
-###### 打开```wanxiang.schema.yaml```文件，表头按照提示进行4个维度的选择，定义属于自己的输入法方案:
+###### 打开```wanxiang.schema.yaml```文件，表头按照提示进行3个维度的选择，定义属于自己的输入法方案:
 
 ```yaml
 #本方案匹配词库解码顺序为：全拼拼音；墨奇;鹤形;自然码;简单鹤;仓颉首末;虎码首末;五笔前2;汉心码
 #############DIY你想要的方案组合,试试搭配一个自然码+墨奇辅助的方案吧！###########################
-schema_name: 
-  name: 万象拼音   #可以改成与你所选方案一致的描述，不改也行
 set_shuru_schema:         #配置此项就是选择什么输入法,同时拆分反查和中英文混输也将匹配该输入方案
   __include: algebra_zrm  #可选解码规则有   algebra_pinyin, algebra_zrm, algebra_flypy,  algebra_ziguang, algebra_sogou, algebra_mspy, algebra_abc  选择一个填入
 set_algebra_fuzhu:        #配置此项就是选择什么辅助码
