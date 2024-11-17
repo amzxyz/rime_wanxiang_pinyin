@@ -1,7 +1,7 @@
 -- 欢迎使用带声调的拼音词库
 -- @amzxyz
--- https://github.com/amzxyz/rime_feisheng
--- https://github.com/amzxyz/rime_wanxiang_pinyin
+-- https://github.com/amzxyz/rime_wanxiang
+-- https://github.com/amzxyz/rime_wanxiang_pro
 -- 本lua通过定义一个不直接上屏的引导符号搭配26字母实现快速符号输入，并在双击''上屏上一次的符号，双击;;重复上屏上次的汉字和字母
 -- 使用方式加入到函数 - lua_processor@*quick_symbol_text 下面
 -- 方案文件配置,
