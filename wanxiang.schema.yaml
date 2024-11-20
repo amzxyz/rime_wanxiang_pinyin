@@ -392,6 +392,7 @@ algebra_pinyin:
   __append: 
     - xlit/āáǎàōóǒòēéěèīíǐìūúǔùǖǘǚǜü/aaaaooooeeeeiiiiuuuuvvvvv/
     - erase/^xx;.*$/
+    - abbrev|^([a-z]).+$|$1/|  #开启简拼并通过末尾斜杠提权
 algebra_zrm: 
   __append:
     #- erase/^xx;.*$/
@@ -426,6 +427,7 @@ algebra_zrm:
     - xform/^ch/Ⓘ/
     - xform/^zh/Ⓥ/
     - xlit/ⓆⓌⓇⓉⓎⓊⒾⓄⓅⓈⒹⒻⒼⒽⓂⒿⒸⓀⓁⓏⓍⓋⒷⓃ/qwrtyuiopsdfghmjcklzxvbn/
+    - abbrev|^([a-z]).+$|$1/|
 algebra_flypy: 
   __append:
     #- erase/^xx$/
@@ -460,6 +462,7 @@ algebra_flypy:
     - xform/^ch/Ⓘ/
     - xform/^zh/Ⓥ/
     - xlit/ⓆⓌⓇⓉⓎⓊⒾⓄⓅⓈⒹⒻⒼⒽⒿⓀⓁⓏⓍⒸⓋⒷⓃⓂ/qwrtyuiopsdfghjklzxcvbnm/
+    - abbrev|^([a-z]).+$|$1/|
 algebra_mspy: 
   __append:
     - xlit/āáǎàōóǒòēéěèīíǐìūúǔùǖǘǚǜü/aaaaooooeeeeiiiiuuuuvvvvv/
@@ -496,6 +499,7 @@ algebra_mspy:
     - xform/^ch/Ⓘ/
     - xform/^zh/Ⓥ/
     - xlit/ⓆⓌⓇⓉⓎⓊⒾⓄⓅⓈⒹⒻⒼⒽⓂⒿⒸⓀⓁⓏⓍⓋⒷⓃ/qwrtyuiopsdfghmjcklzxvbn/
+    - abbrev|^([a-z]).+$|$1/|
 algebra_sogou: 
   __append:
     - xlit/āáǎàōóǒòēéěèīíǐìūúǔùǖǘǚǜü/aaaaooooeeeeiiiiuuuuvvvvv/
@@ -531,6 +535,7 @@ algebra_sogou:
     - xform/^ch/Ⓘ/
     - xform/^zh/Ⓥ/
     - xlit/ⓆⓌⓇⓉⓎⓊⒾⓄⓅⓈⒹⒻⒼⒽⓂⒿⒸⓀⓁⓏⓍⓋⒷⓃ/qwrtyuiopsdfghmjcklzxvbn/
+    - abbrev|^([a-z]).+$|$1/|
 algebra_ziguang: 
   __append:
     - xlit/āáǎàōóǒòēéěèīíǐìūúǔùǖǘǚǜü/aaaaooooeeeeiiiiuuuuvvvvv/
@@ -564,6 +569,7 @@ algebra_ziguang:
     - xform/^sh/Ⓘ/
     - xform/^ch/Ⓐ/
     - xlit/ⓌⓉⓎⓊⒾⓄⓅⒶⒼⓈⒹⒻⒽⒿⓀⓁⓏⓍⒷⓃⓂⓆⓇ/wtyuiopagsdfhjklzxbnmqr/
+    - abbrev|^([a-z]).+$|$1/|
 algebra_abc: 
   __append:
     - xlit/āáǎàōóǒòēéěèīíǐìūúǔùǖǘǚǜü/aaaaooooeeeeiiiiuuuuvvvvv/
@@ -596,6 +602,7 @@ algebra_abc:
     - xform/^ch/Ⓔ/
     - xform/^sh/Ⓥ/
     - xlit/ⓆⓌⒺⓇⓉⓎⓄⓅⒶⓈⒹⒻⒼⒽⒿⓀⓁⓏⓍⒸⓋⒷⓃⓂ/qwertyopasdfghjklzxcvbnm/
+    - abbrev|^([a-z]).+$|$1/|
 
 ###############################################以下是用来配置不同的辅助码方案###############################################
 fuzhu_kong: 
