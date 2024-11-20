@@ -391,11 +391,17 @@ speller:
 algebra_pinyin: 
   __append: 
     - xlit/āáǎàōóǒòēéěèīíǐìūúǔùǖǘǚǜü/aaaaooooeeeeiiiiuuuuvvvvv/
+    - xform/ń|ň|ǹ/en/ 
+    - xform/\bn\b/en/   #解决𧗈字拼音n通过双拼en打出来
+    - xform/ńg|ňg|ǹg/en/
+    - abbrev/^([a-z]).+$/$1/
     - erase/^xx;.*$/
 algebra_zrm: 
   __append:
-    #- erase/^xx;.*$/
     - xlit/āáǎàōóǒòēéěèīíǐìūúǔùǖǘǚǜü/aaaaooooeeeeiiiiuuuuvvvvv/
+    - xform/ń|ň|ǹ/en/ 
+    - xform/\bn\b/en/   #解决𧗈字拼音n通过双拼en打出来
+    - xform/ńg|ňg|ǹg/en/
     - derive/^([jqxy])u(;.*)$/$1v$2/
     - derive/^([aoe])([ioun])(;.*)$/$1$1$2$3/
     - xform/^([aoe])(ng)?(;.*)$/$1$1$2$3/
@@ -426,10 +432,13 @@ algebra_zrm:
     - xform/^ch/Ⓘ/
     - xform/^zh/Ⓥ/
     - xlit/ⓆⓌⓇⓉⓎⓊⒾⓄⓅⓈⒹⒻⒼⒽⓂⒿⒸⓀⓁⓏⓍⓋⒷⓃ/qwrtyuiopsdfghmjcklzxvbn/
+    - abbrev/^([a-z]).+$/$1/
 algebra_flypy: 
   __append:
-    #- erase/^xx$/
     - xlit/āáǎàōóǒòēéěèīíǐìūúǔùǖǘǚǜü/aaaaooooeeeeiiiiuuuuvvvvv/
+    - xform/ń|ň|ǹ/en/ 
+    - xform/\bn\b/en/   #解决𧗈字拼音n通过双拼en打出来
+    - xform/ńg|ňg|ǹg/en/
     - derive/^([jqxy])u(;.*)$/$1v$2/
     - derive/^([aoe])([ioun])(;.*)$/$1$1$2$3/
     - xform/^([aoe])(ng)?(;.*)$/$1$1$2$3/
@@ -460,9 +469,13 @@ algebra_flypy:
     - xform/^ch/Ⓘ/
     - xform/^zh/Ⓥ/
     - xlit/ⓆⓌⓇⓉⓎⓊⒾⓄⓅⓈⒹⒻⒼⒽⒿⓀⓁⓏⓍⒸⓋⒷⓃⓂ/qwrtyuiopsdfghjklzxcvbnm/
+    - abbrev/^([a-z]).+$/$1/
 algebra_mspy: 
   __append:
     - xlit/āáǎàōóǒòēéěèīíǐìūúǔùǖǘǚǜü/aaaaooooeeeeiiiiuuuuvvvvv/
+    - xform/ń|ň|ǹ/en/ 
+    - xform/\bn\b/en/   #解决𧗈字拼音n通过双拼en打出来
+    - xform/ńg|ňg|ǹg/en/
     - derive/^([jqxy])u(;.*)$/$1v$2/
     - derive/^([aoe].*)(;.*)$/o$1$2/
     - xform/^([ae])(.*)(;.*)$/$1$1$2$3/
@@ -496,9 +509,13 @@ algebra_mspy:
     - xform/^ch/Ⓘ/
     - xform/^zh/Ⓥ/
     - xlit/ⓆⓌⓇⓉⓎⓊⒾⓄⓅⓈⒹⒻⒼⒽⓂⒿⒸⓀⓁⓏⓍⓋⒷⓃ/qwrtyuiopsdfghmjcklzxvbn/
+    - abbrev/^([a-z]).+$/$1/
 algebra_sogou: 
   __append:
     - xlit/āáǎàōóǒòēéěèīíǐìūúǔùǖǘǚǜü/aaaaooooeeeeiiiiuuuuvvvvv/
+    - xform/ń|ň|ǹ/en/ 
+    - xform/\bn\b/en/   #解决𧗈字拼音n通过双拼en打出来
+    - xform/ńg|ňg|ǹg/en/
     - derive/^([jqxy])u(;.*)$/$1v$2/
     - derive/^([aoe].*)(;.*)$/o$1$2/
     - xform/^([ae])(.*)(;.*)$/$1$1$2$3/
@@ -531,9 +548,13 @@ algebra_sogou:
     - xform/^ch/Ⓘ/
     - xform/^zh/Ⓥ/
     - xlit/ⓆⓌⓇⓉⓎⓊⒾⓄⓅⓈⒹⒻⒼⒽⓂⒿⒸⓀⓁⓏⓍⓋⒷⓃ/qwrtyuiopsdfghmjcklzxvbn/
+    - abbrev/^([a-z]).+$/$1/
 algebra_ziguang: 
   __append:
     - xlit/āáǎàōóǒòēéěèīíǐìūúǔùǖǘǚǜü/aaaaooooeeeeiiiiuuuuvvvvv/
+    - xform/ń|ň|ǹ/en/ 
+    - xform/\bn\b/en/   #解决𧗈字拼音n通过双拼en打出来
+    - xform/ńg|ňg|ǹg/en/
     - derive/^([jqxy])u(;.*)$/$1v$2/
     - xform/^([aoe].*)(;.*)$/Ⓞ$1$2/  # 添上固定的零聲母o，先標記爲大寫O
     - xform/^(\w+?)en(;.*)$/$1Ⓦ$2/
@@ -564,9 +585,13 @@ algebra_ziguang:
     - xform/^sh/Ⓘ/
     - xform/^ch/Ⓐ/
     - xlit/ⓌⓉⓎⓊⒾⓄⓅⒶⒼⓈⒹⒻⒽⒿⓀⓁⓏⓍⒷⓃⓂⓆⓇ/wtyuiopagsdfhjklzxbnmqr/
+    - abbrev/^([a-z]).+$/$1/
 algebra_abc: 
   __append:
     - xlit/āáǎàōóǒòēéěèīíǐìūúǔùǖǘǚǜü/aaaaooooeeeeiiiiuuuuvvvvv/
+    - xform/ń|ň|ǹ/en/ 
+    - xform/\bn\b/en/   #解决𧗈字拼音n通过双拼en打出来
+    - xform/ńg|ňg|ǹg/en/
     - xform/^([aoe].*)(;.*)$/Ⓞ$1$2/
     - xform/^(\w+?)ei(;.*)$/$1Ⓠ$2/
     - xform/^(\w+?)ian(;.*)$/$1Ⓦ$2/
@@ -596,7 +621,7 @@ algebra_abc:
     - xform/^ch/Ⓔ/
     - xform/^sh/Ⓥ/
     - xlit/ⓆⓌⒺⓇⓉⓎⓄⓅⒶⓈⒹⒻⒼⒽⒿⓀⓁⓏⓍⒸⓋⒷⓃⓂ/qwertyopasdfghjklzxcvbnm/
-
+    - abbrev/^([a-z]).+$/$1/
 ###############################################以下是用来配置不同的辅助码方案###############################################
 fuzhu_kong: 
   __append: 
