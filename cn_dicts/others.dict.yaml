@@ -24,8 +24,8 @@ sort: by_weight
 阿房宫赋	ē;ek;ek;ek;bj;nr;tz;bs;ek; páng;hf;hf;hf;qf;hs,is;ml;yn;hf; gōng;bk;bk;bl;io;jr;wd;pk;gk; fù;bv;kv;bw;mr;bm;os;mg;bg;	44
 阿房宫赋	ē;ek;ek;ek;bj;nr;tz;bs;ek; páng;hf;hf;hf;qf;hs,is;ml;yn;hf; gōng;bk;bk;bl;io;jr;wd;pk;gk; fù;bv;kv;bw;mr;bm;os;mg;bg;	44
 # 「伯伯」方言
-伯伯	bó;rb;rb;rb;xs;oa;ju;wr;rb; bó;rb;rb;rb;xs;oa;ju;wr;rb;	541
-伯伯	bó;rb;rb;rb;xs;oa;ju;wr;rb; bó;rb;rb;rb;xs;oa;ju;wr;rb;	541
+伯伯	bó;rb;rb;rb;xs;oa;ju;wr;rb; bo;rb;rb;rb;xs;oa;ju;wr;rb;	541
+伯伯	bó;rb;rb;rb;xs;oa;ju;wr;rb; bo;rb;rb;rb;xs;oa;ju;wr;rb;	541
 # 「斜」的古音
 远上寒山石径斜	yuǎn;zy;ze;zy;uq;yu;mu;fq;ze; shàng;ba;la;aa,ba;pu,pd;ym;yf;h,hh;aa; hán;bd;bd;bd;ih;jy;ww;pf;gd; shān;kl;lk;aa;pp;uu;vs;mm;aa; shí;ak;ak;kp,aa,ak,pk;tt;mr;ms;dg;ak; jìng;rj;ig;xg;hp;hm;wu;tc;rg; xié;rd;ru;dy;es;oj;jj;wt;ru;	38
 远上寒山石径斜	yuǎn;zy;ze;zy;uq;yu;mu;fq;ze; shàng;ba;la;aa,ba;pu,pd;ym;yf;h,hh;aa; hán;bd;bd;bd;ih;jy;ww;pf;gd; shān;kl;lk;aa;pp;uu;vs;mm;aa; shí;ak;ak;kp,aa,ak,pk;tt;mr;ms;dg;ak; jìng;rj;ig;xg;hp;hm;wu;tc;rg; xié;rd;ru;dy;es;oj;jj;wt;ru;	38
@@ -53,18 +53,18 @@ sort: by_weight
 扑街仔	pū;fb;fb;fb;jh;qy;uy;rh;fb; jiē;rt;ii;xg,xi;hs;hn;pg;tf;rd; zǎi;rz;rz;rz;xa;od;jh;wb;rz;	20
 仆街仔	pū;rb;rb;rb;xh;oy;jy;wh;rb; jiē;rt;ii;xg,xi;hs;hn;pg;tf;rd; zǎi;rz;rz;rz;xa;od;jh;wb;rz;	0
 仆街仔	pū;rb;rb;rb;xh;oy;jy;wh;rb; jiē;rt;ii;xg,xi;hs;hn;pg;tf;rd; zǎi;rz;rz;rz;xa;od;jh;wb;rz;	0
-街溜子	jiē;rt;ii;xg,xi;hs;hn;pg;tf;rd; liū;dt;dt;dl;kw;ew;kq;iq;dt; zǐ;la;va;aa,vh;aa;nd;hi;bb;va;	70
-街溜子	jiē;rt;ii;xg,xi;hs;hn;pg;tf;rd; liū;dt;dt;dl;kw;ew;kq;iq;dt; zǐ;la;va;aa,vh;aa;nd;hi;bb;va;	70
+街溜子	jiē;rt;ii;xg,xi;hs;hn;pg;tf;rd; liū;dt;dt;dl;kw;ew;kq;iq;dt; zi;la;va;aa,vh;aa;nd;hi;bb;va;	70
+街溜子	jiē;rt;ii;xg,xi;hs;hn;pg;tf;rd; liū;dt;dt;dl;kw;ew;kq;iq;dt; zi;la;va;aa,vh;aa;nd;hi;bb;va;	70
 # 「錤」这个字念 ji，但是台湾媒体都会念成 qi，他的英文名 Ming-Chi Kuo 也是接近 qi
 郭明錤	guō;we;we;ex;ib;yl;gt;yb;we; míng;oo;oo;oo;vl;ab;ov;je;oo; jī;jb;;jq;;cc;zh;qa;;	38
 郭明錤	guō;we;we;ex;ib;yl;gt;yb;we; míng;oo;oo;oo;vl;ab;ov;je;oo; jī;jb;;jq;;cc;zh;qa;;	38
 # 「镐 gao hao」的发音，多为韩国人名，不知道 🤷‍♂️，词库里为 gao，这里额外加上 hao 音
 李昌镐	lǐ;mz;mz;mz;wa;dd;eh;sb;lz; chāng;oo;oo;oo;vv;aa;oo;jj;oo; gǎo;jk;jk;jg;do;ob;zg;qy;jk;	242
 曹世镐	cáo;co;ao;oc,co;dv;ta;fo;gm;ao; shì;cv;av;ca,cv,aa;vr;pt;la;an;av; gǎo;jk;jk;jg;do;ob;zg;qy;jk;	0
-张镐哲	zhāng;gi;gi;gi;rh;no;bp;xt;gi; gǎo;jk;jk;jg;do;ob;zg;qy;jk; zhé;fk;fk;kv;jo;qr;ud;rr;fk;	0
+张镐哲	zhāng;gi;gi;gi;rh;no;bp;xt;gi; hào;jk;jk;jg;do;ob;zg;qy;jk; zhé;fk;fk;kv;jo;qr;ud;rr;fk;	0
 姜成镐	jiāng;yn;yn;ny,yn;fy;tv;gb;ug;en; chéng;wv;wv;gg,wg;rh;is;na;dn;vg; gǎo;jk;jk;jg;do;ob;zg;qy;jk;	0
 姜镐童	jiāng;yn;yn;ny,yn;fy;tv;gb;ug;en; gǎo;jk;jk;jg;do;ob;zg;qy;jk; tóng;ll;ll;ll;bg;yg;id;uj;ll;	0
-张镐濂	zhāng;gi;gi;gi;rh;no;bp;xt;gi; gǎo;jk;jk;jg;do;ob;zg;qy;jk; lián;dj;dn;dl;kf;ec,xc;kc;iy;dj;	0
+张镐濂	zhāng;gi;gi;gi;rh;no;bp;xt;gi; hào;jk;jk;jg;do;ob;zg;qy;jk; lián;dj;dn;dl;kf;ec,xc;kc;iy;dj;	0
 李敏镐	lǐ;mz;mz;mz;wa;dd;eh;sb;lz; mǐn;pw;pw;wm;ej;ok;eh;tx;mw; gǎo;jk;jk;jg;do;ob;zg;qy;jk;	28
 李陈镐	lǐ;mz;mz;mz;wa;dd;eh;sb;lz; chén;ed;ed;ed;bi;nd;ty;ba;ed; gǎo;jk;jk;jg;do;ob;zg;qy;jk;	2
 赵亮镐	zhào;tx;tx;zi;qy;gk;pb;fh;tx; liàng;wj;wj;wj,jb;ii;yn,yu;go;yp;wj; gǎo;jk;jk;jg;do;ob;zg;qy;jk;	0
@@ -432,7 +432,7 @@ sort: by_weight
 不到	bú;ab;ad;ad,ax;dh;mf;cb;i,gi;ad; dào;gd;ad;dv;di;mn;yp;gc;vd;	0
 不备	bú;ab;ad;ad,ax;dh;mf;cb;i,gi;ad; bèi;wt;wt;wt;jw;hw;hq;tl;wt;	0
 不论	bú;ab;ad;ad,ax;dh;mf;cb;i,gi;ad; lùn;yl;yb;yl;ca;ip;sj;yw;yb;	0
-不敢	bú;ab;ad;ad,ax;dh;mf;cb;i,gi;ad; gǎn;ew;vw;we,aw,vw;rj;mk,nk;ah;nb;vw;	0
+不敢	bù;ab;ad;ad,ax;dh;mf;cb;i,gi;ad; gǎn;ew;vw;we,aw,vw;rj;mk,nk;ah;nb;vw;	0
 不惧	bú;ab;ad;ad,ax;dh;mf;cb;i,gi;ad; jù;xb;xb;xj;nf;pc;hh;nh;xb;	0
 不顾	bú;ab;ad;ad,ax;dh;mf;cb;i,gi;ad; gù;iy;ir;ye;rm;mo;xw;db;ir;	0
 不测	bú;ab;ad;ad,ax;dh;mf;cb;i,gi;ad; cè;dd;dd;dz;ki;en;kp;im;dd;	0
@@ -451,7 +451,7 @@ sort: by_weight
 不借	bú;ab;ad;ad,ax;dh;mf;cb;i,gi;ad; jiè;ro;ro;rx;xv;oa;jo;wa;ro;	0
 不赚	bú;ab;ad;ad,ax;dh;mf;cb;i,gi;ad; zhuàn;bj;kn;bj;mf;bc;oc;mu;bj;	0
 不盗	bú;ab;ad;ad,ax;dh;mf;cb;i,gi;ad; dào;dm;dm;mc;fa;it;wa;uq;dm;	0
-不干	bú;ab;ad;ad,ax;dh;mf;cb;i,gi;ad; gàn;au;au;aa;ss;mj;eg;fg;au;	0
+不干	bù;ab;ad;ad,ax;dh;mf;cb;i,gi;ad; gān;au;au;aa;ss;mj;eg;fg;au;	0
 不赖	bú;ab;ad;ad,ax;dh;mf;cb;i,gi;ad; lài;ub;ur;uf;dm;do;xo;gk;ur;	0
 不赦	bú;ab;ad;ad,ax;dh;mf;cb;i,gi;ad; shè;iw;tw;iw,wi;gj;gk;gh;fo;tw;	0
 不跨	bú;ab;ad;ad,ax;dh;mf;cb;i,gi;ad; kuà;zk;zk;zk;gr;rs;pa;kh;zk;	0
@@ -463,12 +463,12 @@ sort: by_weight
 不败	bú;ab;ad;ad,ax;dh;mf;cb;i,gi;ad; bài;bw;kw;bw,wb;mj;bk;oh;mt;bw;	0
 不讳	bú;ab;ad;ad,ax;dh;mf;cb;i,gi;ad; huì;yw;yw;yw;cp;is;sg;yf;yw;	0
 不绽	bú;ab;ad;ad,ax;dh;mf;cb;i,gi;ad; zhàn;sz;sr;sd;ee;vo;it;xp;sr;	0
-不悔	bú;ab;ad;ad,ax;dh;mf;cb;i,gi;ad; huǐ;xm;xm;xm;nh;py;hk;nt;xm;	0
+不悔	bù;ab;ad;ad,ax;dh;mf;cb;i,gi;ad; huǐ;xm;xm;xm;nh;py;hk;nt;xm;	0
 一栋	yí;aa;aa;aa;dd;mm;fi;g,gg;aa; dòng;md;md;md;wi;dd;ey;sa;ld;	0
-一段	yì;aa;aa;aa;dd;mm;fi;g,gg;aa; duàn;pu;py;ud,du,pu;ul;he;ur;wd;py;	0
+一段	yí;aa;aa;aa;dd;mm;fi;g,gg;aa; duàn;pu;py;ud,du,pu;ul;he;ur;wd;py;	0
 一律	yí;aa;aa;aa;dd;mm;fi;g,gg;aa; lǜ;ry;iy;xy;hp;hq;wb;tv;ra;	0
 一路	yí;aa;aa;aa;dd;mm;fi;g,gg;aa; lù;zk;zk;zg;go;rr;ps;kh;zk;	0
-一发	yì;aa;aa;aa;dd;mm;fi;g,gg;aa; fā;fy;vd;ay,fd,vy,yd;rh;ie;si;v,nt;vy;	0
+一发	yí;aa;aa;aa;dd;mm;fi;g,gg;aa; fā;fy;vd;ay,fd,vy,yd;rh;ie;si;v,nt;vy;	0
 一端	yì;aa;aa;aa;dd;mm;fi;g,gg;aa; duān;le;le;le;bb;yb;il;um;le;	0
 一天	yì;aa;aa;aa;dd;mm;fi;g,gg;aa; tiān;ad;ad;ad;ue;mk;fm;gd;ad;	0
 一忽	yì;aa;aa;aa;dd;mm;fi;g,gg;aa; hū;wx;wx;xw;in;pp;nh;qr;wx;	0
@@ -485,7 +485,7 @@ sort: by_weight
 一点	yì;aa;aa;aa;dd;mm;fi;g,gg;aa; diǎn;vh;lh;hv;pn;yf,xf;yc;hk;ve;	0
 一刻	yí;aa;aa;aa;dd;mm;fi;g,gg;aa; kè;wd;wd;dh;ii;yn;kp;yn;wd;	0
 一般	yì;aa;aa;aa;dd;mm;fi;g,gg;aa; bān;vu;vy;vu;tl;he;ir;te;vy;	0
-一片	yì;aa;aa;aa;dd;mm;fi;g,gg;aa; piàn;pv;pv;pa,pv;ii,ur;ll,ln;ap;th;pv;	0
+一片	yí;aa;aa;aa;dd;mm;fi;g,gg;aa; piàn;pv;pv;pa,pv;ii,ur;ll,ln;ap;th;pv;	0
 一束	yí;aa;aa;aa;dd;mm;fi;g,gg;aa; shù;gr;an;ad,mk;df;dl;xs;gk;an;	0
 一桌	yì;aa;aa;aa;dd;mm;fi;g,gg;aa; zhuō;bm;lm;mo,bm;pw;yd;ye;hj;al;	0
 一台	yì;aa;aa;aa;dd;mm;fi;g,gg;aa; tái;sk;sk;sk;po;ir;kd;ck;vk;	0
@@ -541,7 +541,7 @@ sort: by_weight
 一朵	yì;aa;aa;aa;dd;mm;fi;g,gg;aa; duǒ;jm;jm;mj,jm;iw;hd;oe;ms;jl;	0
 一盘	yì;aa;aa;aa;dd;mm;fi;g,gg;aa; pán;vm;vm;mv,vm;ta;ht;ia;te;vm;	0
 一勺	yì;aa;aa;aa;dd;mm;fi;g,gg;aa; sháo;bd;bd;gd;uh;pi,pm,xi;ni;qy;pd;	0
-一叶	yì;aa;aa;aa;dd;mm;fi;g,gg;aa; yè;ku;ku;ku;os;rj;dn;kf;ku;	0
+一叶	yí;aa;aa;aa;dd;mm;fi;g,gg;aa; yè;ku;ku;ku;os;rj;dn;kf;ku;	0
 一顿	yí;aa;aa;aa;dd;mm;fi;g,gg;aa; dùn;ty;tr;yt;dm;po;fw;gb;tr;	0
 一辆	yí;aa;aa;aa;dd;mm;fi;g,gg;aa; liàng;il;il;il;te;kb;ym;lg;il;	0
 一顶	yì;aa;aa;aa;dd;mm;fi;g,gg;aa; dǐng;dy;dr;dy,yd;jm;mo;aw;sd;dr;	0
@@ -553,13 +553,13 @@ sort: by_weight
 一套	yí;aa;aa;aa;dd;mm;fi;g,gg;aa; tào;dg;ds;di;xh;ki;mp;dd;dv;	0
 一集	yì;aa;aa;aa;dd;mm;fi;g,gg;aa; jí;rm;rm;mv,vm;xw;od;ue;wy;rl;	0
 一首	yì;aa;aa;aa;dd;mm;fi;g,gg;aa; shǒu;bz;bz;qz;fs;tu;ho;ut;em;	0
-一段	yì;aa;aa;aa;dd;mm;fi;g,gg;aa; duàn;pu;py;ud,du,pu;ul;he;ur;wd;py;	0
-一句	yì;aa;aa;aa;dd;mm;fi;g,gg;aa; jù;bk;bk;gk,kg,pk;ii;pr;gj;qk;pk;	0
+一段	yí;aa;aa;aa;dd;mm;fi;g,gg;aa; duàn;pu;py;ud,du,pu;ul;he;ur;wd;py;	0
+一句	yí;aa;aa;aa;dd;mm;fi;g,gg;aa; jù;bk;bk;gk,kg,pk;ii;pr;gj;qk;pk;	0
 一词	yì;aa;aa;aa;dd;mm;fi;g,gg;aa; cí;yk;yk;ys;co;ir;sd;yn;yk;	0
-一节	yí;aa;aa;aa;dd;mm;fi;g,gg;aa; jié;ce;ce;ce;zb;tl;lz;ab;ce;	0
+一节	yì;aa;aa;aa;dd;mm;fi;g,gg;aa; jié;ce;ce;ce;zb;tl;lz;ab;ce;	0
 一本	yì;aa;aa;aa;dd;mm;fi;g,gg;aa; běn;ma;aa;aa,ma;wd;dm;ef;sg;aa;	0
 一部	yì;aa;aa;aa;dd;mm;fi;g,gg;aa; bù;le;le;ek,ep;bb;yl;it;uk;le;	0
-一卷	yì;aa;aa;aa;dd;mm;fi;g,gg;aa; juǎn;jv;jv;ef,je;ft;fu;hz;ud;dv;	0
+一卷	yí;aa;aa;aa;dd;mm;fi;g,gg;aa; juǎn;jv;jv;ef,je;ft;fu;hz;ud;dv;	0
 一季	yì;aa;aa;aa;dd;mm;fi;g,gg;aa; jì;hz;hz;hz;ua;hd;xh;tb;hz;	0
 一轮	yì;aa;aa;aa;dd;mm;fi;g,gg;aa; lún;il;ib;il;ta;kp;yj;lw;ib;	0
 一圈	yì;aa;aa;aa;dd;mm;fi;g,gg;aa; quān;kv;kv;kj;nt;wu;rz;lu;wv;	0
@@ -575,7 +575,7 @@ sort: by_weight
 一床	yì;aa;aa;aa;dd;mm;fi;g,gg;aa; chuáng;gm;gm;gm,mg;rw;id;xe;ys;gl;	0
 一椅	yī;aa;aa;aa;dd;mm;fi;g,gg;aa; yǐ;mk;mk;mq;wj;dr;ez;sd;lk;	0
 一城	yì;aa;aa;aa;dd;mm;fi;g,gg;aa; chéng;ti;ti;ti;gh;gs;ga;fd;tg;	0
-一县	yì;aa;aa;aa;dd;mm;fi;g,gg;aa; xiàn;qs;qs;sq,qs;pp;bi;fk;eg;qv;	0
+一县	yí;aa;aa;aa;dd;mm;fi;g,gg;aa; xiàn;qs;qs;sq,qs;pp;bi;fk;eg;qv;	0
 一省	yì;aa;aa;aa;dd;mm;fi;g,gg;aa; shěng;uo;uo;ou;is;fu;yq;it;um;	0
 一国	yì;aa;aa;aa;dd;mm;fi;g,gg;aa; guó;ky;ky;ky;na;wi;ri;l,lg;wy;	0
 一洲	yì;aa;aa;aa;dd;mm;fi;g,gg;aa; zhōu;dv;dv,dl;dv;kp;el;ko;iy;dv;	0
@@ -612,7 +612,7 @@ sort: by_weight
 一缕	yì;aa;aa;aa;dd;mm;fi;g,gg;aa; lǚ;sn;sn;sl;ey;vv;ib;xo;sn;	0
 一抹	yì;aa;aa;aa;dd;mm;fi;g,gg;aa; mǒ;fw;fm;fm;je;qj;ue;rg;fm;	0
 一面	yì;aa;aa;aa;dd;mm;fi;g,gg;aa; miàn;ao;aa;aa;dd;ml;bm;dm;aa;	0
-一轴	yì;aa;aa;aa;dd;mm;fi;g,gg;aa; zhóu;iy;iy;iy;tp;kw;yd;lm;iy;	0
+一轴	yī;aa;aa;aa;dd;mm;fi;g,gg;aa; zhóu;iy;iy;iy;tp;kw;yd;lm;iy;	0
 一图	yì;aa;aa;aa;dd;mm;fi;g,gg;aa; tú;kd;kd;kd;nh;wy;rw;lt;wd;	0
 一曲	yì;aa;aa;aa;dd;mm;fi;g,gg;aa; qǔ;kc;la;aa,oa;vp,pd;tw,xw;yq;ma;aa;	0
 一书	yì;aa;aa;aa;dd;mm;fi;g,gg;aa; shū;vd;vd;ad,vd;rh;is;ai;nn;vd;	0
@@ -732,9 +732,9 @@ sort: by_weight
 一台电视	yì;aa;aa;aa;dd;mm;fi;g,gg;aa; tái;sk;sk;sk;po;ir;kd;ck;vk; diàn;ov,yv;lv;ag,og;ee;lu;oa;jn;av; shì;pj;pe;ju,uj;hk;iu;fe;py;pj;	0
 一篇小说	yì;aa;aa;aa;dd;mm;fi;g,gg;aa; piān;vc;vc;vb;nj;hb;ri;ty;vc; xiǎo;lb;ld;ad;ii;nc;yx;ih;vd; shuō;yx;ye;yd;ck;iu;sp;yu;ye;	0
 一瓶水	yì;aa;aa;aa;dd;mm;fi;g,gg;aa; píng;bw;bw;wb;fh;tn;hr;ua;ew; shuǐ;ln;ln;ad,uv;oo;ee;ks;ii;vn;	0
-一片大海	yì;aa;aa;aa;dd;mm;fi;g,gg;aa; piàn;pv;pv;pa,pv;ii,ur;ll,ln;ap;th;pv; dà;ar;un;ad;xx;kk;md;dd;an; hǎi;dm;dm;dm;kh;ey;kk;it;dm;	0
+一片大海	yí;aa;aa;aa;dd;mm;fi;g,gg;aa; piàn;pv;pv;pa,pv;ii,ur;ll,ln;ap;th;pv; dà;ar;un;ad;xx;kk;md;dd;an; hǎi;dm;dm;dm;kh;ey;kk;it;dm;	0
 一座城市	yí;aa;aa;aa;dd;mm;fi;g,gg;aa; zuò;gr;gt;gz;rg;ig;xg;yw;gt; chéng;ti;ti;ti;gh;gs;ga;fd;tg; shì;wj;wj;wj;iy;yb;zr;ym;wj;	0
-一片森林	yì;aa;aa;aa;dd;mm;fi;g,gg;aa; piàn;pv;pv;pa,pv;ii,ur;ll,ln;ap;th;pv; sēn;mm;mm;ml;ww;dd;ee;ss;ll; lín;mm;mm;mm;ww;dd;ee;ss;ll;	0
+一片森林	yí;aa;aa;aa;dd;mm;fi;g,gg;aa; piàn;pv;pv;pa,pv;ii,ur;ll,ln;ap;th;pv; sēn;mm;mm;ml;ww;dd;ee;ss;ll; lín;mm;mm;mm;ww;dd;ee;ss;ll;	0
 一堆垃圾	yì;aa;aa;aa;dd;mm;fi;g,gg;aa; duī;tv;tf;tv;ga;gg;gu;fw;ta; lā;tl;tl;tl;gb;gt;gi;fu;tl; jī;tj;tj;tj;gh;ge;gc;fe;tj;	0
 一头大象	yì;aa;aa;aa;dd;mm;fi;g,gg;aa; tóu;dd;dd;dd;hx;yk,xk;wm;ud;dd; dà;ar;un;ad;xx;kk;md;dd;an; xiàng;du;dn;du,pd,ua;gh;no;wx;qj;en;	0
 一把钥匙	yī;aa;aa;aa;dd;mm;fi;g,gg;aa; bǎ;fb;fb;fb;jt;qu;um;rc;fb; yào;jo;jo;jo;dl;ob;zv;qe;jo; shi;ob;ob;bu,ub;va;ap;ov;jg;ob;	0
@@ -756,7 +756,7 @@ sort: by_weight
 一只手套	yì;aa;aa;aa;dd;mm;fi;g,gg;aa; zhī;kb;kb;kb;of;rc;dh;kw;kb; shǒu;pf;pl;pa,ub;oo;qq;us;rt;pv; tào;dg;ds;di;xh;ki;mp;dd;dv;	0
 一张脸	yì;aa;aa;aa;dd;mm;fi;g,gg;aa; zhāng;gi;gi;gi;rh;no;bp;xt;gi; liǎn;oq;oa;oa,oq;ld;bm;vf;ew;oa;	0
 一口气	yì;aa;aa;aa;dd;mm;fi;g,gg;aa; kǒu;la;la;aa;oo;rr;dk;kk;aa; qì;pv;pv;py,ry;ss;on,xn;vq;rn;pv;	0
-一根头发	yì;aa;aa;aa;dd;mm;fi;g,gg;aa; gēn;mg;mg;mg;wh;dv;ei;sv;lh; tóu;dd;dd;dd;hx;yk,xk;wm;ud;dd; fà;fy;vd;ay,fd,vy,yd;rh;ie;si;v,nt;vy;	0
+一根头发	yì;aa;aa;aa;dd;mm;fi;g,gg;aa; gēn;mg;mg;mg;wh;dv;ei;sv;lh; tóu;dd;dd;dd;hx;yk,xk;wm;ud;dd; fā;fy;vd;ay,fd,vy,yd;rh;ie;si;v,nt;vy;	0
 一只鸟	yì;aa;aa;aa;dd;mm;fi;g,gg;aa; zhī;kb;kb;kb;of;rc;dh;kw;kb; niǎo;na;wd,pa;na,pa;cc;pm;xn;qy;pa;	0
 一对耳环	yí;aa;aa;aa;dd;mm;fi;g,gg;aa; duì;yc;yc;cy,yc;lk;ei;rk;cf;yc; ěr;ol;aa;aa;dd,du;sj;qe;bg;aa; huán;wb;wb;wb;ah;mf;nc;gg;wb;	0
 一块巧克力	yí;aa;aa;aa;dd;mm;fi;g,gg;aa; kuài;tg;tg;td,tg;gx;gk;gj;fn;tn; qiǎo;gk;gv;gk;pr;ms;ua;ag;gv; kè;ux,ge;ue;eg,ux;sk;ju;cp;dq;ue; lì;vp;vp;gp;uu;ks;sl;lt;vp;	0
@@ -770,7 +770,7 @@ sort: by_weight
 一束光	yí;aa;aa;aa;dd;mm;fi;g,gg;aa; shù;gr;an;ad,mk;df;dl;xs;gk;an; guāng;xe;xw;ea,xw;hk;fu;mg;iq;ee;	0
 一盒饼干	yì;aa;aa;aa;dd;mm;fi;g,gg;aa; hé;rm;rm;mh;ea;ot;ja;wg;rm; bǐng;uk;uk;ub;gp;nt;ql;qn;uk; gān;au;au;aa;ss;mj;eg;fg;au;	0
 一只青蛙	yì;aa;aa;aa;dd;mm;fi;g,gg;aa; zhī;kb;kb;kb;of;rc;dh;kw;kb; qīng;fo;fo;of,fo;al;qb;av;ge;ao; wā;it;it;ig;fg;lg;cg;jf;it;	0
-一片云	yì;aa;aa;aa;dd;mm;fi;g,gg;aa; piàn;pv;pv;pa,pv;ii,ur;ll,ln;ap;th;pv; yún;ag,es;es;es,se;up;mi;by;fc;ev;	0
+一片云	yí;aa;aa;aa;dd;mm;fi;g,gg;aa; piàn;pv;pv;pa,pv;ii,ur;ll,ln;ap;th;pv; yún;ag,es;es;es,se;up;mi;by;fc;ev;	0
 一只狐狸	yì;aa;aa;aa;dd;mm;fi;g,gg;aa; zhī;kb;kb;kb;of;rc;dh;kw;kb; hú;qg;qg;qg;bh;ko;my;qt;qg; lí;ql;ql;ql;bg;kg;md;qt;ql;	0
 一只兔子	yì;aa;aa;aa;dd;mm;fi;g,gg;aa; zhī;kb;kb;kb;of;rc;dh;kw;kb; tù;dd;dd;dd;gh;ni;wt;qk;ed; zi;la;va;aa,vh;aa;nd;hi;bb;va;	0
 一只松鼠	yì;aa;aa;aa;dd;mm;fi;g,gg;aa; zhī;kb;kb;kb;of;rc;dh;kw;kb; sōng;mg;ms;mg;wp;di;ek;sw;lv; shǔ;jv;jv;ju;sr;hv;ps;vn;jv;	0
@@ -784,7 +784,7 @@ sort: by_weight
 一瓶果汁	yì;aa;aa;aa;dd;mm;fi;g,gg;aa; píng;bw;bw;wb;fh;tn;hr;ua;ew; guǒ;tm;ln;ad,tm;vw;wd;qe;js;an; zhī;du;du;du;ks;ej;kn;if;du;	0
 一碟菜	yì;aa;aa;aa;dd;mm;fi;g,gg;aa; dié;um;um;um,uy;tw;md;me;da;ul; cài;cc;cm;cc;zw;td;le;ae;cl;	0
 一张纸	yì;aa;aa;aa;dd;mm;fi;g,gg;aa; zhāng;gi;gi;gi;rh;no;bp;xt;gi; zhǐ;su;su;su;er;vp;ib;xq;su;	0
-一卷胶带	yì;aa;aa;aa;dd;mm;fi;g,gg;aa; juǎn;jv;jv;ef,je;ft;fu;hz;ud;dv; jiāo;of;ox;oj;ly;bk;vb;eu;ox; dài;cj;fj;jb;zy;tb;lr;gk;aj;	0
+一卷胶带	yí;aa;aa;aa;dd;mm;fi;g,gg;aa; juǎn;jv;jv;ef,je;ft;fu;hz;ud;dv; jiāo;of;ox;oj;ly;bk;vb;eu;ox; dài;cj;fj;jb;zy;tb;lr;gk;aj;	0
 一盒牙签	yì;aa;aa;aa;dd;mm;fi;g,gg;aa; hé;rm;rm;mh;ea;ot;ja;wg;rm; yá;gp,ac;ap;ap;du;mh;ly;ah;ap; qiān;vq;va;va,vq;nd;hm;rf;tw;va;	0
 一颗枣	yì;aa;aa;aa;dd;mm;fi;g,gg;aa; kē;gy;gr;yg;vm;wo;qw;js;gr; zǎo;ud;ad;cd;dh;dy;ew;gm;ad;	0
 一滴水	yì;aa;aa;aa;dd;mm;fi;g,gg;aa; dī;dg;dk;dd,dg;ko;eb;kc;iu;dk; shuǐ;ln;ln;ad,uv;oo;ee;ks;ii;vn;	0
@@ -809,7 +809,7 @@ sort: by_weight
 一条短信	yì;aa;aa;aa;dd;mm;fi;g,gg;aa; tiáo;wm;wm;wm;jf;hd;he;ts;wx; duǎn;ub;ua;ud;ed;ot;oz;td;ud; xìn;rk;rk;ry;xc;or;js;wy;rk;	0
 一副扑克牌	yí;aa;aa;aa;dd;mm;fi;g,gg;aa; fù;ad;ad;df,dt;di;mn;fp;gk;ad; pū;fb;fb;fb;jh;qy;uy;rh;fb; kè;ux,ge;ue;eg,ux;sk;ju;cp;dq;ue; pái;pu;pu;pb;us;lj;an;th;pu;	0
 一台洗衣机	yì;aa;aa;aa;dd;mm;fi;g,gg;aa; tái;sk;sk;sk;po;ir;kd;ck;vk; xǐ;de;de;dx;kk;eu;kp;it;de; yī;wy;wy;dd;kk;yv;ti;ye;wh; jī;mj;mj;mj;wi;dn;eo;sm;lj;	0
-一片沙漠	yì;aa;aa;aa;dd;mm;fi;g,gg;aa; piàn;pv;pv;pa,pv;ii,ur;ll,ln;ap;th;pv; shā;du;du;du;ki;eh;kt;ii;du; mò;dd;dd;dm;kx;ek;km;ia;dd;	0
+一片沙漠	yí;aa;aa;aa;dd;mm;fi;g,gg;aa; piàn;pv;pv;pa,pv;ii,ur;ll,ln;ap;th;pv; shā;du;du;du;ki;eh;kt;ii;du; mò;dd;dd;dm;kx;ek;km;ia;dd;	0
 一场婚礼	yì;aa;aa;aa;dd;mm;fi;g,gg;aa; chǎng;tp;tp;ty;gu;gh;ge;fn;tp; hūn;no;no;nh;yv;va;bo;vq;no; lǐ;pv;pv;ug;hr;iu;fa;py;pv;	0
 一座高楼	yí;aa;aa;aa;dd;mm;fi;g,gg;aa; zuò;gr;gt;gz;rg;ig;xg;yw;gt; gāo;wk;wk;wk;io;yr;gg;ym;wk; lóu;mn;mn;ml;wy;dv;eb;so;ln;	0
 一条跑道	yì;aa;aa;aa;dd;mm;fi;g,gg;aa; tiáo;wm;wm;wm;jf;hd;he;ts;wx; pǎo;zb;zs;zb;gt;ru;pv;kh;zv; dào;zz;zz;zu;fq;yu;hu;ut;zm;	0
@@ -821,13 +821,13 @@ sort: by_weight
 一条皮带	yì;aa;aa;aa;dd;mm;fi;g,gg;aa; tiáo;wm;wm;wm;jf;hd;he;ts;wx; pí;py;vy;ad,ay,vd,vy,ya;rl;de;rp;hc;vy; dài;cj;fj;jb;zy;tb;lr;gk;aj;	0
 一根筷子	yì;aa;aa;aa;dd;mm;fi;g,gg;aa; gēn;mg;mg;mg;wh;dv;ei;sv;lh; kuài;vg;vg;vk;nx;hk;rj;tn;vk; zi;la;va;aa,vh;aa;nd;hi;bb;va;	0
 一条毛巾	yì;aa;aa;aa;dd;mm;fi;g,gg;aa; tiáo;wm;wm;wm;jf;hd;he;ts;wx; máo;pv;pv;pg;ur;hu;vm;tf;pv; jīn;kl;ll;aa;yy;lb;rj;mh;aa;	0
-一片天空	yì;aa;aa;aa;dd;mm;fi;g,gg;aa; piàn;pv;pv;pa,pv;ii,ur;ll,ln;ap;th;pv; tiān;ad;ad;ad;ue;mk;fm;gd;ad; kōng;bg;bg;xg,bg;ip;jm;eu;pw;gg;	0
+一片天空	yí;aa;aa;aa;dd;mm;fi;g,gg;aa; piàn;pv;pv;pa,pv;ii,ur;ll,ln;ap;th;pv; tiān;ad;ad;ad;ue;mk;fm;gd;ad; kōng;bg;bg;xg,bg;ip;jm;eu;pw;gg;	0
 一场大雪	yì;aa;aa;aa;dd;mm;fi;g,gg;aa; chǎng;tp;tp;ty;gu;gh;ge;fn;tp; dà;ar;un;ad;xx;kk;md;dd;an; xuě;ye;ye;yx;ys;mm;tb;fv;ya;	0
 一束阳光	yí;aa;aa;aa;dd;mm;fi;g,gg;aa; shù;gr;an;ad,mk;df;dl;xs;gk;an; yáng;eo;eo;eo;bv;na;to;bj;eo; guāng;xe;xw;ea,xw;hk;fu;mg;iq;ee;	0
 一棵松树	yì;aa;aa;aa;dd;mm;fi;g,gg;aa; kē;mg;mg;mg;ww;dd;ee;sj;lg; sōng;mg;ms;mg;wp;di;ek;sw;lv; shù;mc;mc;md;wk;di;ek;sc;lc;	0
 一只鸭子	yì;aa;aa;aa;dd;mm;fi;g,gg;aa; zhī;kb;kb;kb;of;rc;dh;kw;kb; yā;jn;jn;nj,jn;vc;wm;sx;lq;jn; zi;la;va;aa,vh;aa;nd;hi;bb;va;	0
 一只公鸡	yì;aa;aa;aa;dd;mm;fi;g,gg;aa; zhī;kb;kb;kb;of;rc;dh;kw;kb; gōng;bs;bs;sb,bs;fp;ci;hk;wc;bv; jī;yn;yn;ny,yn;lc;em;rx;cq;yn;	0
-一张唱片	yì;aa;aa;aa;dd;mm;fi;g,gg;aa; zhāng;gi;gi;gi;rh;no;bp;xt;gi; chàng;ko;ko;ki;ov;ra;do;kj;ko; piàn;pv;pv;pa,pv;ii,ur;ll,ln;ap;th;pv;	0
+一张唱片	yì;aa;aa;aa;dd;mm;fi;g,gg;aa; zhāng;gi;gi;gi;rh;no;bp;xt;gi; chàng;ko;ko;ki;ov;ra;do;kj;ko; piān;pv;pv;pa,pv;ii,ur;ll,ln;ap;th;pv;	0
 一支火箭	yì;aa;aa;aa;dd;mm;fi;g,gg;aa; zhī;uy;uy;uy;sl;je;ci;fc;uy; huǒ;br,rb;dr;dd;tt;ff;ch;oo;dr; jiàn;vd;vd;vq;ni;hn;rp;tu;vd;	0
 一场战争	yì;aa;aa;aa;dd;mm;fi;g,gg;aa; chǎng;tp;tp;ty;gu;gh;ge;fn;tp; zhàn;vg;lg;gv;pa;yi;yp;hk;vg; zhēng;dy;dl;dy;gp;nd;xb;qv;ev;	0
 一架航天飞机	yì;aa;aa;aa;dd;mm;fi;g,gg;aa; jià;lm;lm;mj;uw;kd;se;lk;ll; háng;vj;vj;vk;ti;hn;io;te;vj; tiān;ad;ad;ad;ue;mk;fm;gd;ad; fēi;vd;vd;yd;rh;no,xo;cf;nu;vd; jī;mj;mj;mj;wi;dn;eo;sm;lj;	0
@@ -838,7 +838,7 @@ sort: by_weight
 一张照片	yì;aa;aa;aa;dd;mm;fi;g,gg;aa; zhāng;gi;gi;gi;rh;no;bp;xt;gi; zhào;oh;oh;hv;vn;af;oc;jv;oe; piān;pv;pv;pa,pv;ii,ur;ll,ln;ap;th;pv;	0
 一件毛衣	yí;aa;aa;aa;dd;mm;fi;g,gg;aa; jiàn;rn;rn;rn;xb;oq;jq;wr;rn; máo;pv;pv;pg;ur;hu;vm;tf;pv; yī;wy;wy;dd;kk;yv;ti;ye;wh;	0
 一块蛋黄	yī;aa;aa;aa;dd;mm;fi;g,gg;aa; kuài;tg;tg;td,tg;gx;gk;gj;fn;tn; dàn;zi;vi;ip,pi;rf;ni;tc;nh;vi; huáng;cb;cb;ad,cb;zy;tc;nh;am;cb;	0
-一片瓜子	yì;aa;aa;aa;dd;mm;fi;g,gg;aa; piàn;pv;pv;pa,pv;ii,ur;ll,ln;ap;th;pv; guā;in,vd;pn;pd;uh;ho;yg;rc;pn; zi;la;va;aa,vh;aa;nd;hi;bb;va;	0
+一片瓜子	yí;aa;aa;aa;dd;mm;fi;g,gg;aa; piàn;pv;pv;pa,pv;ii,ur;ll,ln;ap;th;pv; guā;in,vd;pn;pd;uh;ho;yg;rc;pn; zǐ;la;va;aa,vh;aa;nd;hi;bb;va;	0
 一颗纽扣	yì;aa;aa;aa;dd;mm;fi;g,gg;aa; kē;gy;gr;yg;vm;wo;qw;js;gr; niǔ;si;si;si;eg;vg;ig;xn;si; kòu;fk;fk;fk;jo;qr;ud;rk;fk;	0
 一袋米饭	yì;aa;aa;aa;dd;mm;fi;g,gg;aa; dài;ry;ry;yd;xk;ov;jt;wa;rh; mǐ;bm;dm;dd;ll;fd;pm;oy;dl; fàn;uy;uy;uf;gl;ne;qr;qn;uy;	0
 一台冰箱	yì;aa;aa;aa;dd;mm;fi;g,gg;aa; tái;sk;sk;sk;po;ir;kd;ck;vk; bīng;du;du;du;fo;ie;wk;ui;du; xiāng;vo;vo;vx;ns;hu;rq;ts;vm;	0
@@ -851,10 +851,10 @@ sort: by_weight
 一辆坦克	yí;aa;aa;aa;dd;mm;fi;g,gg;aa; liàng;il;il;il;te;kb;ym;lg;il; tǎn;td;ta;td;gd;gm;gf;fj;td; kè;ux,ge;ue;eg,ux;sk;ju;cp;dq;ue;	0
 一支铅笔	yì;aa;aa;aa;dd;mm;fi;g,gg;aa; zhī;uy;uy;uy;sl;je;ci;fc;uy; qiān;jk;jk;jk;do;or;zd;qm;jk; bǐ;vm;vm;vm;nr;hu;rv;tt;vm;	0
 一块橡皮擦	yí;aa;aa;aa;dd;mm;fi;g,gg;aa; kuài;tg;tg;td,tg;gx;gk;gj;fn;tn; xiàng;mu;mn;mx;wh;do;ew;sq;lx; pí;py;vy;ad,ay,vd,vy,ya;rl;de;rp;hc;vy; cā;fu;fx;fi;ji;qf;uf;rp;fx;	0
-一根铲子	yì;aa;aa;aa;dd;mm;fi;g,gg;aa; gēn;mg;mg;mg;wh;dv;ei;sv;lh; chǎn;ji;ji;ji;du;oh;zx;qu;ji; zi;la;va;aa,vh;aa;nd;hi;bb;va;	0
+一根铲子	yì;aa;aa;aa;dd;mm;fi;g,gg;aa; gēn;mg;mg;mg;wh;dv;ei;sv;lh; chǎn;ji;ji;ji;du;oh;zx;qu;ji; zǐ;la;va;aa,vh;aa;nd;hi;bb;va;	0
 一块砖头	yí;aa;aa;aa;dd;mm;fi;g,gg;aa; kuài;tg;tg;td,tg;gx;gk;gj;fn;tn; zhuān;uv;uv;uv;th;mi;mi;df;uv; tóu;dd;dd;dd;hx;yk,xk;wm;ud;dd;	0
 一座图书馆	yí;aa;aa;aa;dd;mm;fi;g,gg;aa; zuò;gr;gt;gz;rg;ig;xg;yw;gt; tú;kd;kd;kd;nh;wy;rw;lt;wd; shū;vd;vd;ad,vd;rh;is;ai;nn;vd; guǎn;ul;uk;ug;gd;nr;qk;qn;ug;	0
-一件夹克	yí;aa;aa;aa;dd;mm;fi;g,gg;aa; jiàn;rn;rn;rn;xb;oq;jq;wr;rn; jiá;ar;an;fb,ar;dx;kt;hh;gu;an; kè;ux,ge;ue;eg,ux;sk;ju;cp;dq;ue;	0
+一件夹克	yí;aa;aa;aa;dd;mm;fi;g,gg;aa; jiàn;rn;rn;rn;xb;oq;jq;wr;rn; jiā;ar;an;fb,ar;dx;kt;hh;gu;an; kè;ux,ge;ue;eg,ux;sk;ju;cp;dq;ue;	0
 一束菊花	yí;aa;aa;aa;dd;mm;fi;g,gg;aa; shù;gr;an;ad,mk;df;dl;xs;gk;an; jú;cm;cm;cj,cm;zl;td;lp;aq;cm; huā;cb;cb;ch;za;tp;lv;aw;cb;	0
 一块奶酪	yí;aa;aa;aa;dd;mm;fi;g,gg;aa; kuài;tg;tg;td,tg;gx;gk;gj;fn;tn; nǎi;nn;nn;nn;yu;vs;bv;ve;nn; lào;yk;yk;yg;po;mr;ys;sg;yk;	0
 一条新闻	yì;aa;aa;aa;dd;mm;fi;g,gg;aa; tiáo;wm;wm;wm;jf;hd;he;ts;wx; xīn;lj;lj;jq;bp;yl;it;us;lj; wén;me;me;em,me;ou;lj;aq;ub;me;	0
@@ -868,13 +868,13 @@ sort: by_weight
 一架望远镜	yì;aa;aa;aa;dd;mm;fi;g,gg;aa; jià;lm;lm;mj;uw;kd;se;lk;ll; wàng;ww;ww;wo;ia;yg;fn;yn;ww; yuǎn;zy;ze;zy;uq;yu;mu;fq;ze; jìng;je;je;jj;dk;ou;zp;qu;je;	0
 一包薯条	yī;aa;aa;aa;dd;mm;fi;g,gg;aa; bāo;bs;bs;gs;ut;pu;nv;qn;pv; shǔ;co;co;cu;zv;ta;lo;al;co; tiáo;wm;wm;wm;jf;hd;he;ts;wx;	0
 一座发电站	yí;aa;aa;aa;dd;mm;fi;g,gg;aa; zuò;gr;gt;gz;rg;ig;xg;yw;gt; fā;fy;vd;ay,fd,vy,yd;rh;ie;si;v,nt;vy; diàn;ov,yv;lv;ag,og;ee;lu;oa;jn;av; zhàn;lv;lk;lv;bo;yr;id;uh;lk;	0
-一片草地	yì;aa;aa;aa;dd;mm;fi;g,gg;aa; piàn;pv;pv;pa,pv;ii,ur;ll,ln;ap;th;pv; cǎo;cu;cu;cz;zs;tj;ln;aj;cu; dì;ty;ty;ty;gr,ga;gd;ge;f,fb;ty;	0
+一片草地	yí;aa;aa;aa;dd;mm;fi;g,gg;aa; piàn;pv;pv;pa,pv;ii,ur;ll,ln;ap;th;pv; cǎo;cu;cu;cz;zs;tj;ln;aj;cu; dì;ty;ty;ty;gr,ga;gd;ge;f,fb;ty;	0
 一只猫头鹰	yì;aa;aa;aa;dd;mm;fi;g,gg;aa; zhī;kb;kb;kb;of;rc;dh;kw;kb; māo;qt;qt;qm;bw;kw;mq;qt;qt; tóu;dd;dd;dd;hx;yk,xk;wm;ud;dd; yīng;gn;gn;gn,nv;rc;im;xx;yw;gn;	0
 一只袋鼠	yì;aa;aa;aa;dd;mm;fi;g,gg;aa; zhī;kb;kb;kb;of;rc;dh;kw;kb; dài;ry;ry;yd;xk;ov;jt;wa;rh; shǔ;jv;jv;ju;sr;hv;ps;vn;jv;	0
 一艘潜水艇	yì;aa;aa;aa;dd;mm;fi;g,gg;aa; sōu;vy;vy;vs,vy;tl;he;ir;te;vy; qián;do;do;dt;kv;ea;ko;if;do; shuǐ;ln;ln;ad,uv;oo;ee;ks;ii;vn; tǐng;vw;vz;vt;tq;hg;iu;te;vr;	0
 一架无人机	yì;aa;aa;aa;dd;mm;fi;g,gg;aa; jià;lm;lm;mj;uw;kd;se;lk;ll; wú;ay;ay;ag,ay,ee;uk;mu;du;fq;av; rén;pn;pn;pd;ee;oo;jr;w,ww;pn; jī;mj;mj;mj;wi;dn;eo;sm;lj;	0
 一辆摩托车	yí;aa;aa;aa;dd;mm;fi;g,gg;aa; liàng;il;il;il;te;kb;ym;lg;il; mó;gu;gu;mu,um;do;iq;zu;ys;gu; tuō;fq;fq;fq,ft;ja;qp;ur;rt;fq; chē;au;al;aa;tt;kq;yc;lg;aa;	0
-一片星空	yì;aa;aa;aa;dd;mm;fi;g,gg;aa; piàn;pv;pv;pa,pv;ii,ur;ll,ln;ap;th;pv; xīng;ou;ou;ou;va;am;ol;jt;ou; kōng;bg;bg;xg,bg;ip;jm;eu;pw;gg;	0
+一片星空	yí;aa;aa;aa;dd;mm;fi;g,gg;aa; piàn;pv;pv;pa,pv;ii,ur;ll,ln;ap;th;pv; xīng;ou;ou;ou;va;am;ol;jt;ou; kōng;bg;bg;xg,bg;ip;jm;eu;pw;gg;	0
 一片冰川	yī;aa;aa;aa;dd;mm;fi;g,gg;aa; piàn;pv;pv;pa,pv;ii,ur;ll,ln;ap;th;pv; bīng;du;du;du;fo;ie;wk;ui;du; chuān;pl;pl;pa;up;ll;oc;kt;pa;	0
 一道闪电	yí;aa;aa;aa;dd;mm;fi;g,gg;aa; dào;zz;zz;zu;fq;yu;hu;ut;zm; shǎn;mr;mr;mr,rm;oe;lo;aj;uw;mr; diàn;ov,yv;lv;ag,og;ee;lu;oa;jn;av;	0
 一根树枝	yì;aa;aa;aa;dd;mm;fi;g,gg;aa; gēn;mg;mg;mg;wh;dv;ei;sv;lh; shù;mc;mc;md;wk;di;ek;sc;lc; zhī;mv;my;mv;wl;de;ec;sf;ly;	0
@@ -922,7 +922,7 @@ sort: by_weight
 一根面条	yì;aa;aa;aa;dd;mm;fi;g,gg;aa; gēn;mg;mg;mg;wh;dv;ei;sv;lh; miàn;ao;aa;aa;dd;ml;bm;dm;aa; tiáo;wm;wm;wm;jf;hd;he;ts;wx;	0
 一碗粥	yì;aa;aa;aa;dd;mm;fi;g,gg;aa; wǎn;uv;uv;uw;tt;mu;mz;dp;uv; zhōu;gm;gg;gg,mg;rr;nn;bb;xo;gg;	0
 一瓶啤酒	yì;aa;aa;aa;dd;mm;fi;g,gg;aa; píng;bw;bw;wb;fh;tn;hr;ua;ew; pí;ku;ku;kb;os;rj;dn;kr;ku; jiǔ;dy;dy;dy;kd;ew;ky;is;dy;	0
-一盘沙拉	yì;aa;aa;aa;dd;mm;fi;g,gg;aa; pán;vm;vm;mv,vm;ta;ht;ia;te;vm; shā;du;du;du;ki;eh;kt;ii;du; là;fl;fl;fl;jb;qt;ui;ru;fl;	0
+一盘沙拉	yì;aa;aa;aa;dd;mm;fi;g,gg;aa; pán;vm;vm;mv,vm;ta;ht;ia;te;vm; shā;du;du;du;ki;eh;kt;ii;du; lā;fl;fl;fl;jb;qt;ui;ru;fl;	0
 一箱苹果	yì;aa;aa;aa;dd;mm;fi;g,gg;aa; xiāng;vo;vo;vx;ns;hu;rq;ts;vm; píng;cp;cp;cp;zs;tj;lh;ag;cu; guǒ;tm;ln;ad,tm;vw;wd;qe;js;an;	0
 一张地图	yì;aa;aa;aa;dd;mm;fi;g,gg;aa; zhāng;gi;gi;gi;rh;no;bp;xt;gi; dì;ty;ty;ty;gr,ga;gd;ge;f,fb;ty; tú;kd;kd;kd;nh;wy;rw;lt;wd;	0
 一瓶可乐	yì;aa;aa;aa;dd;mm;fi;g,gg;aa; píng;bw;bw;wb;fh;tn;hr;ua;ew; kě;dk;dk;dk;jj;mr;zk;sk;av; lè;px;pd;pd,px;ui;hd;by;qi;pd;	0
@@ -932,10 +932,10 @@ sort: by_weight
 一袋大米	yì;aa;aa;aa;dd;mm;fi;g,gg;aa; dài;ry;ry;yd;xk;ov;jt;wa;rh; dà;ar;un;ad;xx;kk;md;dd;an; mǐ;bm;dm;dd;ll;fd;pm;oy;dl;	0
 一包纸巾	yì;aa;aa;aa;dd;mm;fi;g,gg;aa; bāo;bs;bs;gs;ut;pu;nv;qn;pv; zhǐ;su;su;su;er;vp;ib;xq;su; jīn;kl;ll;aa;yy;lb;rj;mh;aa;	0
 一箱书	yì;aa;aa;aa;dd;mm;fi;g,gg;aa; xiāng;vo;vo;vx;ns;hu;rq;ts;vm; shū;vd;vd;ad,vd;rh;is;ai;nn;vd;	0
-一片西瓜	yì;aa;aa;aa;dd;mm;fi;g,gg;aa; piàn;pv;pv;pa,pv;ii,ur;ll,ln;ap;th;pv; xī;ak,wk;aa;aa;pp;mw;vx;sg;aa; guā;in,vd;pn;pd;uh;ho;yg;rc;pn;	0
+一片西瓜	yí;aa;aa;aa;dd;mm;fi;g,gg;aa; piàn;pv;pv;pa,pv;ii,ur;ll,ln;ap;th;pv; xī;ak,wk;aa;aa;pp;mw;vx;sg;aa; guā;in,vd;pn;pd;uh;ho;yg;rc;pn;	0
 一杯果汁	yì;aa;aa;aa;dd;mm;fi;g,gg;aa; bēi;mb;mb;mb;wh;df;ec;sg;lb; guǒ;tm;ln;ad,tm;vw;wd;qe;js;an; zhī;du;du;du;ks;ej;kn;if;du;	0
 一只杯子	yì;aa;aa;aa;dd;mm;fi;g,gg;aa; zhī;kb;kb;kb;of;rc;dh;kw;kb; bēi;mb;mb;mb;wh;df;ec;sg;lb; zi;la;va;aa,vh;aa;nd;hi;bb;va;	0
-一片药	yì;aa;aa;aa;dd;mm;fi;g,gg;aa; piàn;pv;pv;pa,pv;ii,ur;ll,ln;ap;th;pv; yào;cu;cu;cy;zh;ti;li;ax;cu;	0
+一片药	yí;aa;aa;aa;dd;mm;fi;g,gg;aa; piàn;pv;pv;pa,pv;ii,ur;ll,ln;ap;th;pv; yào;cu;cu;cy;zh;ti;li;ax;cu;	0
 一张钞票	yì;aa;aa;aa;dd;mm;fi;g,gg;aa; zhāng;gi;gi;gi;rh;no;bp;xt;gi; chāo;ju;ju;ju;di;oh;zt;qi;ju; piào;xu;xx;xu;pi;mf;vf;sf;xx;	0
 一盒蛋挞	yì;aa;aa;aa;dd;mm;fi;g,gg;aa; hé;rm;rm;mh;ea;ot;ja;wg;rm; dàn;zi;vi;ip,pi;rf;ni;tc;nh;vi; tà;fd;fz;fd;jq;qk,xk;uu;rd;fd;	0
 一支画笔	yì;aa;aa;aa;dd;mm;fi;g,gg;aa; zhī;uy;uy;uy;sl;je;ci;fc;uy; huà;at;ak;ak;dp;mw;fm;gl;aa; bǐ;vm;vm;vm;nr;hu;rv;tt;vm;	0
@@ -952,9 +952,9 @@ sort: by_weight
 一双眼睛	yì;aa;aa;aa;dd;mm;fi;g,gg;aa; shuāng;yy;yy;yy;ll;ee,xe;rr;cc;yy; yǎn;og;og;og;sh;bv;qi;hv;mh; jīng;oo;oo;oq;sl;bb;qv;hg;mo;	0
 一根黄瓜	yì;aa;aa;aa;dd;mm;fi;g,gg;aa; gēn;mg;mg;mg;wh;dv;ei;sv;lh; huáng;cb;cb;ad,cb;zy;tc;nh;am;cb; guā;in,vd;pn;pd;uh;ho;yg;rc;pn;	0
 一条短裤	yì;aa;aa;aa;dd;mm;fi;g,gg;aa; tiáo;wm;wm;wm;jf;hd;he;ts;wx; duǎn;ub;ua;ud;ed;ot;oz;td;ud; kù;pi;pi;yk;ht;lq;ty;pu;pi;	0
-一瓶洗发水	yì;aa;aa;aa;dd;mm;fi;g,gg;aa; píng;bw;bw;wb;fh;tn;hr;ua;ew; xǐ;de;de;dx;kk;eu;kp;it;de; fà;fy;vd;ay,fd,vy,yd;rh;ie;si;v,nt;vy; shuǐ;ln;ln;ad,uv;oo;ee;ks;ii;vn;	0
+一瓶洗发水	yì;aa;aa;aa;dd;mm;fi;g,gg;aa; píng;bw;bw;wb;fh;tn;hr;ua;ew; xǐ;de;de;dx;kk;eu;kp;it;de; fā;fy;vd;ay,fd,vy,yd;rh;ie;si;v,nt;vy; shuǐ;ln;ln;ad,uv;oo;ee;ks;ii;vn;	0
 一瓶番茄酱	yì;aa;aa;aa;dd;mm;fi;g,gg;aa; píng;bw;bw;wb;fh;tn;hr;ua;ew; fān;ct;pt;tb,pt,tm;hw,uw;hw;tq;to;pt; qié;ck;ck;cj;zo;tr;ld;al;ck; jiàng;ly;dy;yx;ld;lw;ay;uq;dy;	0
-一片枫叶	yì;aa;aa;aa;dd;mm;fi;g,gg;aa; piàn;pv;pv;pa,pv;ii,ur;ll,ln;ap;th;pv; fēng;mf;mx;mf;wy;dk;eb;sm;lx; yè;ku;ku;ku;os;rj;dn;kf;ku;	0
+一片枫叶	yí;aa;aa;aa;dd;mm;fi;g,gg;aa; piàn;pv;pv;pa,pv;ii,ur;ll,ln;ap;th;pv; fēng;mf;mx;mf;wy;dk;eb;sm;lx; yè;ku;ku;ku;os;rj;dn;kf;ku;	0
 一只猪	yì;aa;aa;aa;dd;mm;fi;g,gg;aa; zhī;kb;kb;kb;of;rc;dh;kw;kb; zhū;qo;qo;qv;bv;ka;mo;qt;qo;	0
 一根火腿肠	yì;aa;aa;aa;dd;mm;fi;g,gg;aa; gēn;mg;mg;mg;wh;dv;ei;sv;lh; huǒ;br,rb;dr;dd;tt;ff;ch;oo;dr; tuǐ;og;oz;ot;lq;bv;vu;ev;oh; cháng;op;op;oy;lu;bh;ve;en;op;	0
 一根胡萝卜	yì;aa;aa;aa;dd;mm;fi;g,gg;aa; gēn;mg;mg;mg;wh;dv;ei;sv;lh; hú;go;uo;og;sl;jb;cv;de;uo; luó;cx;cx;cl;zf;tn,xn;ll;al;cx; bo;ld;ld;ad;ph;yy;yb;hh;ad;	0
@@ -963,7 +963,7 @@ sort: by_weight
 一双筷子	yì;aa;aa;aa;dd;mm;fi;g,gg;aa; shuāng;yy;yy;yy;ll;ee,xe;rr;cc;yy; kuài;vg;vg;vk;nx;hk;rj;tn;vk; zi;la;va;aa,vh;aa;nd;hi;bb;va;	0
 一杯牛奶	yì;aa;aa;aa;dd;mm;fi;g,gg;aa; bēi;mb;mb;mb;wh;df;ec;sg;lb; niú;pu;pl;pa;bb;hq;qn;rh;pa; nǎi;nn;nn;nn;yu;vs;bv;ve;nn;	0
 一袋薯片	yì;aa;aa;aa;dd;mm;fi;g,gg;aa; dài;ry;ry;yd;xk;ov;jt;wa;rh; shǔ;co;co;cu;zv;ta;lo;al;co; piàn;pv;pv;pa,pv;ii,ur;ll,ln;ap;th;pv;	0
-一片饼干	yì;aa;aa;aa;dd;mm;fi;g,gg;aa; piàn;pv;pv;pa,pv;ii,ur;ll,ln;ap;th;pv; bǐng;uk;uk;ub;gp;nt;ql;qn;uk; gān;au;au;aa;ss;mj;eg;fg;au;	0
+一片饼干	yí;aa;aa;aa;dd;mm;fi;g,gg;aa; piàn;pv;pv;pa,pv;ii,ur;ll,ln;ap;th;pv; bǐng;uk;uk;ub;gp;nt;ql;qn;uk; gān;au;au;aa;ss;mj;eg;fg;au;	0
 一颗种子	yì;aa;aa;aa;dd;mm;fi;g,gg;aa; kē;gy;gr;yg;vm;wo;qw;js;gr; zhǒng;hv;hv;hv;up;hl;xg;tk;hv; zi;la;va;aa,vh;aa;nd;hi;bb;va;	0
 一根稻草	yì;aa;aa;aa;dd;mm;fi;g,gg;aa; gēn;mg;mg;mg;wh;dv;ei;sv;lh; dào;hj;hj;hj,hy;us;hx;xp;te;hj; cǎo;cu;cu;cz;zs;tj;ln;aj;cu;	0
 一条河流	yì;aa;aa;aa;dd;mm;fi;g,gg;aa; tiáo;wm;wm;wm;jf;hd;he;ts;wx; hé;dk;dk;dk;kj;er;kz;is;dk; liú;di;dv;di;kr;eu;ko;iy;dv;	0
