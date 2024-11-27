@@ -10,12 +10,11 @@
 
 ---
 name: wanxiang
-version: "2024.10.13"
+version: "2024.11.11"
 sort: by_weight  #字典初始排序，可選original或by_weight
 use_preset_vocabulary: false
 import_tables:
   - cn_dicts/large     # 大字集
-#  - cn_dicts/base     # 基础词库
   - cn_dicts/ext1      # 扩展词库1
   - cn_dicts/ext2      # 扩展词库2
   - cn_dicts/ext3      # 扩展词库3

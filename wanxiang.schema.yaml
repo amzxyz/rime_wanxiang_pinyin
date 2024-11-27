@@ -59,7 +59,7 @@ switches:
 # 输入引擎
 engine:
   processors:
-#    - lua_processor@select_character          # 以词定字，有了辅助码了，想开启可以注释掉
+    - lua_processor@*select_character          # 以词定字，有了辅助码了，想开启可以注释掉
     - lua_processor@*cold_word_drop.processor
     - lua_processor@*quick_symbol_text    #快符引导以及重复上屏
     - lua_processor@*userdb_sync_delete   #通过输入 /del 触发,用于清理自定义同步目录下txt用户词典里被标记c<0的词条
@@ -117,8 +117,8 @@ engine:
     - lua_filter@*pro_comment_format                #超级注释模块，支持错词提示、辅助码显示，部件组字读音注释，支持个性化配置和关闭相应的功能，详情搜索pro_comment_format进行详细配置
     - uniquifier                                    # 去重
 
-
-
+# Lua 基于词频的字符集过滤，小于设定值将不会显示在候选中
+word_frequency_filter: 2
 # Lua 配置: 日期、时间、星期、ISO 8601、时间戳的触发关键字
 date_translator:
   date: date            # 日期： 2022-11-29
@@ -362,7 +362,8 @@ key_binder:
     - { when: has_menu, accept: "Control+z", toggle: zrm_chaifen }
 #使用快捷键Control+q开启和关闭辅助码显示
     - { when: has_menu, accept: "Control+a", toggle: fuzhu_switch }
-    - { when: composing, accept: "Control+s", toggle: "tone_display" }
+#使用快捷键Control+s开启和关闭声调显示
+    - { when: has_menu, accept: "Control+s", toggle: "tone_display" }
 # 使用 tab 在不同音节之间跳转
     - { when: has_menu, accept: "Tab", send: "Control+Right" }
     - { when: composing, accept: "Tab", send: "Control+Right" }
@@ -394,7 +395,7 @@ algebra_pinyin:
     - xform/ń|ň|ǹ/en/ 
     - xform/\bn\b/en/   #解决𧗈字拼音n通过双拼en打出来
     - xform/ńg|ňg|ǹg/en/
-    - abbrev/^([a-z]).+$/$1/
+
     - erase/^xx;.*$/
 algebra_zrm: 
   __append:
@@ -432,7 +433,7 @@ algebra_zrm:
     - xform/^ch/Ⓘ/
     - xform/^zh/Ⓥ/
     - xlit/ⓆⓌⓇⓉⓎⓊⒾⓄⓅⓈⒹⒻⒼⒽⓂⒿⒸⓀⓁⓏⓍⓋⒷⓃ/qwrtyuiopsdfghmjcklzxvbn/
-    - abbrev/^([a-z]).+$/$1/
+
 algebra_flypy: 
   __append:
     - xlit/āáǎàōóǒòēéěèīíǐìūúǔùǖǘǚǜü/aaaaooooeeeeiiiiuuuuvvvvv/
@@ -469,7 +470,7 @@ algebra_flypy:
     - xform/^ch/Ⓘ/
     - xform/^zh/Ⓥ/
     - xlit/ⓆⓌⓇⓉⓎⓊⒾⓄⓅⓈⒹⒻⒼⒽⒿⓀⓁⓏⓍⒸⓋⒷⓃⓂ/qwrtyuiopsdfghjklzxcvbnm/
-    - abbrev/^([a-z]).+$/$1/
+
 algebra_mspy: 
   __append:
     - xlit/āáǎàōóǒòēéěèīíǐìūúǔùǖǘǚǜü/aaaaooooeeeeiiiiuuuuvvvvv/
@@ -509,7 +510,7 @@ algebra_mspy:
     - xform/^ch/Ⓘ/
     - xform/^zh/Ⓥ/
     - xlit/ⓆⓌⓇⓉⓎⓊⒾⓄⓅⓈⒹⒻⒼⒽⓂⒿⒸⓀⓁⓏⓍⓋⒷⓃ/qwrtyuiopsdfghmjcklzxvbn/
-    - abbrev/^([a-z]).+$/$1/
+
 algebra_sogou: 
   __append:
     - xlit/āáǎàōóǒòēéěèīíǐìūúǔùǖǘǚǜü/aaaaooooeeeeiiiiuuuuvvvvv/
@@ -548,7 +549,7 @@ algebra_sogou:
     - xform/^ch/Ⓘ/
     - xform/^zh/Ⓥ/
     - xlit/ⓆⓌⓇⓉⓎⓊⒾⓄⓅⓈⒹⒻⒼⒽⓂⒿⒸⓀⓁⓏⓍⓋⒷⓃ/qwrtyuiopsdfghmjcklzxvbn/
-    - abbrev/^([a-z]).+$/$1/
+
 algebra_ziguang: 
   __append:
     - xlit/āáǎàōóǒòēéěèīíǐìūúǔùǖǘǚǜü/aaaaooooeeeeiiiiuuuuvvvvv/
@@ -585,7 +586,7 @@ algebra_ziguang:
     - xform/^sh/Ⓘ/
     - xform/^ch/Ⓐ/
     - xlit/ⓌⓉⓎⓊⒾⓄⓅⒶⒼⓈⒹⒻⒽⒿⓀⓁⓏⓍⒷⓃⓂⓆⓇ/wtyuiopagsdfhjklzxbnmqr/
-    - abbrev/^([a-z]).+$/$1/
+
 algebra_abc: 
   __append:
     - xlit/āáǎàōóǒòēéěèīíǐìūúǔùǖǘǚǜü/aaaaooooeeeeiiiiuuuuvvvvv/
@@ -621,7 +622,7 @@ algebra_abc:
     - xform/^ch/Ⓔ/
     - xform/^sh/Ⓥ/
     - xlit/ⓆⓌⒺⓇⓉⓎⓄⓅⒶⓈⒹⒻⒼⒽⒿⓀⓁⓏⓍⒸⓋⒷⓃⓂ/qwertyopasdfghjklzxcvbnm/
-    - abbrev/^([a-z]).+$/$1/
+
 ###############################################以下是用来配置不同的辅助码方案###############################################
 fuzhu_kong: 
   __append: 
