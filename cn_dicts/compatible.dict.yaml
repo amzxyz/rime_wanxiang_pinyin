@@ -6,6 +6,8 @@ name: compatible
 version: "2024-11-11"
 sort: by_weight
 ...
+年长	nián;pf;pl;ra,pa;es;oq;ev;rh;pa; zhǎng;pn;pn;pd;uh;po;pc;ta;pn;	528
+年长	nián;pf;pl;ra,pa;es;oq;ev;rh;pa; cháng;pn;pn;pd;uh;po;pc;ta;pn;	121
 一行	yì;aa;aa;aa;dd;mm;fi;g,gg;aa; háng;rd;ii;xd,xi;hs;hn;px;tf;rd;	4083
 一行	yì;aa;aa;aa;dd;mm;fi;g,gg;aa; xíng;rd;ii;xd,xi;hs;hn;px;tf;rd;	621
 五行	wǔ;aw;aa;aa;gg;mm;wu;gg;aa; xíng;rd;ii;xd,xi;hs;hn;px;tf;rd;	3095
