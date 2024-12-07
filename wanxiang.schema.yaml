@@ -812,8 +812,8 @@ __include: octagram   #启用语言模型
 octagram:
   __patch:
     grammar:
-      language: amz-v2n3m1-zh-hans  
-      collocation_max_length: 5
+      language: amz-v3n2m1-zh-hans  
+      collocation_max_length: 4
       collocation_min_length: 2
     translator/contextual_suggestions: true
     translator/max_homophones: 7
