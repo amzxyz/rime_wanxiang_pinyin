@@ -358,9 +358,10 @@ key_binder:
     - { when: has_menu, accept: semicolon, send: 2 }
 #使用Control+e进入翻译模式
     - { when: has_menu, accept: "Control+e", toggle: chinese_english}
+#使用快捷键Control+m/z分别开启和关闭墨奇或自然码辅助码拆分显示
     - { when: has_menu, accept: "Control+m", toggle: moqi_chaifen }
     - { when: has_menu, accept: "Control+z", toggle: zrm_chaifen }
-#使用快捷键Control+q开启和关闭辅助码显示
+#使用快捷键Control+a开启和关闭辅助码显示
     - { when: has_menu, accept: "Control+a", toggle: fuzhu_switch }
 #使用快捷键Control+s开启和关闭声调显示
     - { when: has_menu, accept: "Control+s", toggle: "tone_display" }
