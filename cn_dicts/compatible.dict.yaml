@@ -1,16 +1,46 @@
 # Rime dictionary
 # encoding: utf-8
 #https://github.com/amzxyz/RIME-LMDG
+#兼容词库，对于多字词汇两种读音的场景，手动维护到本表以及一些其他的杂项
 ---
 name: compatible
 version: "2024-11-11"
 sort: by_weight
 ...
+不长	bù;ab;ad;ad,ax;dh;mf;cb;i,gi;ad; cháng;pn;pn;pd;uh;po;pc;ta;pn;	1081
+不长	bù;ab;ad;ad,ax;dh;mf;cb;i,gi;ad; zhǎng;pn;pn;pd;uh;po;pc;ta;pn;	708
+掠夺	lüè;fx;fx;fj;ji;qf;uy;ry;fx; duó;dc;dc;dc,cd;xk;ki;mk;df;dc;	11
+掠夺	lüě;fx;fx;fj;ji;qf;uy;ry;fx; duó;dc;dc;dc,cd;xk;ki;mk;df;dc;	11
+略长	lüè;tk;tk;tg;wo;wr;qs;lt;tk; zhǎng;pn;pn;pd;uh;po;pc;ta;pn;	98
+略长	lüè;tk;tk;tg;wo;wr;qs;lt;tk; cháng;pn;pn;pd;uh;po;pc;ta;pn;	123
+略长一些	lüè;tk;tk;tg;wo;wr;qs;lt;tk; cháng;pn;pn;pd;uh;po;pc;ta;pn; yì;aa;aa;aa;dd;mm;fi;g,gg;aa; xiē;ve;ve;ec;ru;ym;sm;hx;ve;	72
+略长几岁	lüè;tk;tk;tg;wo;wr;qs;lt;tk; zhǎng;pn;pn;pd;uh;po;pc;ta;pn; jǐ;pv;pv;py;ii;hn;oj;mt;pv; suì;ux;ex;ux;pf;ui;vl;mq;sx;	52
+见长	jiàn;ke;ke;ag,ek,ke;pk;bu;ej;mq;av; zhǎng;pn;pn;pd;uh;po;pc;ta;pn;	794
+见长	jiàn;ke;ke;ag,ek,ke;pk;bu;ej;mq;av; cháng;pn;pn;pd;uh;po;pc;ta;pn;	320
+所长	suǒ;hj;pj;hj,jh;up;hl;mt;rn;pj; cháng;pn;pn;pd;uh;po;pc;ta;pn;	669
+所长	suǒ;hj;pj;hj,jh;up;hl;mt;rn;pj; zhǎng;pn;pn;pd;uh;po;pc;ta;pn;	258
+便宜	biàn;rg;rg;rg;xy;ok;jb;wg;rg; yí;bq;bq;bq;iu;jm;wf;pe;gq;	255
+便宜	pián;rg;rg;rg;xy;ok;jb;wg;rg; yi;bq;bq;bq;iu;jm;wf;pe;gq;	3240
+便不便宜	biàn;rg;rg;rg;xy;ok;jb;wg;rg; bú;ab;ad;ad,ax;dh;mf;cb;i,gi;ad; biàn;rg;rg;rg;xy;ok;jb;wg;rg; yí;bq;bq;bq;iu;jm;wf;pe;gq;	1034
+便宜行事	biàn;rg;rg;rg;xy;ok;jb;wg;rg; yí;bq;bq;bq;iu;jm;wf;pe;gq; xíng;rd;ii;xd,xi;hs;hn;px;tf;rd; shì;gy;al;aa;dp;jn;fb;gk;av;	485
+便宜之内	biàn;rg;rg;rg;xy;ok;jb;wg;rg; yí;bq;bq;bq;iu;jm;wf;pe;gq; zhī;dn;dn;dd;hh;io;ri;pp;dn; nèi;kr;ld;ad,kr;oe;ob,xb;mj;mw;ad;	124
+越长	yuè;tl;tv;zy;qh;gv;pn;fh;tg; cháng;pn;pn;pd;uh;po;pc;ta;pn;	445
+越长	yuè;tl;tv;zy;qh;gv;pn;fh;tg; zhǎng;pn;pn;pd;uh;po;pc;ta;pn;	817
+越长大	yuè;tl;tv;zy;qh;gv;pn;fh;tg; zhǎng;pn;pn;pd;uh;po;pc;ta;pn; dà;ar;un;ad;xx;kk;md;dd;an;	666
+越长越快	yuè;tl;tv;zy;qh;gv;pn;fh;tg; zhǎng;pn;pn;pd;uh;po;pc;ta;pn; yuè;tl;tv;zy;qh;gv;pn;fh;tg; kuài;xg;xg;xd,xg;nx;pk;hj;nn;xn;	262
+越长越好	yuè;tl;tv;zy;qh;gv;pn;fh;tg; cháng;pn;pn;pd;uh;po;pc;ta;pn; yuè;tl;tv;zy;qh;gv;pn;fh;tg; hǎo;nz;nz;nz;ya;vd;bh;vb;nz;	322
+越长越	yuè;tl;tv;zy;qh;gv;pn;fh;tg; cháng;pn;pn;pd;uh;po;pc;ta;pn; yuè;tl;tv;zy;qh;gv;pn;fh;tg;	635
+越长越	yuè;tl;tv;zy;qh;gv;pn;fh;tg; zhǎng;pn;pn;pd;uh;po;pc;ta;pn; yuè;tl;tv;zy;qh;gv;pn;fh;tg;	425
+行长	háng;rd;ii;xd,xi;hs;hn;px;tf;rd; zhǎng;pn;pn;pd;uh;po;pc;ta;pn;	2117
+年长	nián;pf;pl;ra,pa;es;oq;ev;rh;pa; zhǎng;pn;pn;pd;uh;po;pc;ta;pn;	367
+年长	nián;pf;pl;ra,pa;es;oq;ev;rh;pa; cháng;pn;pn;pd;uh;po;pc;ta;pn;	268
+长牙	zhǎng;pn;pn;pd;uh;po;pc;ta;pn; yá;gp,ac;ap;ap;du;mh;ly;ah;ap;	493
+长牙	cháng;pn;pn;pd;uh;po;pc;ta;pn; yá;gp,ac;ap;ap;du;mh;ly;ah;ap;	101
+长相	zhǎng;pn;pn;pd;uh;po;pc;ta;pn; xiàng;mo;mo;mo;ws;du;eq;sh;lm;	1576
 白庙	bái;po;po;pa,po;ss;ha;ub;rr;po; miào;gy;gy;gy;rp;iw;xd;ym;gy;	1
-不为	bù;ab;ad;ad,ax;dh;mf;cb;i,gi;ad; wèi;ld;dd;dd;uu;ii;ii;o,yl;dd;	6598
-不为	bù;ab;ad;ad,ax;dh;mf;cb;i,gi;ad; wèi;ld;dd;dd;uu;ii;ii;o,yl;dd;	6162
-黄贺	huáng;cb;cb;ad,cb;zy;tc;nh;am;cb; hè;lb;lr;bj;um;ko;so;lk;lr;	1
-年长	nián;pf;pl;ra,pa;es;oq;ev;rh;pa; zhǎng;pn;pn;pd;uh;po;pc;ta;pn;	1808
+不为	bú;ab;ad;ad,ax;dh;mf;cb;i,gi;ad; wèi;ld;dd;dd;uu;ii;ii;o,yl;dd;	6598
+不为	bù;ab;ad;ad,ax;dh;mf;cb;i,gi;ad; wéi;ld;dd;dd;uu;ii;ii;o,yl;dd;	6162
+年长	nián;pf;pl;ra,pa;es;oq;ev;rh;pa; cháng;pn;pn;pd;uh;po;pc;ta;pn;	1808
 年长	nián;pf;pl;ra,pa;es;oq;ev;rh;pa; zhǎng;pn;pn;pd;uh;po;pc;ta;pn;	3306
 十四	shí;al;al;aa;ss;jj;ns;fg;aa; sì;ke;ke;aa,ke;nk;wc;ys;lh;we;	1
 四十	sì;ke;ke;aa,ke;nk;wc;ys;lh;we; shí;al;al;aa;ss;jj;ns;fg;aa;	1
@@ -22,9 +52,7 @@ sort: by_weight
 往外传	wǎng;rv;iv;xv;ha,hg;hg;wn;ty;rv; wài;xb;xb;xb;fh;ny;ly;qh;xb; zhuàn;rv;rv;rv;xh;oi;ji;wf;rv;	90
 捉兔	zhuō;fz;fr;fz;jg;qo;up;rk;fr; tù;dd;dd;dd;gh;ni;wt;qk;ed;	1
 白石塔	bái;po;po;pa,po;ss;ha;ub;rr;po; shí;ak;ak;kp,aa,ak,pk;tt;mr;ms;dg;ak; tǎ;tk;tk;td,th;go;gr;gd;fa;tk;	1
-白石塔	bái;po;po;pa,po;ss;ha;ub;rr;po; shí;ak;ak;kp,aa,ak,pk;tt;mr;ms;dg;ak; tǎ;tk;tk;td,th;go;gr;gd;fa;tk;	1
 板凳宽	bǎn;my;my;mf;wl;de,xe;er;sr;ly; dèng;bj;vj;jd;ri;nn;ho;wg;dj; kuān;bj;be;bj,jb;ik;ju,xu;we;pa;gj;	1
-扁担长	biǎn;hc;hc;hc;qj,hj;ht,it,xt;mi;yn;hc; dàn;fd;fa;fd;jd;qm;uf;rj;fd; zhǎng;pn;pn;pd;uh;po;pc;ta;pn;	1
 扁担长	biǎn;hc;hc;hc;qj,hj;ht,it,xt;mi;yn;hc; dàn;fd;fa;fd;jd;qm;uf;rj;fd; zhǎng;pn;pn;pd;uh;po;pc;ta;pn;	1
 剥桔子	bō;ed;ed;dl;si;nn;bp;vi;ld; jú;mk;mk;mj;wo;dr;ed;sf;lk; zi;la;va;aa,vh;aa;nd;hi;bb;va;	1
 常练习	cháng;xj;xj;jk,xd,dd;hy;fb;sr;ip;ej; liàn;sd;sd;sd,sj;ei;vc,vd;iy;xa;sd; xí;vd;vd;ga;dd;sm;zx;nu;vd;	1
